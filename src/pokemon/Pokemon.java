@@ -9,7 +9,7 @@ public class Pokemon {
 	private int id;
 	
 	//Construtor
-	Pokemon(String nome, int id, Status stats, AtkPool atkpool, String tipo){
+	public Pokemon(String nome, int id, Status stats, AtkPool atkpool, String tipo){
 		this.nome = nome;
 		this.id = id;
 		this.stats = stats;
