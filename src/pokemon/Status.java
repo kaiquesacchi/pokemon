@@ -11,15 +11,15 @@ public class Status {
 	//volatile stats
 	private int curHp;
 	private String effect;
-	
+	//construtor
 	public Status(int atk, int aspAtk, int def, int spDef, int spd, int maxHp){
-		this.atk=atk;
-		this.spAtk=spAtk;
-		this.def=def;
-		this.spDef=spDef;
-		this.spd=spd;
-		this.maxHp=maxHp;
-		this.curHp=maxHp;
-		this.effect=null;		
+		this.atk = atk;
+		this.spAtk = spAtk;
+		this.def = def;
+		this.spDef = spDef;
+		this.spd = spd;
+		this.maxHp = maxHp;
+		this.curHp = maxHp;
+		this.effect = null;		
 		}
 }
