@@ -13,7 +13,6 @@ public class Status {
 	private int curHp;
 	private String effect;
 	
-	
 	//Construtor
 	public Status(int atk, int spAtk, int def, int spDef, int spd, int maxHp){
 		this.atk = atk;
@@ -44,5 +43,27 @@ public class Status {
 	
 	public int getAtk(){
 		return atk;
+	}
+	
+	public int getSpAtk(){
+		return this.spAtk;
+	}
+	public int getDef(){
+		return this.def;
+	}
+	public int getSpDef(){
+		return this.spDef;
+	}
+	public int getSpd(){
+		return this.spd;
+	}
+	public int getMaxHp(){
+		return this.maxHp;
+	}
+	public int getCurHp(){
+		return this.curHp;
+	}
+	public String getEffect(){
+		return this.effect;
 	}
 }
