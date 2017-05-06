@@ -4,9 +4,9 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 	 
-public class CarregaPokemons {
+public class CarregaTxt {
 	 
-    public static Pokemon[] leitor(String path) throws IOException {
+    public static Pokemon[] leitorPokemon(String path) throws IOException {
     	Pokemon[] pokemons = new Pokemon[152];
         BufferedReader buffRead = new BufferedReader(new FileReader(path));
         String linha = buffRead.readLine();
@@ -26,5 +26,22 @@ public class CarregaPokemons {
 	    buffRead.close();
 	    System.out.println("[CarregaPokemons] Pokemons gerados com sucesso");
 	    return pokemons;
+	}
+    
+    
+    public static int[] leitorStatus(String path, String nome) throws IOException {
+    	if (nome.equals("Mr. Mime")) path += "mrmime.asm";
+    	else if (nome.equals("Farfetch'd")) path += "farfetchd.asm";
+    	else path += (nome.toLowerCase() + ".asm");
+    	int[] aux = new int[5];
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        buffRead.readLine(); // Pula a primeira linha.
+        for (int i = 0;i < 5; i++) {
+        	String linha = buffRead.readLine();
+            String[] aux2 = linha.split(" ", 3);
+	        aux[i] = Integer.parseInt(aux2[1]);
+	    }
+	    buffRead.close();
+	    return aux;
 	}
 }

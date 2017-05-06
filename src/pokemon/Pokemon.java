@@ -1,5 +1,7 @@
 package pokemon;
 
+import java.io.IOException;
+
 public class Pokemon {
 	//Atributos
 	private String nome;
@@ -10,14 +12,14 @@ public class Pokemon {
 	private String id;
 	
 	//Construtor	
-	public Pokemon(String id, String nome, String tipo1, String tipo2){
+	public Pokemon(String id, String nome, String tipo1, String tipo2) throws IOException{
 		this.nome = nome;
 		this.id = id;
 		this.tipo1 = tipo1;
 		this.tipo2 = tipo2;
-		this.stats = new Status();
+		this.stats = new Status(nome);
 	}
-	public Pokemon(String id, String nome, String tipo1){
+	public Pokemon(String id, String nome, String tipo1) throws IOException{
 		this(id, nome, tipo1, "");
 	}
 	

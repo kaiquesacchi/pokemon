@@ -1,5 +1,7 @@
 package pokemon;
 
+import java.io.IOException;
+
 public class Status {
 	//Atributos
 		//status constantes
@@ -25,24 +27,21 @@ public class Status {
 		this.effect = null;		
 		}
 	
-	public Status(){
-		this.atk = gerar();
-		this.spAtk = gerar();
-		this.def = gerar();
-		this.spDef = gerar();
-		this.spd = gerar();
-		this.maxHp = gerar();
+	public Status(String nome) throws IOException{
+		int[] aux = CarregaTxt.leitorStatus("txt/baseStats/", nome);
+		this.atk = aux[1];
+		this.spAtk = aux[4];
+		this.def = aux[2];
+		this.spDef = aux[4];
+		this.spd = aux[3];
+		this.maxHp = aux[0];
 		this.curHp = this.maxHp;
 		this.effect = null;		
 	}
 	
-	//Métodos
-	private int gerar(){
-		return ((int)(((Math.random() * 100)%10) + 10));
-	}
-	
+	//Métodos	
 	public int getAtk(){
-		return atk;
+		return this.atk;
 	}
 	
 	public int getSpAtk(){
