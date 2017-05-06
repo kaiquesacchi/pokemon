@@ -13,9 +13,7 @@ public class CarregaPokemons {
         int i=1;
         while (true) {
             if (linha != null) {
-                System.out.println(linha);
                 String[] aux = linha.split(",");
-                System.out.println(aux.length);
                 if (aux.length == 3)
                 	pokemons[i] = new Pokemon(aux[0], aux[1], aux[2]);
                 else
@@ -26,6 +24,7 @@ public class CarregaPokemons {
 	        i++;
 	    }
 	    buffRead.close();
+	    System.out.println("[CarregaPokemons] Pokemons gerados com sucesso");
 	    return pokemons;
 	}
 }

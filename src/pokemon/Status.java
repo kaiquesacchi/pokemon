@@ -1,18 +1,21 @@
 package pokemon;
 
 public class Status {
-	//solid stats
+	//Atributos
+		//status constantes
 	private int atk;
 	private int spAtk;
 	private int def;
 	private int spDef;
 	private int spd;
 	private int maxHp;
-	//volatile stats
+		//status volateis
 	private int curHp;
 	private String effect;
-	//construtor
-	public Status(int atk, int aspAtk, int def, int spDef, int spd, int maxHp){
+	
+	
+	//Construtor
+	public Status(int atk, int spAtk, int def, int spDef, int spd, int maxHp){
 		this.atk = atk;
 		this.spAtk = spAtk;
 		this.def = def;
@@ -22,4 +25,24 @@ public class Status {
 		this.curHp = maxHp;
 		this.effect = null;		
 		}
+	
+	public Status(){
+		this.atk = gerar();
+		this.spAtk = gerar();
+		this.def = gerar();
+		this.spDef = gerar();
+		this.spd = gerar();
+		this.maxHp = gerar();
+		this.curHp = this.maxHp;
+		this.effect = null;		
+	}
+	
+	//Métodos
+	private int gerar(){
+		return ((int)(((Math.random() * 100)%10) + 10));
+	}
+	
+	public int getAtk(){
+		return atk;
+	}
 }

@@ -1,0 +1,7 @@
+[Status]
+	Criar todos os metodos get (assim como o getAtk()).
+[CarregaAtaques]
+	Encontrar um txt com todos os ataques (ou criar um...).
+[Pokemon]
+	Criar os metodos get.
+	Criar os metodos set necessarios.
