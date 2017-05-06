@@ -44,4 +44,23 @@ public class CarregaTxt {
 	    buffRead.close();
 	    return aux;
 	}
+    
+    public static Ataque[] leitorAtaque(String path) throws IOException {
+    	Ataque[] ataques = new Ataque[165];
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        String linha = buffRead.readLine();
+        int i=0;
+        while (true) {
+            if (linha != null) {
+                String[] aux = linha.split(",");
+                ataques[i] = new Ataque(aux[0], aux[1], Integer.parseInt(aux[2]), aux[3], Integer.parseInt(aux[4]), Integer.parseInt(aux[5]));
+            }
+            else break;
+	        linha = buffRead.readLine();
+	        i++;
+	    }
+	    buffRead.close();
+	    System.out.println("[CarregaAtaques] Ataques gerados com sucesso");
+	    return ataques;
+	}
 }

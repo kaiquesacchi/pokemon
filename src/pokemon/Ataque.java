@@ -9,8 +9,18 @@ public class Ataque {
 	private int PP;
 	private String efeito;
 	
+	//Métodos
+	public void printAll(){
+		System.out.println("nome: "+nome);
+		System.out.println("tipo: "+tipo);
+		System.out.println("dano: "+dano);
+		System.out.println("precisao: "+precisao);
+		System.out.println("PP: "+PP);
+		System.out.println("efeito: "+efeito);
+	}
+	
 	//Construtor
-	public Ataque(String nome, String tipo, int dano, int precisao, int PP, String efeito){
+	public Ataque(String nome, String efeito, int dano, String tipo, int precisao, int PP){
 		this.nome = nome;
 		this.tipo = tipo;
 		this.dano = dano;
