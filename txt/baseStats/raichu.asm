@@ -1,28 +1,21 @@
-db DEX_RAICHU ; pokedex id
-db 60 ; base hp
-db 90 ; base attack
-db 55 ; base defense
-db 100 ; base speed
-db 90 ; base special
-db ELECTRIC ; species type 1
-db ELECTRIC ; species type 2
-db 75 ; catch rate
-db 122 ; base exp yield
+RAICHU ; pokedex id
+60 ; base hp
+90 ; base attack
+55 ; base defense
+100 ; base speed
+90 ; base special
+ELECTRIC ; species type 1
+ELECTRIC ; species type 2
+75 ; catch rate
+122 ; base exp yield
 INCBIN "pic/bmon/raichu.pic",0,1 ; 77, sprite dimensions
 dw RaichuPicFront
 dw RaichuPicBack
 ; attacks known at lvl 0
-db THUNDERSHOCK
-db GROWL
-db THUNDER_WAVE
-db 0
-db 0 ; growth rate
-; learnset
-	tmlearn 1,5,6,8
-	tmlearn 9,10,15,16
-	tmlearn 17,19,20,24
-	tmlearn 25,31,32
-	tmlearn 33,34,39,40
-	tmlearn 44,45
-	tmlearn 50,55
-db 0 ; padding
+THUNDERSHOCK
+GROWL
+THUNDER WAVE
+0
+0 ; growth rate
+; learnset,1,5,6,8,9,10,15,16,17,19,20,24,25,31,32,33,34,39,40,44,45,50,55
+0 ; padding

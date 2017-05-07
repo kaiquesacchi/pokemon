@@ -1,16 +1,17 @@
 package pokemon;
 
+import java.io.IOException;
+
 public class AtkPool {
 	//Atributos
-	private Ataque[] ataques;
-	
-	//Métodos
-	public Ataque[] getAtaques(){
-		return ataques;
-	}
+	private Ataque[] ataquesAtuais;
+	private int[] tmsRecebiveis;
+	private int[][] ataquesPorNivel;
 	
 	//Construtor
-	public AtkPool(Ataque[] ataques){
-		this.ataques = ataques;
+	public AtkPool(String nome) throws IOException {
+		Ataque[] ataques = CarregaTxt.leitorAtaque("moves.txt");
+		ataquesAtuais = CarregaTxt.leitorAtksBase("txt/baseStats/", nome, ataques);
+		tmsRecebiveis= CarregaTxt.leitorTmsRecebiveis("txt/baseStats", nome);
 	}
 }

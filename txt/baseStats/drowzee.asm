@@ -1,28 +1,21 @@
-db DEX_DROWZEE ; pokedex id
-db 60 ; base hp
-db 48 ; base attack
-db 45 ; base defense
-db 42 ; base speed
-db 90 ; base special
-db PSYCHIC ; species type 1
-db PSYCHIC ; species type 2
-db 190 ; catch rate
-db 102 ; base exp yield
+DROWZEE ; pokedex id
+60 ; base hp
+48 ; base attack
+45 ; base defense
+42 ; base speed
+90 ; base special
+PSYCHIC ; species type 1
+PSYCHIC ; species type 2
+190 ; catch rate
+102 ; base exp yield
 INCBIN "pic/bmon/drowzee.pic",0,1 ; 66, sprite dimensions
 dw DrowzeePicFront
 dw DrowzeePicBack
 ; attacks known at lvl 0
-db POUND
-db HYPNOSIS
-db 0
-db 0
-db 0 ; growth rate
-; learnset
-	tmlearn 1,5,6,8
-	tmlearn 9,10
-	tmlearn 17,18,19,20
-	tmlearn 29,30,31,32
-	tmlearn 33,34,35,40
-	tmlearn 42,44,45,46
-	tmlearn 49,50,55
-db 0 ; padding
+POUND
+HYPNOSIS
+0
+0
+0 ; growth rate
+; learnset,1,5,6,8,9,10,17,18,19,20,29,30,31,32,33,34,35,40,42,44,45,46,49,50,55
+0 ; padding

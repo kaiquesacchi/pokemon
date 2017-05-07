@@ -18,6 +18,9 @@ public class Ataque {
 		System.out.println("PP: "+PP);
 		System.out.println("efeito: "+efeito);
 	}
+	public String getNome(){
+		return nome;
+	}
 	
 	//Construtor
 	public Ataque(String nome, String efeito, int dano, String tipo, int precisao, int PP){

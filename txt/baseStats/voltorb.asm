@@ -1,28 +1,21 @@
-db DEX_VOLTORB ; pokedex id
-db 40 ; base hp
-db 30 ; base attack
-db 50 ; base defense
-db 100 ; base speed
-db 55 ; base special
-db ELECTRIC ; species type 1
-db ELECTRIC ; species type 2
-db 190 ; catch rate
-db 103 ; base exp yield
+VOLTORB ; pokedex id
+40 ; base hp
+30 ; base attack
+50 ; base defense
+100 ; base speed
+55 ; base special
+ELECTRIC ; species type 1
+ELECTRIC ; species type 2
+190 ; catch rate
+103 ; base exp yield
 INCBIN "pic/bmon/voltorb.pic",0,1 ; 55, sprite dimensions
 dw VoltorbPicFront
 dw VoltorbPicBack
 ; attacks known at lvl 0
-db TACKLE
-db SCREECH
-db 0
-db 0
-db 0 ; growth rate
-; learnset
-	tmlearn 6
-	tmlearn 9
-	tmlearn 20,24
-	tmlearn 25,30,31,32
-	tmlearn 33,34,36,39
-	tmlearn 44,45,47
-	tmlearn 50,55
-db 0 ; padding
+TACKLE
+SCREECH
+0
+0
+0 ; growth rate
+; learnset,6,9,20,24,25,30,31,32,33,34,36,39,44,45,47,50,55
+0 ; padding

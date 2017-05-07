@@ -18,6 +18,7 @@ public class Pokemon {
 		this.tipo1 = tipo1;
 		this.tipo2 = tipo2;
 		this.stats = new Status(nome);
+		this.atkPool = new AtkPool(nome);
 	}
 	public Pokemon(String id, String nome, String tipo1) throws IOException{
 		this(id, nome, tipo1, "");
@@ -52,9 +53,9 @@ public class Pokemon {
 	public String getEffect(){
 		return stats.getEffect();
 	}
-	public Ataque[] getAtkPool(){
+	/*public Ataque[] getAtkPool(){
 		return atkPool.getAtaques();
-	}
+	}*/
 	public String getTipo1(){
 		return tipo1;
 	}

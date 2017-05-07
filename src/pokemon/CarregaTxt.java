@@ -38,8 +38,8 @@ public class CarregaTxt {
         buffRead.readLine(); // Pula a primeira linha.
         for (int i = 0;i < 5; i++) {
         	String linha = buffRead.readLine();
-            String[] aux2 = linha.split(" ", 3);
-	        aux[i] = Integer.parseInt(aux2[1]);
+            String[] aux2 = linha.split(" ", 2);
+	        aux[i] = Integer.parseInt(aux2[0]);
 	    }
 	    buffRead.close();
 	    return aux;
@@ -62,5 +62,42 @@ public class CarregaTxt {
 	    buffRead.close();
 	    System.out.println("[CarregaAtaques] Ataques gerados com sucesso");
 	    return ataques;
+	}
+    
+    public static int[] leitorTmsRecebiveis(String path, String nome) throws IOException {
+    	if (nome.equals("Mr. Mime")) path += "mrmime.asm";
+    	else if (nome.equals("Farfetch'd")) path += "farfetchd.asm";
+    	else path += (nome.toLowerCase() + ".asm");
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        for (int i = 0; i<19; i++) buffRead.readLine(); // Pula 20 linhas.
+        String linha = buffRead.readLine();
+        String[] aux = linha.split(",");
+        int[] aux2 = new int[aux.length];
+	    for (int i = 1; i<aux.length; i++){
+	    	aux2[i-1] = Integer.parseInt(aux[i]);
+	    	System.out.println(aux2[i-1]);
+	    }
+	    buffRead.close();
+	    return aux2;
+	}
+    
+    public static Ataque[] leitorAtksBase(String path, String nome, Ataque[] ataques) throws IOException {
+    	if (nome.equals("Mr. Mime")) path += "mrmime.asm";
+    	else if (nome.equals("Farfetch'd")) path += "farfetchd.asm";
+    	else path += (nome.toLowerCase() + ".asm");
+    	Ataque[] aux = new Ataque[4];
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        for (int i = 0; i<14; i++) buffRead.readLine(); // Pula 14 linhas.
+        for (int i = 0; i<4; i++){
+        	String aux2 = buffRead.readLine();
+        	if (aux2.equals("0")) aux[i] = null;
+        	else {
+        		int j = 0;
+        		while(!(ataques[j].getNome().equals(aux2)) && j < ataques.length) j++;
+        		aux[i] = ataques[j];
+        	}
+        }
+        buffRead.close();
+        return aux;
 	}
 }

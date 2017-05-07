@@ -1,28 +1,21 @@
-db DEX_KRABBY ; pokedex id
-db 30 ; base hp
-db 105 ; base attack
-db 90 ; base defense
-db 50 ; base speed
-db 25 ; base special
-db WATER ; species type 1
-db WATER ; species type 2
-db 225 ; catch rate
-db 115 ; base exp yield
+KRABBY ; pokedex id
+30 ; base hp
+105 ; base attack
+90 ; base defense
+50 ; base speed
+25 ; base special
+WATER ; species type 1
+WATER ; species type 2
+225 ; catch rate
+115 ; base exp yield
 INCBIN "pic/bmon/krabby.pic",0,1 ; 55, sprite dimensions
 dw KrabbyPicFront
 dw KrabbyPicBack
 ; attacks known at lvl 0
-db BUBBLE
-db LEER
-db 0
-db 0
-db 0 ; growth rate
-; learnset
-	tmlearn 3,6,8
-	tmlearn 9,10,11,12,13,14
-	tmlearn 20
-	tmlearn 31,32
-	tmlearn 34
-	tmlearn 44
-	tmlearn 50,51,53,54
-db 0 ; padding
+BUBBLE
+LEER
+0
+0
+0 ; growth rate
+; learnset,3,6,8,9,10,11,12,13,14,20,31,32,34,44,50,51,53,54
+0 ; padding
