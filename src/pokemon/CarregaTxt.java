@@ -103,6 +103,32 @@ public class CarregaTxt {
         return aux;
 	}
     
+    
+    
+    public static String[][] leitorLearnSet(String path, String nome, Ataque[] ataques) throws IOException {
+    	if (nome.equals("Mr. Mime")) nome = "MR MIME";
+    	else if (nome.equals("Farfetch'd")) nome = "FARFETCHD";
+    	else nome = nome.toUpperCase();
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        String linha = buffRead.readLine();
+        while (!(nome.equals(linha))) linha = buffRead.readLine(); // Pula linhas até encontrar o pokemon correspondente.
+        while (!(linha.equals("Learnset"))) linha = buffRead.readLine();
+        String[][] aux = new String[10][2];
+        int i=0;
+        while (!((linha = buffRead.readLine()).equals("0"))){
+        	aux[i] = (linha.split(","));
+        	i++;
+        }
+        buffRead.close();
+        return (aux);
+	}
+    
+    
+    
+    
+    
+    
+    
     public static Potion[] leitorPotions(String path) throws IOException {
     	Potion[] potions = new Potion[8];
         BufferedReader buffRead = new BufferedReader(new FileReader(path));
