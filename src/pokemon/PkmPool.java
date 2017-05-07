@@ -2,10 +2,10 @@ package pokemon;
 
 public class PkmPool {
 	//Atributos
-	private Pokemon[] pokemons;
+	private PokemonBase[] pokemons;
 	
 	//Construtor
-	public PkmPool(Pokemon[] pokemons){
+	public PkmPool(PokemonBase[] pokemons){
 		this.pokemons = pokemons;
 	}
 }

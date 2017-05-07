@@ -6,8 +6,8 @@ import java.io.IOException;
 	 
 public class CarregaTxt {
 	 
-    public static Pokemon[] leitorPokemon(String path) throws IOException {
-    	Pokemon[] pokemons = new Pokemon[152];
+    public static PokemonBase[] leitorPokemon(String path) throws IOException {
+    	PokemonBase[] pokemons = new PokemonBase[152];
         BufferedReader buffRead = new BufferedReader(new FileReader(path));
         String linha = buffRead.readLine();
         int i=1;
@@ -15,9 +15,9 @@ public class CarregaTxt {
             if (linha != null) {
                 String[] aux = linha.split(",");
                 if (aux.length == 3)
-                	pokemons[i] = new Pokemon(aux[0], aux[1], aux[2]);
+                	pokemons[i] = new PokemonBase(aux[0], aux[1], aux[2]);
                 else
-                	pokemons[i] = new Pokemon(aux[0], aux[1], aux[2], aux[3]); 
+                	pokemons[i] = new PokemonBase(aux[0], aux[1], aux[2], aux[3]); 
 	        } 
             else break;
 	        linha = buffRead.readLine();
