@@ -32,14 +32,11 @@ public class Pokemon {
 	public int getAtk(){
 		return stats.getAtk();
 	}
-	public int getSpAtk(){
-		return stats.getSpAtk();
-	}
 	public int getDef(){
 		return stats.getDef();
 	}
-	public int getSpDef(){
-		return stats.getSpDef();
+	public int getSpc(){
+		return stats.getSpc();
 	}
 	public int getSpd(){
 		return stats.getSpd();
@@ -66,10 +63,9 @@ public class Pokemon {
 		return id;
 	}
 	public void printAll(){
-		System.out.println(id + "_" + nome + "_" + tipo1 + "_" + tipo2 + "_" + stats.getAtk());
-	}
-	public void printAtk(){
-		System.out.println("||||||||||||||||||||" + nome + "|||||||||||||||||||||");
+		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||");
+		System.out.println("["+id+"]  " + nome);
+		System.out.println(tipo1 + "||" + tipo2);
 		this.atkPool.printAll();
 	}
 }
