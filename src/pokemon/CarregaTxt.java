@@ -100,4 +100,104 @@ public class CarregaTxt {
         buffRead.close();
         return aux;
 	}
+    
+    public static Potion[] leitorPotions(String path) throws IOException {
+    	Potion[] potions = new Potion[8];
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        String linha = buffRead.readLine();
+        int i=0;
+        while (true) {
+            if (linha != null) {
+                String[] aux = linha.split(",");
+                potions[i] = new Potion(aux[0], Integer.parseInt(aux[1]), Integer.parseInt(aux[2]));
+            }
+            else break;
+	        linha = buffRead.readLine();
+	        i++;
+	    }
+	    buffRead.close();
+	    System.out.println("[CarregaPotion] Potions geradas com sucesso");
+	    return potions;
+	}
+    
+    public static Pokeball[] leitorPokeballs(String path) throws IOException {
+    	Pokeball[] pokeballs = new Pokeball[4];
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        String linha = buffRead.readLine();
+        int i=0;
+        while (true) {
+            if (linha != null) {
+                String[] aux = linha.split(",");
+                pokeballs[i] = new Pokeball(aux[0], Integer.parseInt(aux[1]), Integer.parseInt(aux[2]));
+            }
+            else break;
+	        linha = buffRead.readLine();
+	        i++;
+	    }
+	    buffRead.close();
+	    System.out.println("[CarregaPokeball] Pokeballs geradas com sucesso");
+	    return pokeballs;
+	}
+    
+    public static Elixer[] leitorElixeres(String path) throws IOException {
+    	Elixer[] elixeres = new Elixer[4];
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        String linha = buffRead.readLine();
+        int i=0;
+        while (true) {
+            if (linha != null) {
+                String[] aux = linha.split(",");
+                elixeres[i] = new Elixer(aux[0], Integer.parseInt(aux[1]), Integer.parseInt(aux[2]));
+            }
+            else break;
+	        linha = buffRead.readLine();
+	        i++;
+	    }
+	    buffRead.close();
+	    System.out.println("[CarregaElixere] Elixeres gerados com sucesso");
+	    return elixeres;
+	}
+    
+    public static BattleItem[] leitorBattleItems(String path) throws IOException {
+    	BattleItem[] battleItems = new BattleItem[4];
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        String linha = buffRead.readLine();
+        int i=0;
+        while (true) {
+            if (linha != null) {
+                String[] aux = linha.split(",");
+                battleItems[i] = new BattleItem(aux[0], Integer.parseInt(aux[1]), Integer.parseInt(aux[2]));
+            }
+            else break;
+	        linha = buffRead.readLine();
+	        i++;
+	    }
+	    buffRead.close();
+	    System.out.println("[CarregaBattleItem] BattleItems gerados com sucesso");
+	    return battleItems;
+	}
+    
+    public static StatusRestore[] leitorStatusRestore(String path) throws IOException {
+    	StatusRestore[] statusRestores = new StatusRestore[4];
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        String linha = buffRead.readLine();
+        int i=0;
+        while (true) {
+            if (linha != null) {
+                String[] aux = linha.split(",");
+                statusRestores[i] = new StatusRestore(aux[0], Integer.parseInt(aux[1]));
+            }
+            else break;
+	        linha = buffRead.readLine();
+	        i++;
+	    }
+	    buffRead.close();
+	    System.out.println("[CarregaStatusRestore] StatusRestores gerados com sucesso");
+	    return statusRestores;
+	}
+    
+    
+    
+    
+    
 }
