@@ -68,4 +68,7 @@ public class Pokemon {
 	public void printAll(){
 		System.out.println(id + "_" + nome + "_" + tipo1 + "_" + tipo2 + "_" + stats.getAtk());
 	}
+	public void print(){
+		this.atkPool.printAtaques();
+	}
 }
