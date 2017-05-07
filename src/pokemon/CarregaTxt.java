@@ -49,6 +49,7 @@ public class CarregaTxt {
     	Ataque[] ataques = new Ataque[165];
         BufferedReader buffRead = new BufferedReader(new FileReader(path));
         String linha = buffRead.readLine();
+        linha = buffRead.readLine();
         int i=0;
         while (true) {
             if (linha != null) {
@@ -60,7 +61,7 @@ public class CarregaTxt {
 	        i++;
 	    }
 	    buffRead.close();
-	    System.out.println("[CarregaAtaques] Ataques gerados com sucesso");
+	    //System.out.println("[CarregaAtaques] Ataques gerados com sucesso");
 	    return ataques;
 	}
     
@@ -75,7 +76,6 @@ public class CarregaTxt {
         int[] aux2 = new int[aux.length];
 	    for (int i = 1; i<aux.length; i++){
 	    	aux2[i-1] = Integer.parseInt(aux[i]);
-	    	System.out.println(aux2[i-1]);
 	    }
 	    buffRead.close();
 	    return aux2;
@@ -93,7 +93,9 @@ public class CarregaTxt {
         	if (aux2.equals("0")) aux[i] = null;
         	else {
         		int j = 0;
-        		while(!(ataques[j].getNome().equals(aux2)) && j < ataques.length) j++;
+        		while(j < ataques.length && !(ataques[j].getNome().equals(aux2))){
+        			j++;
+        		}
         		aux[i] = ataques[j];
         	}
         }
