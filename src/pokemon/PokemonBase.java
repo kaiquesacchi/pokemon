@@ -50,9 +50,6 @@ public class PokemonBase {
 	public String getEffect(){
 		return stats.getEffect();
 	}
-	/*public Ataque[] getAtkPool(){
-		return atkPool.getAtaques();
-	}*/
 	public String getTipo1(){
 		return tipo1;
 	}
@@ -66,6 +63,7 @@ public class PokemonBase {
 		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||");
 		System.out.println("["+id+"]  " + nome);
 		System.out.println(tipo1 + "||" + tipo2);
+		this.stats.printAll();
 		this.atkPool.printAll();
 	}
 }

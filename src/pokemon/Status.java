@@ -51,5 +51,7 @@ public class Status {
 	
 	public void printAll(){
 		System.out.println("----------Status-----------");
+		System.out.println("atk: " + atk + "   def: " + def + "   spc: " + spc);
+		System.out.println("spd: " + spd + "           maxHP: " + maxHp);
 	}
 }
