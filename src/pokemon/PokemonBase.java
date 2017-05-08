@@ -44,15 +44,6 @@ public class PokemonBase {
 	public int getMaxHp(){
 		return stats.getMaxHp();
 	}
-	public int getCurHp(){
-		return stats.getCurHp();
-	}
-	public String getEffect(){
-		return stats.getEffect();
-	}
-	/*public Ataque[] getAtkPool(){
-		return atkPool.getAtaques();
-	}*/
 	public String getTipo1(){
 		return tipo1;
 	}

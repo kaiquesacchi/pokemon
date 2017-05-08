@@ -1,6 +1,6 @@
 package pokemon;
 
-public abstract class Item {
+	abstract public class Item {
 	//Atributos
 	private String nome;
 	private int preco;

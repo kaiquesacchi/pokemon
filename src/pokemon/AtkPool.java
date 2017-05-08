@@ -8,6 +8,23 @@ public class AtkPool {
 	private int[] tmsRecebiveis;
 	private String[][] ataquesPorNivel;
 	
+	//Métodos
+	public Ataque[] getAtaquesAtuais(){
+		return ataquesAtuais;
+	}
+	public int[] getTmsRecebiveis(){
+		return tmsRecebiveis;
+	}
+	public String getAtaquePorNivel(int lv){
+		int i = 0;
+		while(lv != Integer.parseInt(ataquesPorNivel[i][0])){
+			if(i>20) return null;
+			i++;
+		}
+			return ataquesPorNivel[i][1];
+	}
+	
+	
 	//Construtor
 	public AtkPool(String nome) throws IOException {
 		Ataque[] ataques = CarregaTxt.leitorAtaque("txt/moves.txt");

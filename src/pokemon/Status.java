@@ -11,8 +11,6 @@ public class Status {
 	private int spd;
 	private int maxHp;
 		//status volateis
-	private int curHp;
-	private String effect;
 	
 	//Construtor	
 	public Status(String nome) throws IOException{
@@ -21,9 +19,7 @@ public class Status {
 		this.def = aux[2];
 		this.spd = aux[3];
 		this.spc = aux[4];
-		this.maxHp = aux[0];
-		this.curHp = this.maxHp;
-		this.effect = null;		
+		this.maxHp = aux[0];		
 	}
 	
 	//Métodos	
@@ -42,13 +38,6 @@ public class Status {
 	public int getMaxHp(){
 		return this.maxHp;
 	}
-	public int getCurHp(){
-		return this.curHp;
-	}
-	public String getEffect(){
-		return this.effect;
-	}
-	
 	public void printAll(){
 		System.out.println("----------Status-----------");
 	}
