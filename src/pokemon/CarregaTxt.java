@@ -223,7 +223,33 @@ public class CarregaTxt {
 	    System.out.println("[CarregaStatusRestore] StatusRestores gerados com sucesso");
 	    return statusRestores;
 	}
-    
+    public static Type leitorTypeChart(String path) throws IOException {
+        BufferedReader buffRead = new BufferedReader(new FileReader(path));
+        String linha = buffRead.readLine();
+        String[] aux2 = (linha.split(","));
+        linha = buffRead.readLine();//pula a primeira linha
+        String[][] aux = new String[18][19];
+        int x=0;
+        while (true){
+        	if(linha != null){
+        		aux[x] = (linha.split(","));	
+        	}
+        	else break;
+        	linha = buffRead.readLine();
+        	x++;
+        }
+        buffRead.close();
+        
+        /*for(int i=0;i<17;i++){
+			for(int j=0;j<18;j++){
+				System.out.print(","+aux[i][j]);
+			}
+			System.out.println();
+		}*/
+        Type aux3 = new Type(aux2, aux);
+        System.out.println("[CarregaTypeChart] TypeChart gerada com sucesso");
+        return (aux3);
+	}
     
     
     

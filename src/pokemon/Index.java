@@ -6,5 +6,6 @@ public class Index {
 	public static void main(String[] args) throws IOException{
 		Ataque[] ataques = CarregaTxt.leitorAtaque("txt/moves.txt");
 		PokemonBase[] pokemons = CarregaTxt.leitorPokemon("txt/pokemons.txt");
+		Type tipos = CarregaTxt.leitorTypeChart("txt/type.txt");
 	}
 }

@@ -53,6 +53,9 @@ public class PokemonBase {
 	public String getId(){
 		return id;
 	}
+	public AtkPool getAtkPool(){
+		return atkPool;
+	}
 	public void printAll(){
 		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||");
 		System.out.println("["+id+"]  " + nome);

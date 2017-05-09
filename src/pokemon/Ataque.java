@@ -21,6 +21,21 @@ public class Ataque {
 	public String getNome(){
 		return nome;
 	}
+	public String getTipo(){
+		return tipo;
+	}
+	public int getDano(){
+		return dano;
+	}
+	public int getPrecisao(){
+		return precisao;
+	}
+	public int getPP(){
+		return PP;
+	}
+	public String getEfeito(){
+		return efeito;
+	}
 	
 	//Construtor
 	public Ataque(String nome, String efeito, int dano, String tipo, int precisao, int PP){

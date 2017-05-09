@@ -18,7 +18,7 @@ public class AtkPool {
 	public String getAtaquePorNivel(int lv){
 		int i = 0;
 		while(lv != Integer.parseInt(ataquesPorNivel[i][0])){
-			if(i>20) return null;
+			if(i>100) return null;
 			i++;
 		}
 			return ataquesPorNivel[i][1];
