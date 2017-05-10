@@ -6,7 +6,8 @@ public class Ataque {
 	private String tipo;
 	private int dano;
 	private int precisao;
-	private int PP;
+	private int PPmax;
+	private int PPcur;
 	private String efeito;
 	
 	//Métodos
@@ -15,7 +16,7 @@ public class Ataque {
 		System.out.println("tipo: "+tipo);
 		System.out.println("dano: "+dano);
 		System.out.println("precisao: "+precisao);
-		System.out.println("PP: "+PP);
+		System.out.println("PP: "+PPmax);
 		System.out.println("efeito: "+efeito);
 	}
 	public String getNome(){
@@ -30,11 +31,21 @@ public class Ataque {
 	public int getPrecisao(){
 		return precisao;
 	}
-	public int getPP(){
-		return PP;
+	public int getPPmax(){
+		return PPmax;
+	}
+	public int getPPcur(){
+		return PPcur;
 	}
 	public String getEfeito(){
 		return efeito;
+	}
+	public void usePP(){
+		PPcur--;
+	}
+	public void restorePP(int a){
+		if(PPcur + a > PPmax) PPcur = PPmax;
+		else PPcur+=a;
 	}
 	
 	//Construtor
@@ -43,7 +54,8 @@ public class Ataque {
 		this.tipo = tipo;
 		this.dano = dano;
 		this.precisao = precisao;
-		this.PP = PP;
+		this.PPmax = PP;
+		this.PPcur = this.PPmax;
 		this.efeito = efeito;
 	}
 }

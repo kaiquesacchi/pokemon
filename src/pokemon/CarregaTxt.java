@@ -187,7 +187,7 @@ public class CarregaTxt {
 	}
     
     public static BattleItem[] leitorBattleItems(String path) throws IOException {
-    	BattleItem[] battleItems = new BattleItem[4];
+    	BattleItem[] battleItems = new BattleItem[7];
         BufferedReader buffRead = new BufferedReader(new FileReader(path));
         String linha = buffRead.readLine();
         int i=0;
@@ -206,7 +206,7 @@ public class CarregaTxt {
 	}
     
     public static StatusRestore[] leitorStatusRestore(String path) throws IOException {
-    	StatusRestore[] statusRestores = new StatusRestore[4];
+    	StatusRestore[] statusRestores = new StatusRestore[6];
         BufferedReader buffRead = new BufferedReader(new FileReader(path));
         String linha = buffRead.readLine();
         int i=0;
@@ -239,13 +239,6 @@ public class CarregaTxt {
         	x++;
         }
         buffRead.close();
-        
-        /*for(int i=0;i<17;i++){
-			for(int j=0;j<18;j++){
-				System.out.print(","+aux[i][j]);
-			}
-			System.out.println();
-		}*/
         Type aux3 = new Type(aux2, aux);
         System.out.println("[CarregaTypeChart] TypeChart gerada com sucesso");
         return (aux3);

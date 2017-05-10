@@ -8,6 +8,8 @@ public class Pokemon extends PokemonBase{
 	private int curHp;
 	private boolean[] effect = new boolean[5]; //paralyze, poison, burn, freeze, confuse
 	private Status statsVol;
+	private boolean chargeEffect;
+	private Ataque habChargeEffect;
 	
 	//Metodos
 		//getters
@@ -32,6 +34,18 @@ public class Pokemon extends PokemonBase{
 				curHp-=dmg;
 			else 
 				curHp=0;
+		}
+		public boolean chargeEffect(){
+			return chargeEffect;
+		}
+		public void addChargeEffect(Ataque hab){
+			chargeEffect = true;
+			habChargeEffect = hab;
+			
+		}
+		public void removeChargeEffect(){
+			chargeEffect = false;
+			habChargeEffect = null;
 		}
 		public void addEffect(String effect){
 			switch (effect){
@@ -85,6 +99,8 @@ public class Pokemon extends PokemonBase{
 		this.curHp=base.getMaxHp();
 		this.effect=null;
 		this.statsVol=null;
+		this.chargeEffect=false;
+		this.habChargeEffect=null;
 	}
 	
 	

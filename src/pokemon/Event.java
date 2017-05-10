@@ -2,7 +2,7 @@ package pokemon;
 
 	abstract public class Event {
 	//Atributos
-	private PkmPool pool1;
+	protected PkmPool pool1;
 	//Métodos
 	//abstract public void action();
 	abstract public String description();
