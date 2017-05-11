@@ -45,9 +45,116 @@ public class UsarItem extends Event {
 		}
 		return aux;
 	}
-	/*public void action(String typeOfItem){
+	public void action(String typeOfItem, String itemName, int pke, int skill){
+		Pokemon poke = pool1.getPokemonX(pke);
+		switch(typeOfItem){
+		case "BattleItem":
+			switch(itemName){
+			case "X ATTACK":
+				poke.getStatsVol().addAtk((int)(poke.calcStatusAdd("ATTACK")));
+				break;
+			case "X DEFEND":
+				poke.getStatsVol().addDef((int)(poke.calcStatusAdd("DEFENSE")));
+				break;
+			case "X SPEED":
+				poke.getStatsVol().addSpd((int)(poke.calcStatusAdd("SPEED")));
+				break;
+			case "X SPECIAL":
+				poke.getStatsVol().addSpc((int)(poke.calcStatusAdd("SPECIAL")));
+				break;
+			case "X ACCURACY":
+				poke.getStatsVol().addSpc((int)(poke.calcStatusAdd("ACCURACY")));
+				break;
+			case "DIRE HIT": //FALTA IMPLEMENTAR CRITICO
+				break;
+			case "GUARD SPEC": //falta implementar, impede reducao de status pelo oponente por 5 turnos
+				break;
+			}
+			break;
+		case "Elixer":
+			switch(itemName){
+			case "ETHER":
+				poke.getAtkPool().getAtaqueAtualX(skill).restorePP(10);
+				break;
+			case "MAX ETHER":
+				poke.getAtkPool().getAtaqueAtualX(skill).restorePP(100);
+				break;
+			case "ELIXER":
+				for(int a=0;a<4;a++){
+					poke.getAtkPool().getAtaqueAtualX(skill).restorePP(10);
+				}
+				break;
+			case "MAX ELIXER":
+				for(int a=0;a<4;a++){
+					poke.getAtkPool().getAtaqueAtualX(skill).restorePP(100);
+				}
+				break;
+			}
+			break;
+		case "Pokeball":  //FALTA IMPLEMENTAR CAPTURA
+			switch(itemName){
+			case "POKE BALL":
+			case "GREAT BALL":
+			case "ULTRA BALL":
+			case "MASTURBALL":
+			}
+			break;
+		case "Potion":
+			switch(itemName){
+			case "POTION":
+				poke.heal(20);
+				break;
+			case "SUPER POTION":
+				poke.heal(50);
+				break;
+			case "HYPER POTION":
+				poke.heal(200);
+				break;
+			case "MAX POTION":
+				poke.heal(10000);
+				break;
+			case "FULL RESTORE":
+				poke.heal(10000);
+				poke.removeEffect("ALL");
+				break;
+			case "FRESH WATER":
+				poke.heal(50);
+				break;
+			case "SODA POP":
+				poke.heal(60);
+				break;
+			case "LEMONADE":
+				poke.heal(80);
+				break;
+			}
+			break;
+		case "StatusRestore":
+			switch(itemName){
+			case "ANTIDOTE":
+				poke.removeEffect("POISON");
+				break;
+			case "PARALYZ HEAL":
+				poke.removeEffect("PARALYZE");
+				break;
+			case "AWAKENING":
+				poke.removeEffect("SLEEP");
+				break;
+			case "BURN HEAL":
+				poke.removeEffect("BURN");
+				break;
+			case "ICE HEAL":
+				poke.removeEffect("FREEZE");
+				break;
+			case "FULL HEAL":
+				poke.removeEffect("ALL");
+				break;
+			}
+			break;
+		default:
+			System.out.println("deu bosta no UsarItemAction");
+		}
 		
-	}*/
+	}
 	public String description(){
 		return("Usa um item de batalha");
 	}

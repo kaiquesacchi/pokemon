@@ -9,9 +9,10 @@ public class Status {
 	private int def;
 	private int spc;
 	private int spd;
-	private int maxHp;
+	private int hp;
 		//status volateis
-	
+	private double accuracy;
+	private double evasion;
 	//Construtor	
 	public Status(String nome) throws IOException{
 		int[] aux = CarregaTxt.leitorStatus("txt/baseStats/", nome);
@@ -19,7 +20,9 @@ public class Status {
 		this.def = aux[2];
 		this.spd = aux[3];
 		this.spc = aux[4];
-		this.maxHp = aux[0];		
+		this.hp = aux[0];
+		accuracy=1;
+		evasion=1;
 	}
 	
 	//Métodos	
@@ -35,12 +38,39 @@ public class Status {
 	public int getSpd(){
 		return this.spd;
 	}
-	public int getMaxHp(){
-		return this.maxHp;
+	public int getHp(){
+		return this.hp;
+	}
+	public double getAccuracy(){
+		return accuracy;
+	}
+	public double getEvasion(){
+		return evasion;
+	}
+	public void addAtk(int a){
+		atk+=a;
+	}
+	public void addDef(int a){
+		def+=a;
+	}
+	public void addSpc(int a){
+		spc+=a;
+	}
+	public void addSpd(int a){
+		spd+=a;
+	}
+	public void addHp(int a){
+		hp+=a;
+	}
+	public void addAccuracy(double a){
+		accuracy+=a;
+	}
+	public void addEvasion(double a){
+		evasion+=a;
 	}
 	public void printAll(){
 		System.out.println("----------Status-----------");
 		System.out.println("atk: " + atk + "   def: " + def + "   spc: " + spc);
-		System.out.println("spd: " + spd + "           maxHP: " + maxHp);
+		System.out.println("spd: " + spd + "           maxHP: " + hp);
 	}
 }

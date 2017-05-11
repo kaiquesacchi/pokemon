@@ -12,6 +12,9 @@ public class AtkPool {
 	public Ataque[] getAtaquesAtuais(){
 		return ataquesAtuais;
 	}
+	public Ataque getAtaqueAtualX(int x){
+		return ataquesAtuais[x];
+	}
 	public int[] getTmsRecebiveis(){
 		return tmsRecebiveis;
 	}

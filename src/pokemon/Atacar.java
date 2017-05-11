@@ -8,6 +8,7 @@ public class Atacar extends Event{
 	private Type types;
 	
 	//Métodos
+
 	private boolean calcPrecisao(Ataque hab){
 		double a = Math.random() * 100;
 		if(a <= hab.getPrecisao() || hab.getEfeito().equals("CHARGE EFFECT")) return true; //para charge effects, primeira instancia sempre ocorrendo

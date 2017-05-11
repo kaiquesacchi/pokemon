@@ -4,12 +4,12 @@ import java.io.IOException;
 
 public class PokemonBase {
 	//Atributos
-	private String nome;
-	private Status stats;
-	private AtkPool atkPool;
-	private String tipo1;
-	private String tipo2;
-	private String id;
+	protected String nome;
+	protected Status statsSol;
+	protected AtkPool atkPool;
+	protected String tipo1;
+	protected String tipo2;
+	protected String id;
 	
 	//Construtor	
 	public PokemonBase(String id, String nome, String tipo1, String tipo2) throws IOException{
@@ -17,7 +17,7 @@ public class PokemonBase {
 		this.id = id;
 		this.tipo1 = tipo1;
 		this.tipo2 = tipo2;
-		this.stats = new Status(nome);
+		this.statsSol = new Status(nome);
 		this.atkPool = new AtkPool(nome);
 	}
 	public PokemonBase(String id, String nome, String tipo1) throws IOException{
@@ -29,20 +29,23 @@ public class PokemonBase {
 		return nome;
 	}
 	//getStats
+	public Status getStatsSol(){
+		return statsSol;
+	}
 	public int getAtk(){
-		return stats.getAtk();
+		return statsSol.getAtk();
 	}
 	public int getDef(){
-		return stats.getDef();
+		return statsSol.getDef();
 	}
 	public int getSpc(){
-		return stats.getSpc();
+		return statsSol.getSpc();
 	}
 	public int getSpd(){
-		return stats.getSpd();
+		return statsSol.getSpd();
 	}
 	public int getMaxHp(){
-		return stats.getMaxHp();
+		return statsSol.getHp();
 	}
 	public String getTipo1(){
 		return tipo1;
