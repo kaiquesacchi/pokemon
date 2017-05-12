@@ -20,8 +20,9 @@ public class PokemonBase {
 		this.statsSol = new Status(nome);
 		this.atkPool = atkPool;
 	}
+
 	public PokemonBase(int id, String nome, String tipo1, AtkPool atkPool) throws IOException{
-		this(id, nome, tipo1, "", atkPool);
+		this(id, nome, tipo1, null, atkPool);
 	}
 	
 	//Métodos

@@ -1,4 +1,3 @@
-||||
 001
 Bulbasaur
 Grass,Poison
@@ -2085,4 +2084,4 @@ POUND,
 20 - MEGA PUNCH
 30 - METRONOME
 40 - PSYCHIC M
-
+||||

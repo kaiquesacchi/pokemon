@@ -9,20 +9,21 @@ public class Type {
 		int a=0,b=0,c=0;
 		while(!(typeA.equals(colMatriz[a]))){
 			a++;
-			if(a>20){
+			if(a>17){
 				throw new IllegalArgumentException("Invalid Type: " + typeA);
 			}
 		}
 		while(!(type1.equals(colMatriz[b]))){
 			b++;
-			if(b>20){
+			if(b>17){
 				throw new IllegalArgumentException("Invalid Type: " + type1);
 			}
 		}
-		if(!(type2==null)){
+		if((type2!=null)){
+			System.out.println("HERE"+type2);
 			while(!(type2.equals(colMatriz[c]))){
 				c++;
-				if(c>20){
+				if(c>17){
 					throw new IllegalArgumentException("Invalid Type: " + type2);
 				}
 			}

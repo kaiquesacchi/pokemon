@@ -60,7 +60,11 @@ public class Status {
 		spd+=a;
 	}
 	public void addHp(int a){
+		//System.out.println("hp inicial: "+hp);
 		hp+=a;
+		//System.out.println("dano: "+(-a));
+		//System.out.println("here3");
+		//System.out.println("hp final: "+hp);
 	}
 	public void addAccuracy(double a){
 		accuracy+=a;
