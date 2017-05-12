@@ -9,10 +9,10 @@ public class PokemonBase {
 	protected AtkPool atkPool;
 	protected String tipo1;
 	protected String tipo2;
-	protected String id;
+	protected int id;
 	
 	//Construtor	
-	public PokemonBase(String id, String nome, String tipo1, String tipo2) throws IOException{
+	public PokemonBase(int id, String nome, String tipo1, String tipo2) throws IOException{
 		this.nome = nome;
 		this.id = id;
 		this.tipo1 = tipo1;
@@ -20,7 +20,7 @@ public class PokemonBase {
 		this.statsSol = new Status(nome);
 		this.atkPool = new AtkPool(nome);
 	}
-	public PokemonBase(String id, String nome, String tipo1) throws IOException{
+	public PokemonBase(int id, String nome, String tipo1) throws IOException{
 		this(id, nome, tipo1, null);
 	}
 	
@@ -53,7 +53,7 @@ public class PokemonBase {
 	public String getTipo2(){
 		return tipo2;
 	}
-	public String getId(){
+	public int getId(){
 		return id;
 	}
 	public AtkPool getAtkPool(){

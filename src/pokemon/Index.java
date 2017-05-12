@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Index {
 	public static void main(String[] args) throws IOException{
 		Ataque[] ataques = CarregaTxt.leitorAtaque("txt/moves.txt");
-		PokemonBase[] pokemons = CarregaTxt.leitorPokemon("txt/pokemons.txt");
+		//PokemonBase[] pokemons = CarregaTxt.leitorPokemon("txt/pokemons.txt");
 		Type tipos = CarregaTxt.leitorTypeChart("txt/type.txt");
 		Potion[] potions = CarregaTxt.leitorPotions("txt/Itens/Potion");
 		Pokeball[] pokeballs = CarregaTxt.leitorPokeballs("txt/Itens/Pokeball");
@@ -53,7 +53,7 @@ public class Index {
 		
 		
 		
-		
+		/*
 		Pokemon[] pk1 = new Pokemon[2];
 		pk1[0] = new Pokemon(pokemons[5]);
 		pk1[1] = new Pokemon(pokemons[122]);
@@ -87,5 +87,6 @@ public class Index {
 				}
 			}
 		});
+		*/
 	}
 }

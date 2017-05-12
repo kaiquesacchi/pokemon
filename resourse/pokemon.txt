@@ -1,5 +1,5 @@
 ||||
- #001
+001
 Bulbasaur
 Grass,Poison
 --------Ataques Atuais --------
@@ -15,7 +15,7 @@ TACKLE,GROWL,
 41 - SLEEP POWDER
 48 - SOLARBEAM
 ||||
- #002
+002
 Ivysaur
 Grass,Poison
 --------Ataques Atuais --------
@@ -31,7 +31,7 @@ TACKLE,GROWL,LEECH SEED,
 46 - SLEEP POWDER
 54 - SOLARBEAM
 ||||
- #003
+003
 Venusaur
 Grass,Poison
 --------Ataques Atuais --------
@@ -47,7 +47,7 @@ TACKLE,GROWL,LEECH SEED,VINE WHIP,
 55 - SLEEP POWDER
 65 - SOLARBEAM
 ||||
- #004
+004
 Charmander
 Fire,
 --------Ataques Atuais --------
@@ -62,7 +62,7 @@ SCRATCH,GROWL,
 38 - FLAMETHROWER
 46 - FIRE SPIN
 ||||
- #005
+005
 Charmeleon
 Fire,
 --------Ataques Atuais --------
@@ -77,7 +77,7 @@ SCRATCH,GROWL,EMBER,
 42 - FLAMETHROWER
 56 - FIRE SPIN
 ||||
- #006
+006
 Charizard
 Fire,Flying
 --------Ataques Atuais --------
@@ -92,7 +92,7 @@ SCRATCH,GROWL,EMBER,LEER,
 46 - FLAMETHROWER
 55 - FIRE SPIN
 ||||
- #007
+007
 Squirtle
 Water,
 --------Ataques Atuais --------
@@ -107,7 +107,7 @@ TACKLE,TAIL WHIP,
 35 - SKULL BASH
 42 - HYDRO PUMP
 ||||
- #008
+008
 Wartortle
 Water,
 --------Ataques Atuais --------
@@ -122,7 +122,7 @@ TACKLE,TAIL WHIP,BUBBLE,
 39 - SKULL BASH
 47 - HYDRO PUMP
 ||||
- #009
+009
 Blastoise
 Water,
 --------Ataques Atuais --------
@@ -137,7 +137,7 @@ TACKLE,TAIL WHIP,BUBBLE,WATER GUN,
 42 - SKULL BASH
 52 - HYDRO PUMP
 ||||
- #010
+010
 Caterpie
 Bug,
 --------Ataques Atuais --------
@@ -146,7 +146,7 @@ TACKLE,STRING SHOT,
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
- #011
+011
 Metapod
 Bug,
 --------Ataques Atuais --------
@@ -155,7 +155,7 @@ HARDEN,
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
- #012
+012
 Butterfree
 Bug,Flying
 --------Ataques Atuais --------
@@ -171,7 +171,7 @@ CONFUSION,
 26 - WHIRLWIND
 32 - PSYBEAM
 ||||
- #013
+013
 Weedle
 Bug,Poison
 --------Ataques Atuais --------
@@ -180,7 +180,7 @@ POISON STING,STRING SHOT,
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
- #014
+014
 Kakuna
 Bug,Poison
 --------Ataques Atuais --------
@@ -189,7 +189,7 @@ HARDEN,
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
- #015
+015
 Beedrill
 Bug,Poison
 --------Ataques Atuais --------
@@ -204,7 +204,7 @@ FURY ATTACK,
 30 - PIN MISSILE
 35 - AGILITY
 ||||
- #016
+016
 Pidgey
 Normal,Flying
 --------Ataques Atuais --------
@@ -219,7 +219,7 @@ GUST,
 36 - AGILITY
 44 - MIRROR MOVE
 ||||
- #017
+017
 Pidgeotto
 Normal,Flying
 --------Ataques Atuais --------
@@ -234,7 +234,7 @@ GUST,SAND ATTACK,
 40 - AGILITY
 49 - MIRROR MOVE
 ||||
- #018
+018
 Pidgeot
 Normal,Flying
 --------Ataques Atuais --------
@@ -249,7 +249,7 @@ GUST,SAND ATTACK,QUICK ATTACK,
 44 - AGILITY
 54 - MIRROR MOVE
 ||||
- #019
+019
 Rattata
 Normal,
 --------Ataques Atuais --------
@@ -262,7 +262,7 @@ TACKLE,TAIL WHIP,
 23 - FOCUS ENERGY
 34 - SUPER FANG
 ||||
- #020
+020
 Raticate
 Normal,
 --------Ataques Atuais --------
@@ -275,7 +275,7 @@ TACKLE,TAIL WHIP,QUICK ATTACK,
 27 - FOCUS ENERGY
 41 - SUPER FANG
 ||||
- #021
+021
 Spearow
 Normal,Flying
 --------Ataques Atuais --------
@@ -289,7 +289,7 @@ PECK,GROWL,
 29 - DRILL PECK
 36 - AGILITY
 ||||
- #022
+022
 Fearow
 Normal,Flying
 --------Ataques Atuais --------
@@ -303,7 +303,7 @@ PECK,GROWL,LEER,
 34 - DRILL PECK
 43 - AGILITY
 ||||
- #023
+023
 Ekans
 Poison,
 --------Ataques Atuais --------
@@ -317,7 +317,7 @@ WRAP,LEER,
 31 - SCREECH
 38 - ACID
 ||||
- #024
+024
 Arbok
 Poison,
 --------Ataques Atuais --------
@@ -331,7 +331,7 @@ WRAP,LEER,POISON STING,
 36 - SCREECH
 47 - ACID
 ||||
- #025
+025
 Pikachu
 Electric,
 --------Ataques Atuais --------
@@ -345,7 +345,7 @@ THUNDERSHOCK,GROWL,
 33 - AGILITY
 43 - THUNDER
 ||||
- #026
+026
 Raichu
 Electric,
 --------Ataques Atuais --------
@@ -354,7 +354,7 @@ THUNDERSHOCK,GROWL,THUNDER WAVE,
 1,5,6,8,9,10,15,16,17,19,20,24,25,31,32,33,34,39,40,44,45,50,55,0,
 -------Ataques Por Nivel-------
 ||||
- #027
+027
 Sandshrew
 Ground,
 --------Ataques Atuais --------
@@ -368,7 +368,7 @@ SCRATCH,
 31 - SWIFT
 38 - FURY SWIPES
 ||||
- #028
+028
 Sandslash
 Ground,
 --------Ataques Atuais --------
@@ -382,7 +382,7 @@ SCRATCH,SAND ATTACK,
 36 - SWIFT
 47 - FURY SWIPES
 ||||
- #029
+029
 NidoranF
 Poison,
 --------Ataques Atuais --------
@@ -397,7 +397,7 @@ GROWL,TACKLE,
 36 - FURY SWIPES
 43 - DOUBLE KICK
 ||||
- #030
+030
 Nidorina
 Poison,
 --------Ataques Atuais --------
@@ -412,7 +412,7 @@ GROWL,TACKLE,SCRATCH,
 41 - FURY SWIPES
 50 - DOUBLE KICK
 ||||
- #031
+031
 Nidoqueen
 Poison,Ground
 --------Ataques Atuais --------
@@ -424,7 +424,7 @@ TACKLE,SCRATCH,TAIL WHIP,BODY SLAM,
 14 - POISON STING
 23 - BODY SLAM
 ||||
- #032
+032
 NidoranM
 Poison,
 --------Ataques Atuais --------
@@ -439,7 +439,7 @@ LEER,TACKLE,
 36 - HORN DRILL
 43 - DOUBLE KICK
 ||||
- #033
+033
 Nidorino
 Poison,
 --------Ataques Atuais --------
@@ -454,7 +454,7 @@ LEER,TACKLE,HORN ATTACK,
 41 - HORN DRILL
 50 - DOUBLE KICK
 ||||
- #034
+034
 Nidoking
 Poison,Ground
 --------Ataques Atuais --------
@@ -466,7 +466,7 @@ TACKLE,HORN ATTACK,POISON STING,THRASH,
 14 - POISON STING
 23 - THRASH
 ||||
- #035
+035
 Clefairy
 Fairy,
 --------Ataques Atuais --------
@@ -481,7 +481,7 @@ POUND,GROWL,
 39 - DEFENSE CURL
 48 - LIGHT SCREEN
 ||||
- #036
+036
 Clefable
 Fairy,
 --------Ataques Atuais --------
@@ -490,7 +490,7 @@ SING,DOUBLESLAP,MINIMIZE,METRONOME,
 1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,22,24,25,29,30,31,32,33,34,35,38,40,44,45,46,49,50,54,55,0,
 -------Ataques Por Nivel-------
 ||||
- #037
+037
 Vulpix
 Fire,
 --------Ataques Atuais --------
@@ -504,7 +504,7 @@ EMBER,TAIL WHIP,
 35 - FLAMETHROWER
 42 - FIRE SPIN
 ||||
- #038
+038
 Ninetales
 Fire,
 --------Ataques Atuais --------
@@ -513,7 +513,7 @@ EMBER,TAIL WHIP,QUICK ATTACK,ROAR,
 6,8,9,10,15,20,28,31,32,33,34,38,39,40,44,50,0,
 -------Ataques Por Nivel-------
 ||||
- #039
+039
 Jigglypuff
 Normal,Fairy
 --------Ataques Atuais --------
@@ -529,7 +529,7 @@ SING,
 34 - BODY SLAM
 39 - DOUBLE EDGE
 ||||
- #040
+040
 Wigglytuff
 Normal,Fairy
 --------Ataques Atuais --------
@@ -538,7 +538,7 @@ SING,DISABLE,DEFENSE CURL,DOUBLESLAP,
 1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,22,24,25,29,30,31,32,33,34,38,40,44,45,46,49,50,54,55,0,
 -------Ataques Por Nivel-------
 ||||
- #041
+041
 Zubat
 Poison,Flying
 --------Ataques Atuais --------
@@ -552,7 +552,7 @@ LEECH LIFE,
 28 - WING ATTACK
 36 - HAZE
 ||||
- #042
+042
 Golbat
 Poison,Flying
 --------Ataques Atuais --------
@@ -566,7 +566,7 @@ LEECH LIFE,SCREECH,BITE,
 32 - WING ATTACK
 43 - HAZE
 ||||
- #043
+043
 Oddish
 Grass,Poison
 --------Ataques Atuais --------
@@ -581,7 +581,7 @@ ABSORB,
 33 - PETAL DANCE
 46 - SOLARBEAM
 ||||
- #044
+044
 Gloom
 Grass,Poison
 --------Ataques Atuais --------
@@ -596,7 +596,7 @@ ABSORB,POISONPOWDER,STUN SPORE,
 38 - PETAL DANCE
 52 - SOLARBEAM
 ||||
- #045
+045
 Vileplume
 Grass,Poison
 --------Ataques Atuais --------
@@ -608,7 +608,7 @@ STUN SPORE,SLEEP POWDER,ACID,PETAL DANCE,
 17 - STUN SPORE
 19 - SLEEP POWDER
 ||||
- #046
+046
 Paras
 Bug,Grass
 --------Ataques Atuais --------
@@ -622,7 +622,7 @@ SCRATCH,
 34 - SLASH
 41 - GROWTH
 ||||
- #047
+047
 Parasect
 Bug,Grass
 --------Ataques Atuais --------
@@ -636,7 +636,7 @@ SCRATCH,STUN SPORE,LEECH LIFE,
 39 - SLASH
 48 - GROWTH
 ||||
- #048
+048
 Venonat
 Bug,Poison
 --------Ataques Atuais --------
@@ -651,7 +651,7 @@ TACKLE,DISABLE,
 38 - SLEEP POWDER
 43 - PSYCHIC M
 ||||
- #049
+049
 Venomoth
 Bug,Poison
 --------Ataques Atuais --------
@@ -666,7 +666,7 @@ TACKLE,DISABLE,POISONPOWDER,LEECH LIFE,
 43 - SLEEP POWDER
 50 - PSYCHIC M
 ||||
- #050
+050
 Diglett
 Ground,
 --------Ataques Atuais --------
@@ -680,7 +680,7 @@ SCRATCH,
 31 - SLASH
 40 - EARTHQUAKE
 ||||
- #051
+051
 Dugtrio
 Ground,
 --------Ataques Atuais --------
@@ -694,7 +694,7 @@ SCRATCH,GROWL,DIG,
 35 - SLASH
 47 - EARTHQUAKE
 ||||
- #052
+052
 Meowth
 Normal,
 --------Ataques Atuais --------
@@ -708,7 +708,7 @@ SCRATCH,GROWL,
 33 - FURY SWIPES
 44 - SLASH
 ||||
- #053
+053
 Persian
 Normal,
 --------Ataques Atuais --------
@@ -722,7 +722,7 @@ SCRATCH,GROWL,BITE,SCREECH,
 37 - FURY SWIPES
 51 - SLASH
 ||||
- #054
+054
 Psyduck
 Water,
 --------Ataques Atuais --------
@@ -736,7 +736,7 @@ SCRATCH,
 43 - FURY SWIPES
 52 - HYDRO PUMP
 ||||
- #055
+055
 Golduck
 Water,
 --------Ataques Atuais --------
@@ -750,7 +750,7 @@ SCRATCH,TAIL WHIP,DISABLE,
 48 - FURY SWIPES
 59 - HYDRO PUMP
 ||||
- #056
+056
 Mankey
 Fighting,
 --------Ataques Atuais --------
@@ -764,7 +764,7 @@ SCRATCH,LEER,
 33 - SEISMIC TOSS
 39 - THRASH
 ||||
- #057
+057
 Primeape
 Fighting,
 --------Ataques Atuais --------
@@ -778,7 +778,7 @@ SCRATCH,LEER,KARATE CHOP,FURY SWIPES,
 37 - SEISMIC TOSS
 46 - THRASH
 ||||
- #058
+058
 Growlithe
 Fire,
 --------Ataques Atuais --------
@@ -792,7 +792,7 @@ BITE,ROAR,
 39 - AGILITY
 50 - FLAMETHROWER
 ||||
- #059
+059
 Arcanine
 Fire,
 --------Ataques Atuais --------
@@ -801,7 +801,7 @@ ROAR,EMBER,LEER,TAKE DOWN,
 6,8,9,10,15,20,23,28,30,31,32,33,34,38,39,40,44,50,0,
 -------Ataques Por Nivel-------
 ||||
- #060
+060
 Poliwag
 Water,
 --------Ataques Atuais --------
@@ -816,7 +816,7 @@ BUBBLE,
 38 - AMNESIA
 45 - HYDRO PUMP
 ||||
- #061
+061
 Poliwhirl
 Water,
 --------Ataques Atuais --------
@@ -831,7 +831,7 @@ BUBBLE,HYPNOSIS,WATER GUN,
 41 - AMNESIA
 49 - HYDRO PUMP
 ||||
- #062
+062
 Poliwrath
 Water,Fighting
 --------Ataques Atuais --------
@@ -842,7 +842,7 @@ HYPNOSIS,WATER GUN,DOUBLESLAP,BODY SLAM,
 16 - HYPNOSIS
 19 - WATER GUN
 ||||
- #063
+063
 Abra
 Psychic,
 --------Ataques Atuais --------
@@ -851,7 +851,7 @@ TELEPORT,
 1,5,6,8,9,10,17,18,19,20,29,30,31,32,33,34,35,40,44,45,46,49,50,55,0,
 -------Ataques Por Nivel-------
 ||||
- #064
+064
 Kadabra
 Psychic,
 --------Ataques Atuais --------
@@ -866,7 +866,7 @@ TELEPORT,CONFUSION,DISABLE,
 38 - PSYCHIC M
 42 - REFLECT
 ||||
- #065
+065
 Alakazam
 Psychic,
 --------Ataques Atuais --------
@@ -881,7 +881,7 @@ TELEPORT,CONFUSION,DISABLE,
 38 - PSYCHIC M
 42 - REFLECT
 ||||
- #066
+066
 Machop
 Fighting,
 --------Ataques Atuais --------
@@ -895,7 +895,7 @@ KARATE CHOP,
 39 - SEISMIC TOSS
 46 - SUBMISSION
 ||||
- #067
+067
 Machoke
 Fighting,
 --------Ataques Atuais --------
@@ -909,7 +909,7 @@ KARATE CHOP,LOW KICK,LEER,
 44 - SEISMIC TOSS
 52 - SUBMISSION
 ||||
- #068
+068
 Machamp
 Fighting,
 --------Ataques Atuais --------
@@ -923,7 +923,7 @@ KARATE CHOP,LOW KICK,LEER,
 44 - SEISMIC TOSS
 52 - SUBMISSION
 ||||
- #069
+069
 Bellsprout
 Grass,Poison
 --------Ataques Atuais --------
@@ -939,7 +939,7 @@ VINE WHIP,GROWTH,
 33 - RAZOR LEAF
 42 - SLAM
 ||||
- #070
+070
 Weepinbell
 Grass,Poison
 --------Ataques Atuais --------
@@ -955,7 +955,7 @@ VINE WHIP,GROWTH,WRAP,
 38 - RAZOR LEAF
 49 - SLAM
 ||||
- #071
+071
 Victreebel
 Grass,Poison
 --------Ataques Atuais --------
@@ -967,7 +967,7 @@ SLEEP POWDER,STUN SPORE,ACID,RAZOR LEAF,
 15 - POISONPOWDER
 18 - SLEEP POWDER
 ||||
- #072
+072
 Tentacool
 Water,Poison
 --------Ataques Atuais --------
@@ -984,7 +984,7 @@ ACID,
 40 - SCREECH
 48 - HYDRO PUMP
 ||||
- #073
+073
 Tentacruel
 Water,Poison
 --------Ataques Atuais --------
@@ -1001,7 +1001,7 @@ ACID,SUPERSONIC,WRAP,
 43 - SCREECH
 50 - HYDRO PUMP
 ||||
- #074
+074
 Geodude
 Rock,Ground
 --------Ataques Atuais --------
@@ -1016,7 +1016,7 @@ TACKLE,
 31 - EARTHQUAKE
 36 - EXPLOSION
 ||||
- #075
+075
 Graveler
 Rock,Ground
 --------Ataques Atuais --------
@@ -1031,7 +1031,7 @@ TACKLE,DEFENSE CURL,
 36 - EARTHQUAKE
 43 - EXPLOSION
 ||||
- #076
+076
 Golem
 Rock,Ground
 --------Ataques Atuais --------
@@ -1046,7 +1046,7 @@ TACKLE,DEFENSE CURL,
 36 - EARTHQUAKE
 43 - EXPLOSION
 ||||
- #077
+077
 Ponyta
 Fire,
 --------Ataques Atuais --------
@@ -1061,7 +1061,7 @@ EMBER,
 43 - TAKE DOWN
 48 - AGILITY
 ||||
- #078
+078
 Rapidash
 Fire,
 --------Ataques Atuais --------
@@ -1076,7 +1076,7 @@ EMBER,TAIL WHIP,STOMP,GROWL,
 47 - TAKE DOWN
 55 - AGILITY
 ||||
- #079
+079
 Slowpoke
 Water,Psychic
 --------Ataques Atuais --------
@@ -1091,7 +1091,7 @@ CONFUSION,
 40 - AMNESIA
 48 - PSYCHIC M
 ||||
- #080
+080
 Slowbro
 Water,Psychic
 --------Ataques Atuais --------
@@ -1107,7 +1107,7 @@ CONFUSION,DISABLE,HEADBUTT,
 44 - AMNESIA
 55 - PSYCHIC M
 ||||
- #081
+081
 Magnemite
 Electric,Steel
 --------Ataques Atuais --------
@@ -1122,7 +1122,7 @@ TACKLE,
 41 - SWIFT
 47 - SCREECH
 ||||
- #082
+082
 Magneton
 Electric,Steel
 --------Ataques Atuais --------
@@ -1137,7 +1137,7 @@ TACKLE,SONICBOOM,THUNDERSHOCK,
 46 - SWIFT
 54 - SCREECH
 ||||
- #083
+083
 Farfetch'd
 Normal,Flying
 --------Ataques Atuais --------
@@ -1151,7 +1151,7 @@ PECK,SAND ATTACK,
 31 - AGILITY
 39 - SLASH
 ||||
- #084
+084
 Doduo
 Normal,Flying
 --------Ataques Atuais --------
@@ -1166,7 +1166,7 @@ PECK,
 40 - TRI ATTACK
 44 - AGILITY
 ||||
- #085
+085
 Dodrio
 Normal,Flying
 --------Ataques Atuais --------
@@ -1181,7 +1181,7 @@ PECK,GROWL,FURY ATTACK,
 45 - TRI ATTACK
 51 - AGILITY
 ||||
- #086
+086
 Seel
 Water,
 --------Ataques Atuais --------
@@ -1195,7 +1195,7 @@ HEADBUTT,
 45 - TAKE DOWN
 50 - ICE BEAM
 ||||
- #087
+087
 Dewgong
 Water,Ice
 --------Ataques Atuais --------
@@ -1209,7 +1209,7 @@ HEADBUTT,GROWL,AURORA BEAM,
 50 - TAKE DOWN
 56 - ICE BEAM
 ||||
- #088
+088
 Grimer
 Poison,
 --------Ataques Atuais --------
@@ -1224,7 +1224,7 @@ POUND,DISABLE,
 48 - SCREECH
 55 - ACID ARMOR
 ||||
- #089
+089
 Muk
 Poison,
 --------Ataques Atuais --------
@@ -1239,7 +1239,7 @@ POUND,DISABLE,POISON GAS,
 53 - SCREECH
 60 - ACID ARMOR
 ||||
- #090
+090
 Shellder
 Water,
 --------Ataques Atuais --------
@@ -1253,7 +1253,7 @@ TACKLE,WITHDRAW,
 39 - LEER
 50 - ICE BEAM
 ||||
- #091
+091
 Cloyster
 Water,Ice
 --------Ataques Atuais --------
@@ -1263,7 +1263,7 @@ WITHDRAW,SUPERSONIC,CLAMP,AURORA BEAM,
 -------Ataques Por Nivel-------
 50 - SPIKE CANNON
 ||||
- #092
+092
 Gastly
 Ghost,Poison
 --------Ataques Atuais --------
@@ -1274,7 +1274,7 @@ LICK,CONFUSE RAY,NIGHT SHADE,
 27 - HYPNOSIS
 35 - DREAM EATER
 ||||
- #093
+093
 Haunter
 Ghost,Poison
 --------Ataques Atuais --------
@@ -1285,7 +1285,7 @@ LICK,CONFUSE RAY,NIGHT SHADE,
 29 - HYPNOSIS
 38 - DREAM EATER
 ||||
- #094
+094
 Gengar
 Ghost,Poison
 --------Ataques Atuais --------
@@ -1296,7 +1296,7 @@ LICK,CONFUSE RAY,NIGHT SHADE,
 29 - HYPNOSIS
 38 - DREAM EATER
 ||||
- #095
+095
 Onix
 Rock,Ground
 --------Ataques Atuais --------
@@ -1310,7 +1310,7 @@ TACKLE,SCREECH,
 33 - SLAM
 43 - HARDEN
 ||||
- #096
+096
 Drowzee
 Psychic,
 --------Ataques Atuais --------
@@ -1325,7 +1325,7 @@ POUND,HYPNOSIS,
 32 - PSYCHIC M
 37 - MEDITATE
 ||||
- #097
+097
 Hypno
 Psychic,
 --------Ataques Atuais --------
@@ -1340,7 +1340,7 @@ POUND,HYPNOSIS,DISABLE,CONFUSION,
 37 - PSYCHIC M
 43 - MEDITATE
 ||||
- #098
+098
 Krabby
 Water,
 --------Ataques Atuais --------
@@ -1354,7 +1354,7 @@ BUBBLE,LEER,
 35 - CRABHAMMER
 40 - HARDEN
 ||||
- #099
+099
 Kingler
 Water,
 --------Ataques Atuais --------
@@ -1368,7 +1368,7 @@ BUBBLE,LEER,VICEGRIP,
 42 - CRABHAMMER
 49 - HARDEN
 ||||
- #100
+100
 Voltorb
 Electric,
 --------Ataques Atuais --------
@@ -1382,7 +1382,7 @@ TACKLE,SCREECH,
 36 - SWIFT
 43 - EXPLOSION
 ||||
- #101
+101
 Electrode
 Electric,
 --------Ataques Atuais --------
@@ -1396,7 +1396,7 @@ TACKLE,SCREECH,SONICBOOM,
 40 - SWIFT
 50 - EXPLOSION
 ||||
- #102
+102
 Exeggcute
 Grass,Psychic
 --------Ataques Atuais --------
@@ -1411,7 +1411,7 @@ BARRAGE,HYPNOSIS,
 42 - SOLARBEAM
 48 - SLEEP POWDER
 ||||
- #103
+103
 Exeggutor
 Grass,Psychic
 --------Ataques Atuais --------
@@ -1421,7 +1421,7 @@ BARRAGE,HYPNOSIS,
 -------Ataques Por Nivel-------
 28 - STOMP
 ||||
- #104
+104
 Cubone
 Ground,
 --------Ataques Atuais --------
@@ -1435,7 +1435,7 @@ BONE CLUB,GROWL,
 43 - BONEMERANG
 46 - RAGE
 ||||
- #105
+105
 Marowak
 Ground,
 --------Ataques Atuais --------
@@ -1449,7 +1449,7 @@ BONE CLUB,GROWL,LEER,FOCUS ENERGY,
 48 - BONEMERANG
 55 - RAGE
 ||||
- #106
+106
 Hitmonlee
 Fighting,
 --------Ataques Atuais --------
@@ -1463,7 +1463,7 @@ DOUBLE KICK,MEDITATE,
 48 - HI JUMP KICK
 53 - MEGA KICK
 ||||
- #107
+107
 Hitmonchan
 Fighting,
 --------Ataques Atuais --------
@@ -1477,7 +1477,7 @@ COMET PUNCH,AGILITY,
 48 - MEGA PUNCH
 53 - COUNTER
 ||||
- #108
+108
 Lickitung
 Normal,
 --------Ataques Atuais --------
@@ -1491,7 +1491,7 @@ WRAP,SUPERSONIC,
 31 - SLAM
 39 - SCREECH
 ||||
- #109
+109
 Koffing
 Poison,
 --------Ataques Atuais --------
@@ -1505,7 +1505,7 @@ TACKLE,SMOG,
 45 - HAZE
 48 - EXPLOSION
 ||||
- #110
+110
 Weezing
 Poison,
 --------Ataques Atuais --------
@@ -1519,7 +1519,7 @@ TACKLE,SMOG,SLUDGE,
 49 - HAZE
 53 - EXPLOSION
 ||||
- #111
+111
 Rhyhorn
 Ground,Rock
 --------Ataques Atuais --------
@@ -1534,7 +1534,7 @@ HORN ATTACK,
 50 - LEER
 55 - TAKE DOWN
 ||||
- #112
+112
 Rhydon
 Ground,Rock
 --------Ataques Atuais --------
@@ -1549,7 +1549,7 @@ HORN ATTACK,STOMP,TAIL WHIP,FURY ATTACK,
 55 - LEER
 64 - TAKE DOWN
 ||||
- #113
+113
 Chansey
 Normal,
 --------Ataques Atuais --------
@@ -1564,7 +1564,7 @@ POUND,DOUBLESLAP,
 48 - LIGHT SCREEN
 54 - DOUBLE EDGE
 ||||
- #114
+114
 Tangela
 Grass,
 --------Ataques Atuais --------
@@ -1579,7 +1579,7 @@ CONSTRICT,BIND,
 45 - SLAM
 49 - GROWTH
 ||||
- #115
+115
 Kangaskhan
 Normal,
 --------Ataques Atuais --------
@@ -1593,7 +1593,7 @@ COMET PUNCH,RAGE,
 41 - LEER
 46 - DIZZY PUNCH
 ||||
- #116
+116
 Horsea
 Water,
 --------Ataques Atuais --------
@@ -1607,7 +1607,7 @@ BUBBLE,
 37 - AGILITY
 45 - HYDRO PUMP
 ||||
- #117
+117
 Seadra
 Water,
 --------Ataques Atuais --------
@@ -1621,7 +1621,7 @@ BUBBLE,SMOKESCREEN,
 41 - AGILITY
 52 - HYDRO PUMP
 ||||
- #118
+118
 Goldeen
 Water,
 --------Ataques Atuais --------
@@ -1636,7 +1636,7 @@ PECK,TAIL WHIP,
 45 - HORN DRILL
 54 - AGILITY
 ||||
- #119
+119
 Seaking
 Water,
 --------Ataques Atuais --------
@@ -1651,7 +1651,7 @@ PECK,TAIL WHIP,SUPERSONIC,
 48 - HORN DRILL
 54 - AGILITY
 ||||
- #120
+120
 Staryu
 Water,
 --------Ataques Atuais --------
@@ -1667,7 +1667,7 @@ TACKLE,
 42 - LIGHT SCREEN
 47 - HYDRO PUMP
 ||||
- #121
+121
 Starmie
 Water,Psychic
 --------Ataques Atuais --------
@@ -1676,7 +1676,7 @@ TACKLE,WATER GUN,HARDEN,
 6,9,10,11,12,13,14,15,20,24,25,29,30,31,32,33,34,39,40,44,45,46,49,50,53,55,0,
 -------Ataques Por Nivel-------
 ||||
- #122
+122
 Mr. Mime
 Psychic,Fairy
 --------Ataques Atuais --------
@@ -1690,7 +1690,7 @@ CONFUSION,BARRIER,
 39 - MEDITATE
 47 - SUBSTITUTE
 ||||
- #123
+123
 Scyther
 Bug,Flying
 --------Ataques Atuais --------
@@ -1705,7 +1705,7 @@ QUICK ATTACK,
 35 - SWORDS DANCE
 42 - AGILITY
 ||||
- #124
+124
 Jynx
 Ice,Psychic
 --------Ataques Atuais --------
@@ -1720,7 +1720,7 @@ POUND,LOVELY KISS,
 47 - THRASH
 58 - BLIZZARD
 ||||
- #125
+125
 Electabuzz
 Electric,
 --------Ataques Atuais --------
@@ -1734,7 +1734,7 @@ QUICK ATTACK,LEER,
 49 - LIGHT SCREEN
 54 - THUNDER
 ||||
- #126
+126
 Magmar
 Fire,
 --------Ataques Atuais --------
@@ -1749,7 +1749,7 @@ EMBER,
 52 - SMOG
 55 - FLAMETHROWER
 ||||
- #127
+127
 Pinsir
 Bug,
 --------Ataques Atuais --------
@@ -1764,7 +1764,7 @@ VICEGRIP,
 49 - SLASH
 54 - SWORDS DANCE
 ||||
- #128
+128
 Tauros
 Normal,
 --------Ataques Atuais --------
@@ -1778,7 +1778,7 @@ TACKLE,
 44 - RAGE
 51 - TAKE DOWN
 ||||
- #129
+129
 Magikarp
 Water,
 --------Ataques Atuais --------
@@ -1788,7 +1788,7 @@ SPLASH,
 -------Ataques Por Nivel-------
 15 - TACKLE
 ||||
- #130
+130
 Gyarados
 Water,Flying
 --------Ataques Atuais --------
@@ -1802,7 +1802,7 @@ BITE,DRAGON RAGE,LEER,HYDRO PUMP,
 41 - HYDRO PUMP
 52 - HYPER BEAM
 ||||
- #131
+131
 Lapras
 Water,Ice
 --------Ataques Atuais --------
@@ -1817,7 +1817,7 @@ WATER GUN,GROWL,
 38 - ICE BEAM
 46 - HYDRO PUMP
 ||||
- #132
+132
 Ditto
 Normal,
 --------Ataques Atuais --------
@@ -1826,7 +1826,7 @@ TRANSFORM,
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
- #133
+133
 Eevee
 Normal,
 --------Ataques Atuais --------
@@ -1839,7 +1839,7 @@ TACKLE,SAND ATTACK,
 37 - BITE
 45 - TAKE DOWN
 ||||
- #134
+134
 Vaporeon
 Water,
 --------Ataques Atuais --------
@@ -1856,7 +1856,7 @@ TACKLE,SAND ATTACK,QUICK ATTACK,WATER GUN,
 48 - MIST
 54 - HYDRO PUMP
 ||||
- #135
+135
 Jolteon
 Electric,
 --------Ataques Atuais --------
@@ -1873,7 +1873,7 @@ TACKLE,SAND ATTACK,QUICK ATTACK,THUNDERSHOCK,
 48 - PIN MISSILE
 54 - THUNDER
 ||||
- #136
+136
 Flareon
 Fire,
 --------Ataques Atuais --------
@@ -1890,7 +1890,7 @@ TACKLE,SAND ATTACK,QUICK ATTACK,EMBER,
 48 - RAGE
 54 - FLAMETHROWER
 ||||
- #137
+137
 Porygon
 Normal,
 --------Ataques Atuais --------
@@ -1903,7 +1903,7 @@ TACKLE,SHARPEN,CONVERSION,
 35 - AGILITY
 42 - TRI ATTACK
 ||||
- #138
+138
 Omanyte
 Rock,Water
 --------Ataques Atuais --------
@@ -1916,7 +1916,7 @@ WATER GUN,WITHDRAW,
 46 - SPIKE CANNON
 53 - HYDRO PUMP
 ||||
- #139
+139
 Omastar
 Rock,Water
 --------Ataques Atuais --------
@@ -1929,7 +1929,7 @@ WATER GUN,WITHDRAW,HORN ATTACK,
 44 - SPIKE CANNON
 49 - HYDRO PUMP
 ||||
- #140
+140
 Kabuto
 Rock,Water
 --------Ataques Atuais --------
@@ -1942,7 +1942,7 @@ SCRATCH,HARDEN,
 44 - LEER
 49 - HYDRO PUMP
 ||||
- #141
+141
 Kabutops
 Rock,Water
 --------Ataques Atuais --------
@@ -1955,7 +1955,7 @@ SCRATCH,HARDEN,ABSORB,
 46 - LEER
 53 - HYDRO PUMP
 ||||
- #142
+142
 Aerodactyl
 Rock,Flying
 --------Ataques Atuais --------
@@ -1968,7 +1968,7 @@ WING ATTACK,AGILITY,
 45 - TAKE DOWN
 54 - HYPER BEAM
 ||||
- #143
+143
 Snorlax
 Normal,
 --------Ataques Atuais --------
@@ -1981,7 +1981,7 @@ HEADBUTT,AMNESIA,REST,
 48 - DOUBLE EDGE
 56 - HYPER BEAM
 ||||
- #144
+144
 Articuno
 Ice,Flying
 --------Ataques Atuais --------
@@ -1993,7 +1993,7 @@ PECK,ICE BEAM,
 55 - AGILITY
 60 - MIST
 ||||
- #145
+145
 Zapdos
 Electric,Flying
 --------Ataques Atuais --------
@@ -2005,7 +2005,7 @@ THUNDERSHOCK,DRILL PECK,
 55 - AGILITY
 60 - LIGHT SCREEN
 ||||
- #146
+146
 Moltres
 Fire,Flying
 --------Ataques Atuais --------
@@ -2017,7 +2017,7 @@ PECK,FIRE SPIN,
 55 - AGILITY
 60 - SKY ATTACK
 ||||
- #147
+147
 Dratini
 Dragon,
 --------Ataques Atuais --------
@@ -2031,7 +2031,7 @@ WRAP,LEER,
 40 - DRAGON RAGE
 50 - HYPER BEAM
 ||||
- #148
+148
 Dragonair
 Dragon,
 --------Ataques Atuais --------
@@ -2045,7 +2045,7 @@ WRAP,LEER,THUNDER WAVE,
 45 - DRAGON RAGE
 55 - HYPER BEAM
 ||||
- #149
+149
 Dragonite
 Dragon,Flying
 --------Ataques Atuais --------
@@ -2059,7 +2059,7 @@ WRAP,LEER,THUNDER WAVE,AGILITY,
 45 - DRAGON RAGE
 60 - HYPER BEAM
 ||||
- #150
+150
 Mewtwo
 Psychic,
 --------Ataques Atuais --------
@@ -2073,7 +2073,7 @@ CONFUSION,DISABLE,SWIFT,PSYCHIC M,
 75 - MIST
 81 - AMNESIA
 ||||
- #151
+151
 Mew
 Psychic,
 --------Ataques Atuais --------
@@ -2085,3 +2085,4 @@ POUND,
 20 - MEGA PUNCH
 30 - METRONOME
 40 - PSYCHIC M
+
