@@ -31,7 +31,9 @@ public class Atacar extends Event{
 	
 	private boolean calcPrecisao(Ataque hab){
 		double a = Math.random() * 100;
-		if(a <= hab.getPrecisao() || hab.getEfeito().equals("CHARGE EFFECT") || hab.getEfeito().equals("FLY EFFECT") || hab.getEfeito().equals("JUMP KICK EFFECT") || hab.getEfeito().equals("SWIFT EFFECT")) return true; //para charge effects, primeira instancia sempre ocorrendo
+		System.out.println("a: "+a);
+		System.out.println("hab.getPrecisao():"+hab.getPrecisao());
+		if(a <= hab.getPrecisao() || hab.getEfeito().equals("CHARGE EFFECT") || hab.getEfeito().equals("FLY EFFECT") || hab.getEfeito().equals("JUMP KICK EFFECT") || hab.getEfeito().equals("SWIFT EFFECT")) return true; //para primeira instancia sempre ocorrendo
 		else return false;
 	}
 	private double calcType(String type){
@@ -93,9 +95,12 @@ public class Atacar extends Event{
 			return;
 		}
 		hab.usePP();
+		//System.out.println("Here");
 		if(calcPrecisao(hab)){
+			hab.printAll();
 			switch(hab.getEfeito()){
 			case "NO ADDITIONAL EFFECT":
+				System.out.println("Here 1");
 				defensor.takeDamage(dano);
 				//System.out.println("LEVOU FODENDOS " + dano + "DE DANOSO");
 				break;
@@ -460,8 +465,8 @@ public class Atacar extends Event{
 	//Construtor
 	public Atacar(PkmPool pool1, PkmPool pool2, Type types){
 		super(pool1);
-		atacante=pool1.getPokemon(1);
-		defensor=pool2.getPokemon(1);
+		atacante=pool1.getPokemon(0);
+		defensor=pool2.getPokemon(0);
 		this.types=types;
 	}
 

@@ -21,7 +21,7 @@ public class PokemonBase {
 		this.atkPool = new AtkPool(nome);
 	}
 	public PokemonBase(String id, String nome, String tipo1) throws IOException{
-		this(id, nome, tipo1, "");
+		this(id, nome, tipo1, null);
 	}
 	
 	//Métodos

@@ -15,9 +15,9 @@ public class CarregaTxt {
             if (linha != null) {
                 String[] aux = linha.split(",");
                 if (aux.length == 3)
-                	pokemons[i] = new PokemonBase(aux[0], aux[1], aux[2]);
+                	pokemons[i] = new PokemonBase(aux[0], aux[1], aux[2].toUpperCase());
                 else
-                	pokemons[i] = new PokemonBase(aux[0], aux[1], aux[2], aux[3]); 
+                	pokemons[i] = new PokemonBase(aux[0], aux[1], aux[2].toUpperCase(), aux[3].toUpperCase()); 
 	        } 
             else break;
 	        linha = buffRead.readLine();

@@ -14,12 +14,12 @@ public class Index {
 		BattleItem[] battleItems = CarregaTxt.leitorBattleItems("txt/Itens/BattleItem");
 		StatusRestore[] statusRestores = CarregaTxt.leitorStatusRestore("txt/Itens/StatusRestore");
 		UsarItem itens1 = new UsarItem(null , battleItems, elixeres, pokeballs, potions, statusRestores);
-		System.out.println("Battle items:");
 		String[] aux = itens1.getBattleItems();
+		//System.out.println("Battle items:");
 		
-		for(int i=1; i<=151; i++){
+	/*	for(int i=1; i<=151; i++){
 			pokemons[i].printAll();
-		}
+		}*/
 		
 		
 		
@@ -62,6 +62,11 @@ public class Index {
 		
 		Trainer treinador1 = new Trainer("Fernando Collor", pkmpool, 0);
 		Trainer treinador2 = new Trainer("Sergio Moro do Top Gear", pkmpool, 0);
+		Atacar ataque1 = new Atacar(treinador1.getPool(), treinador2.getPool(), tipos);
+		ataque1.action(0);
+		//treinador1.getPool().getPokemon(0).printAll();
+		treinador1.getPool().getPokemon(0).getStatsSol().printAll();
+		treinador1.getPool().getPokemon(0).getStatsVol().printAll();
 		
 		
 		
