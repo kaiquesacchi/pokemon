@@ -115,7 +115,7 @@ public class Atacar extends Event{
 				rand = (int)(Math.random() * 10) +1;
 				if(rand == 10){
 					defensor.addEffect("FREEZE");
-					System.out.println("OLOCO BIXO TA EM CHOQUE");
+					System.out.println("OLOCO BIXO TA EM FREEZE");
 				}
 				break;
 			case "OHKO EFFECT": //13
