@@ -63,9 +63,12 @@ public class Index {
 		Trainer treinador1 = new Trainer("Fernando Collor", pkmpool, 0);
 		Trainer treinador2 = new Trainer("Sergio Moro do Top Gear", pkmpool, 0);
 		Atacar ataque1 = new Atacar(treinador1.getPool(), treinador2.getPool(), tipos);
-		ataque1.action(0);
-		//treinador1.getPool().getPokemon(0).printAll();
+		
+		treinador1.getPool().getPokemon(0).getStatsSol().addAtk(10); //emoji lindao
 		treinador1.getPool().getPokemon(0).getStatsSol().printAll();
+		//ataque1.action(0);
+		//treinador1.getPool().getPokemon(0).printAll();
+		//treinador1.getPool().getPokemon(0).getStatsSol().printAll();
 		treinador1.getPool().getPokemon(0).getStatsVol().printAll();
 		
 		
