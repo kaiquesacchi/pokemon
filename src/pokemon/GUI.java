@@ -65,7 +65,7 @@ public class GUI {
 		container.setLayout(null);
 	
 		
-	//	Declaração dos Paineis	
+	//	Declaraï¿½ï¿½o dos Paineis	
 		JPanel PainelBatalha = new JPanel();
 		JPanel PainelPokePool = new JPanel();
 		JPanel PainelItem = new JPanel();
@@ -126,13 +126,13 @@ public class GUI {
 		lblMostrador1.setBounds(519, 242, 222, 93);
 		PainelBatalha.add(lblMostrador1);
 		//Adicionando Icone
-		lblMostrador1.setIcon(resize("/imagens/moldura/mostrador.png", lblMostrador1));
+		lblMostrador1.setIcon(resize("/imagens/Moldura/mostrador.png", lblMostrador1));
 		
 		JLabel lblMostrador2 = new JLabel("");
 		lblMostrador2.setBounds(41, 42, 222, 93);
 		PainelBatalha.add(lblMostrador2);
 		//Adicionando Icone
-		lblMostrador2.setIcon(resize("/imagens/moldura/mostrador.png", lblMostrador2));
+		lblMostrador2.setIcon(resize("/imagens/Moldura/mostrador.png", lblMostrador2));
 		
 		
 		
@@ -142,14 +142,14 @@ public class GUI {
 		JLabel lblPlayer1 = new JLabel("");
 		lblPlayer1.setBounds(57, 189, 282, 198);
 			//Adicionando Icone
-		lblPlayer1.setIcon(resize("/imagens/pokemon/back/36.png", lblPlayer1));
+		lblPlayer1.setIcon(resize("/imagens/Pokemon/back/36.png", lblPlayer1));
 		PainelBatalha.add(lblPlayer1);
 		
 	//		Jogador 2
 		JLabel lblPlayer2 = new JLabel("");
 		lblPlayer2.setBounds(434, 38, 275, 219);
 	//			Adicionando Icone
-		lblPlayer2.setIcon(resize("/imagens/pokemon/front/122.png", lblPlayer2));
+		lblPlayer2.setIcon(resize("/imagens/Pokemon/front/122.png", lblPlayer2));
 		PainelBatalha.add(lblPlayer2);
 		
 		
@@ -168,7 +168,7 @@ public class GUI {
 		
 			JButton btn_Principais1 = new JButton("Atacar");
 			btn_Principais1.setBounds(7, 7, 122, 26);
-			btn_Principais1.setIcon(resize("/imagens/botoes/Botao.png", btn_Principais1));
+			btn_Principais1.setIcon(resize("/imagens/Botoes/Botao.png", btn_Principais1));
 			btn_Principais1.setIconTextGap(-80);
 			btn_Principais1.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -183,7 +183,7 @@ public class GUI {
 			
 			JButton btn_Principais2 = new JButton("Trocar Pokemon");
 			btn_Principais2.setBounds(133, 7, 142, 26);
-			btn_Principais2.setIcon(resize("/imagens/botoes/Botao.png", btn_Principais2));
+			btn_Principais2.setIcon(resize("/imagens/Botoes/Botao.png", btn_Principais2));
 			btn_Principais2.setIconTextGap(-130);
 			btn_Principais2.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -196,7 +196,7 @@ public class GUI {
 			
 			JButton btn_Principais3 = new JButton("Fugir");
 			btn_Principais3.setBounds(7, 37, 122, 26);
-			btn_Principais3.setIcon(resize("/imagens/botoes/Botao.png", btn_Principais3));
+			btn_Principais3.setIcon(resize("/imagens/Botoes/Botao.png", btn_Principais3));
 			btn_Principais3.setIconTextGap(-75);
 			btn_Principais3.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -206,7 +206,7 @@ public class GUI {
 			
 			JButton btn_Principais4 = new JButton("Usar Item");
 			btn_Principais4.setBounds(133, 37, 142, 26);
-			btn_Principais4.setIcon(resize("/imagens/botoes/Botao.png", btn_Principais4));
+			btn_Principais4.setIcon(resize("/imagens/Botoes/Botao.png", btn_Principais4));
 			btn_Principais4.setIconTextGap(-100);
 			btn_Principais4.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -298,7 +298,7 @@ public class GUI {
 			
 			JLabel lblPoke1 = new JLabel();
 			lblPoke1.setBounds(0, 0, 222, 103);
-			lblPoke1.setIcon(resize("/imagens/moldura/mostrador.png", lblPoke1));
+			lblPoke1.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke1));
 			poke1.add(lblPoke1);
 			
 		
@@ -318,7 +318,7 @@ public class GUI {
 			
 			JLabel lblPoke2 = new JLabel();
 			lblPoke2.setBounds(0, 0, 222, 103);
-			lblPoke2.setIcon(resize("/imagens/moldura/mostrador.png", lblPoke2));
+			lblPoke2.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke2));
 			poke2.add(lblPoke2);
 		
 		JPanel poke3 = new JPanel();
@@ -337,7 +337,7 @@ public class GUI {
 			
 			JLabel lblPoke3 = new JLabel();
 			lblPoke3.setBounds(0, 0, 222, 103);
-			lblPoke3.setIcon(resize("/imagens/moldura/mostrador.png", lblPoke3));
+			lblPoke3.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke3));
 			poke3.add(lblPoke3);
 		
 		JPanel poke4 = new JPanel();
@@ -356,7 +356,7 @@ public class GUI {
 			
 			JLabel lblPoke4 = new JLabel();
 			lblPoke4.setBounds(0, 0, 222, 103);
-			lblPoke4.setIcon(resize("/imagens/moldura/mostrador.png", lblPoke4));
+			lblPoke4.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke4));
 			poke4.add(lblPoke4);
 		
 		JPanel poke5 = new JPanel();
@@ -375,7 +375,7 @@ public class GUI {
 			
 			JLabel lblPoke5 = new JLabel();
 			lblPoke5.setBounds(0, 0, 222, 103);
-			lblPoke5.setIcon(resize("/imagens/moldura/mostrador.png", lblPoke5));
+			lblPoke5.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke5));
 			poke5.add(lblPoke5);
 			
 		JPanel poke6 = new JPanel();
@@ -394,7 +394,7 @@ public class GUI {
 			
 			JLabel lblPoke6 = new JLabel();
 			lblPoke6.setBounds(0, 0, 222, 103);
-			lblPoke6.setIcon(resize("/imagens/moldura/mostrador.png", lblPoke6));
+			lblPoke6.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke6));
 			poke6.add(lblPoke6);
 		
 		JButton btnCancelar = new JButton("Cancelar");
@@ -409,7 +409,7 @@ public class GUI {
 		
 		JLabel lblBackPokePool = new JLabel("");
 		lblBackPokePool.setBounds(0, 0, 784, 461);
-		lblBackPokePool.setIcon(resize("/imagens/background/menu/itens.png", lblBackPokePool));
+		lblBackPokePool.setIcon(resize("/imagens/Background/Menu/Itens.png", lblBackPokePool));
 		PainelPokePool.add(lblBackPokePool);
 	
 	/*
@@ -434,12 +434,12 @@ public class GUI {
 		
 			JLabel lbl_ball1 = new JLabel();
 			lbl_ball1.setBounds(64, 0, 177, 177);
-			lbl_ball1.setIcon(resize("/imagens/item/poke-ball.png", lbl_ball1));
+			lbl_ball1.setIcon(resize("/imagens/Item/poke-ball.png", lbl_ball1));
 			Balls.add(lbl_ball1);
 			
 			JLabel lbl_ball2 = new JLabel();
 			lbl_ball2.setBounds(369, 0, 177, 177);
-			lbl_ball2.setIcon(resize("/imagens/item/great-ball.png", lbl_ball2));
+			lbl_ball2.setIcon(resize("/imagens/Item/great-ball.png", lbl_ball2));
 			Balls.add(lbl_ball2);
 			
 			JButton btn_ball1 = new JButton("Pokeball");
@@ -452,12 +452,12 @@ public class GUI {
 			
 			JLabel lbl_ball3 = new JLabel();
 			lbl_ball3.setBounds(64, 230, 177, 177);
-			lbl_ball3.setIcon(resize("/imagens/item/ultra-ball.png", lbl_ball3));
+			lbl_ball3.setIcon(resize("/imagens/Item/ultra-ball.png", lbl_ball3));
 			Balls.add(lbl_ball3);
 			
 			JLabel lbl_ball4 = new JLabel();
 			lbl_ball4.setBounds(369, 230, 177, 177);
-			lbl_ball4.setIcon(resize("/imagens/item/master-ball.png", lbl_ball4));
+			lbl_ball4.setIcon(resize("/imagens/Item/master-ball.png", lbl_ball4));
 			Balls.add(lbl_ball4);
 			
 			JButton btn_ball3 = new JButton("Ultraball");
@@ -475,22 +475,22 @@ public class GUI {
 		
 			JLabel lbl_pot1 = new JLabel();
 			lbl_pot1.setBounds(7, 29, 146, 146);
-			lbl_pot1.setIcon(resize("/imagens/item/potion.png", lbl_pot1));
+			lbl_pot1.setIcon(resize("/imagens/Item/potion.png", lbl_pot1));
 			Pots.add(lbl_pot1);
 			
 			JLabel lbl_pot2 = new JLabel();
 			lbl_pot2.setBounds(157, 29, 146, 146);
-			lbl_pot2.setIcon(resize("/imagens/item/super-potion.png", lbl_pot2));
+			lbl_pot2.setIcon(resize("/imagens/Item/super-potion.png", lbl_pot2));
 			Pots.add(lbl_pot2);
 			
 			JLabel lbl_pot3 = new JLabel();
 			lbl_pot3.setBounds(307, 29, 146, 146);
-			lbl_pot3.setIcon(resize("/imagens/item/hyper-potion.png", lbl_pot3));
+			lbl_pot3.setIcon(resize("/imagens/Item/hyper-potion.png", lbl_pot3));
 			Pots.add(lbl_pot3);
 			
 			JLabel lbl_pot4 = new JLabel();
 			lbl_pot4.setBounds(457, 29, 146, 146);
-			lbl_pot4.setIcon(resize("/imagens/item/max-potion.png", lbl_pot4));
+			lbl_pot4.setIcon(resize("/imagens/Item/max-potion.png", lbl_pot4));
 			Pots.add(lbl_pot4);
 			
 			JButton btn_pot1 = new JButton("Potion");
@@ -519,22 +519,22 @@ public class GUI {
 			
 			JLabel lbl_pot5 = new JLabel();
 			lbl_pot5.setBounds(7, 270, 146, 146);
-			lbl_pot5.setIcon(resize("/imagens/item/full-restore.png", lbl_pot5));
+			lbl_pot5.setIcon(resize("/imagens/Item/full-restore.png", lbl_pot5));
 			Pots.add(lbl_pot5);
 			
 			JLabel lbl_pot6 = new JLabel();
 			lbl_pot6.setBounds(157, 270, 146, 146);
-			lbl_pot6.setIcon(resize("/imagens/item/fresh-water.png", lbl_pot6));
+			lbl_pot6.setIcon(resize("/imagens/Item/fresh-water.png", lbl_pot6));
 			Pots.add(lbl_pot6);
 			
 			JLabel lbl_pot7 = new JLabel();
 			lbl_pot7.setBounds(307, 270, 146, 146);
-			lbl_pot7.setIcon(resize("/imagens/item/soda-pop.png", lbl_pot7));
+			lbl_pot7.setIcon(resize("/imagens/Item/soda-pop.png", lbl_pot7));
 			Pots.add(lbl_pot7);
 			
 			JLabel lbl_pot8 = new JLabel();
 			lbl_pot8.setBounds(457, 270, 146, 146);
-			lbl_pot8.setIcon(resize("/imagens/item/lemonade.png", lbl_pot8));
+			lbl_pot8.setIcon(resize("/imagens/Item/lemonade.png", lbl_pot8));
 			Pots.add(lbl_pot8);
 			
 			JButton btn_pot5 = new JButton("Full Restore");
@@ -564,12 +564,12 @@ public class GUI {
 		
 			JLabel lbl_elix1 = new JLabel();
 			lbl_elix1.setBounds(64, 0, 177, 177);
-			lbl_elix1.setIcon(resize("/imagens/item/ether.png", lbl_elix1));
+			lbl_elix1.setIcon(resize("/imagens/Item/ether.png", lbl_elix1));
 			Elix.add(lbl_elix1);
 			
 			JLabel lbl_elix2 = new JLabel();
 			lbl_elix2.setBounds(369, 0, 177, 177);
-			lbl_elix2.setIcon(resize("/imagens/item/max-ether.png", lbl_elix2));
+			lbl_elix2.setIcon(resize("/imagens/Item/max-ether.png", lbl_elix2));
 			Elix.add(lbl_elix2);
 			
 			JButton btn_elix1 = new JButton("Ether");
@@ -582,12 +582,12 @@ public class GUI {
 			
 			JLabel lbl_elix3 = new JLabel();
 			lbl_elix3.setBounds(64, 230, 177, 177);
-			lbl_elix3.setIcon(resize("/imagens/item/elixir.png", lbl_elix3));
+			lbl_elix3.setIcon(resize("/imagens/Item/elixir.png", lbl_elix3));
 			Elix.add(lbl_elix3);
 			
 			JLabel lbl_elix4 = new JLabel();
 			lbl_elix4.setBounds(369, 230, 177, 177);
-			lbl_elix4.setIcon(resize("/imagens/item/max-elixir.png", lbl_elix4));
+			lbl_elix4.setIcon(resize("/imagens/Item/max-elixir.png", lbl_elix4));
 			Elix.add(lbl_elix4);
 			
 			JButton btn_elix3 = new JButton("Elixir");
