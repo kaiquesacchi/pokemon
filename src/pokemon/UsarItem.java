@@ -46,7 +46,7 @@ public class UsarItem extends Event {
 		return aux;
 	}
 	public void action(String typeOfItem, String itemName, int pke, int skill){
-		Pokemon poke = pool1.getPokemonX(pke);
+		Pokemon poke = pool1.getPokemon(pke);
 		switch(typeOfItem){
 		case "BattleItem":
 			switch(itemName){

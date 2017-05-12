@@ -460,8 +460,8 @@ public class Atacar extends Event{
 	//Construtor
 	public Atacar(PkmPool pool1, PkmPool pool2, Type types){
 		super(pool1);
-		atacante=pool1.getPokemonX(1);
-		defensor=pool2.getPokemonX(1);
+		atacante=pool1.getPokemon(1);
+		defensor=pool2.getPokemon(1);
 		this.types=types;
 	}
 

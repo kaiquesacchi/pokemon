@@ -1,5 +1,6 @@
 package pokemon;
 
+import java.awt.EventQueue;
 import java.io.IOException;
 
 public class Index {
@@ -40,5 +41,30 @@ public class Index {
 			System.out.println("-" + aux[a]);
 		}
 		
+		Pokemon[] pk1 = new Pokemon[2];
+		pk1[0] = new Pokemon(pokemons[5]);
+		pk1[1] = new Pokemon(pokemons[122]);
+		
+		PkmPool pkmpool = new PkmPool(pk1);
+		
+		Trainer treinador1 = new Trainer("Fernando Collor", pkmpool, 0);
+		Trainer treinador2 = new Trainer("Sergio Moro do Top Gear", pkmpool, 0);
+		
+		
+		
+		
+		
+		
+		
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					GUI window = new GUI(treinador1, treinador2);
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
 	}
 }

@@ -4,7 +4,7 @@ public class TrocaPokemon extends Event{
 	//Sem atributos adicionais
 	//Metodos
 	public void action(int a){
-		if(pool1.getPokemonX(0).getBindDur() == 0 && pool1.getPokemonX(0).getThrashPetal() == 0)
+		if(pool1.getPokemon(0).getBindDur() == 0 && pool1.getPokemon(0).getThrashPetal() == 0)
 		pool1.switchPokemon(a);
 		else System.out.println("TA PRESO");
 	}

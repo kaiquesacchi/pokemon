@@ -5,7 +5,7 @@ public class PkmPool {
 	private Pokemon[] pokemons;
 	
 	//Métodos
-	public Pokemon getPokemonX(int x){
+	public Pokemon getPokemon(int x){
 		return pokemons[x];
 	}
 	public void switchPokemon(int a){

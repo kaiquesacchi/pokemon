@@ -19,9 +19,9 @@ import java.awt.event.ActionEvent;
 
 public class GUI {
 
-	private JFrame frame;
+	JFrame frame;
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -32,10 +32,10 @@ public class GUI {
 				}
 			}
 		});
-	}
+	}*/
 
-	public GUI() {
-		initialize();
+	public GUI(Trainer trainer1, Trainer trainer2) {
+		initialize(trainer1, trainer2);
 	}
 
 	private ImageIcon resize(String path, JLabel label) {
@@ -55,7 +55,7 @@ public class GUI {
 		return (new ImageIcon(img));
 	}
 	
-	private void initialize() {
+	private void initialize(Trainer trainer1, Trainer trainer2) {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 800, 500);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -63,9 +63,12 @@ public class GUI {
 		
 		Container container = frame.getContentPane();
 		container.setLayout(null);
+		
+		
+		
 	
 		
-	//	Declara��o dos Paineis	
+	//	Declaraçao dos Paineis	
 		JPanel PainelBatalha = new JPanel();
 		JPanel PainelPokePool = new JPanel();
 		JPanel PainelItem = new JPanel();
