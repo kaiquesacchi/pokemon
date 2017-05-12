@@ -97,7 +97,7 @@ public class GUI {
 		mostrador1.setOpaque(false);
 
 		
-		JLabel name1 = new JLabel("VELOSTER");
+		JLabel name1 = new JLabel(trainer1.getPool().getPokemon(0).getNome());
 		name1.setForeground(Color.WHITE);
 		name1.setFont(new Font("Monospaced", Font.BOLD, 18));
 		name1.setBounds(30, 11, 149, 14);
@@ -115,7 +115,7 @@ public class GUI {
 		mostrador2.setLayout(null);
 		mostrador2.setOpaque(false);
 		
-		JLabel name2 = new JLabel("UNO TURBO");
+		JLabel name2 = new JLabel(trainer1.getPool().getPokemon(0).getNome());
 		name2.setForeground(Color.WHITE);
 		name2.setFont(new Font("Monospaced", Font.BOLD, 18));
 		name2.setBounds(33, 18, 140, 16);
@@ -145,14 +145,14 @@ public class GUI {
 		JLabel lblPlayer1 = new JLabel("");
 		lblPlayer1.setBounds(57, 189, 282, 198);
 			//Adicionando Icone
-		lblPlayer1.setIcon(resize("/imagens/Pokemon/back/36.png", lblPlayer1));
+		lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ Integer.parseInt(trainer1.getPool().getPokemon(0).getId()) +".png", lblPlayer1));
 		PainelBatalha.add(lblPlayer1);
 		
 	//		Jogador 2
 		JLabel lblPlayer2 = new JLabel("");
 		lblPlayer2.setBounds(434, 38, 275, 219);
 	//			Adicionando Icone
-		lblPlayer2.setIcon(resize("/imagens/Pokemon/front/122.png", lblPlayer2));
+		lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ Integer.parseInt(trainer2.getPool().getPokemon(0).getId()) +".png", lblPlayer2));
 		PainelBatalha.add(lblPlayer2);
 		
 		
@@ -240,19 +240,39 @@ public class GUI {
 		PainelBatalha.add(botoesAtaque);
 		botoesAtaque.setLayout(null);
 		
-		JButton btn_ataque1 = new JButton("Ataque 1");
+		JButton btn_ataque1 = new JButton();
+		if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(0) != null){
+			btn_ataque1.setLabel(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(0).getNome());
+			btn_ataque1.setEnabled(true);
+		}
+		else btn_ataque1.setEnabled(false);
 		btn_ataque1.setBounds(7, 7, 141, 56);
 		botoesAtaque.add(btn_ataque1);
 		
-		JButton btn_ataque2 = new JButton("Ataque 2");
+		JButton btn_ataque2 = new JButton();
+		if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(1) != null){
+			btn_ataque2.setLabel(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(1).getNome());
+			btn_ataque2.setEnabled(true);
+		}
+		else btn_ataque2.setEnabled(false);
 		btn_ataque2.setBounds(152, 7, 140, 56);
 		botoesAtaque.add(btn_ataque2);
 		
-		JButton btn_ataque3 = new JButton("Ataque 3");
+		JButton btn_ataque3 = new JButton();
+		if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(2) != null){
+			btn_ataque3.setLabel(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(2).getNome());
+			btn_ataque3.setEnabled(true);
+		}
+		else btn_ataque3.setEnabled(false);
 		btn_ataque3.setBounds(296, 7, 141, 56);
 		botoesAtaque.add(btn_ataque3);
 		
-		JButton btn_ataque4 = new JButton("Ataque 4");
+		JButton btn_ataque4 = new JButton();
+		if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(3) != null){
+			btn_ataque4.setLabel(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(3).getNome());
+			btn_ataque4.setEnabled(true);
+		}
+		else btn_ataque4.setEnabled(false);
 		btn_ataque4.setBounds(441, 7, 140, 56);
 		botoesAtaque.add(btn_ataque4);
 		
@@ -295,7 +315,7 @@ public class GUI {
 			HPBar1.setBounds(80, 72, 130, 12);
 			poke1.add(HPBar1);
 			
-			JButton btnPoke1 = new JButton("New button");
+			JButton btnPoke1 = new JButton();
 			btnPoke1.setBounds(64, 24, 130, 23);
 			poke1.add(btnPoke1);
 			
@@ -303,6 +323,12 @@ public class GUI {
 			lblPoke1.setBounds(0, 0, 222, 103);
 			lblPoke1.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke1));
 			poke1.add(lblPoke1);
+			
+			if(trainer1.getPool().getPokemon(0) != null){
+				btnPoke1.setLabel(trainer1.getPool().getPokemon(0).getNome());
+				btnPoke1.setEnabled(true);
+			}
+			else btnPoke1.setEnabled(false);
 			
 		
 		JPanel poke2 = new JPanel();
@@ -323,6 +349,12 @@ public class GUI {
 			lblPoke2.setBounds(0, 0, 222, 103);
 			lblPoke2.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke2));
 			poke2.add(lblPoke2);
+			
+			if(trainer1.getPool().getPokemon(1) != null){
+				btnPoke2.setLabel(trainer1.getPool().getPokemon(1).getNome());
+				btnPoke2.setEnabled(true);
+			}
+			else btnPoke2.setEnabled(false);
 		
 		JPanel poke3 = new JPanel();
 		poke3.setBounds(41, 294, 222, 103);
@@ -342,6 +374,12 @@ public class GUI {
 			lblPoke3.setBounds(0, 0, 222, 103);
 			lblPoke3.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke3));
 			poke3.add(lblPoke3);
+			
+			if(trainer1.getPool().getPokemon(2) != null){
+				btnPoke3.setLabel(trainer1.getPool().getPokemon(2).getNome());
+				btnPoke3.setEnabled(true);
+			}
+			else btnPoke3.setEnabled(false);
 		
 		JPanel poke4 = new JPanel();
 		poke4.setBounds(510, 32, 222, 103);
@@ -361,6 +399,12 @@ public class GUI {
 			lblPoke4.setBounds(0, 0, 222, 103);
 			lblPoke4.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke4));
 			poke4.add(lblPoke4);
+			
+			if(trainer1.getPool().getPokemon(3) != null){
+				btnPoke4.setLabel(trainer1.getPool().getPokemon(3).getNome());
+				btnPoke4.setEnabled(true);
+			}
+			else btnPoke4.setEnabled(false);
 		
 		JPanel poke5 = new JPanel();
 		poke5.setBounds(510, 158, 222, 103);
@@ -381,6 +425,12 @@ public class GUI {
 			lblPoke5.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke5));
 			poke5.add(lblPoke5);
 			
+			if(trainer1.getPool().getPokemon(4) != null){
+				btnPoke5.setLabel(trainer1.getPool().getPokemon(4).getNome());
+				btnPoke5.setEnabled(true);
+			}
+			else btnPoke5.setEnabled(false);
+			
 		JPanel poke6 = new JPanel();
 		poke6.setBounds(510, 294, 222, 103);
 		PainelPokePool.add(poke6);
@@ -399,6 +449,12 @@ public class GUI {
 			lblPoke6.setBounds(0, 0, 222, 103);
 			lblPoke6.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke6));
 			poke6.add(lblPoke6);
+			
+			if(trainer1.getPool().getPokemon(5) != null){
+				btnPoke6.setLabel(trainer1.getPool().getPokemon(5).getNome());
+				btnPoke6.setEnabled(true);
+			}
+			else btnPoke6.setEnabled(false);
 		
 		JButton btnCancelar = new JButton("Cancelar");
 		btnCancelar.addActionListener(new ActionListener() {
