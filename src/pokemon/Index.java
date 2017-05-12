@@ -16,6 +16,14 @@ public class Index {
 		UsarItem itens1 = new UsarItem(null , battleItems, elixeres, pokeballs, potions, statusRestores);
 		System.out.println("Battle items:");
 		String[] aux = itens1.getBattleItems();
+		
+		for(int i=1; i<=151; i++){
+			pokemons[i].printAll();
+		}
+		
+		
+		
+		/*
 		for(int a=0;a<aux.length;a++){
 			System.out.println("-" + aux[a]);
 		}
@@ -40,6 +48,11 @@ public class Index {
 		for(int a=0;a<aux.length;a++){
 			System.out.println("-" + aux[a]);
 		}
+		*/
+		
+		
+		
+		
 		
 		Pokemon[] pk1 = new Pokemon[2];
 		pk1[0] = new Pokemon(pokemons[5]);

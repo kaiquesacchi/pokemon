@@ -60,9 +60,10 @@ public class PokemonBase {
 		return atkPool;
 	}
 	public void printAll(){
-		System.out.println("|||||||||||||||||||||||||||||||||||||||||||||");
-		System.out.println("["+id+"]  " + nome);
-		System.out.println(tipo1 + "||" + tipo2);
+		System.out.println("||||");
+		System.out.println(id);
+		System.out.println(nome);
+		System.out.println(tipo1 + "," + tipo2);
 		this.atkPool.printAll();
 	}
 }
