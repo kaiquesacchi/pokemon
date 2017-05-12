@@ -145,14 +145,14 @@ public class GUI {
 		JLabel lblPlayer1 = new JLabel("");
 		lblPlayer1.setBounds(57, 189, 282, 198);
 			//Adicionando Icone
-		lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ Integer.parseInt(trainer1.getPool().getPokemon(0).getId()) +".png", lblPlayer1));
+		lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", lblPlayer1));
 		PainelBatalha.add(lblPlayer1);
 		
 	//		Jogador 2
 		JLabel lblPlayer2 = new JLabel("");
 		lblPlayer2.setBounds(434, 38, 275, 219);
 	//			Adicionando Icone
-		lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ Integer.parseInt(trainer2.getPool().getPokemon(0).getId()) +".png", lblPlayer2));
+		lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", lblPlayer2));
 		PainelBatalha.add(lblPlayer2);
 		
 		
