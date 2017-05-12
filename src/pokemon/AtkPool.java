@@ -35,6 +35,14 @@ public class AtkPool {
 		tmsRecebiveis= CarregaTxt.leitorTmsRecebiveis("txt/baseStats/", nome);
 		ataquesPorNivel = CarregaTxt.leitorLearnSet("txt/evos_learnSet.txt", nome, ataques);
 	}
+	
+	public AtkPool(Ataque[] ataquesAtuais, int[] tmsRecebiveis, String[][] ataquesPorNivel) {
+		super();
+		this.ataquesAtuais = ataquesAtuais;
+		this.tmsRecebiveis = tmsRecebiveis;
+		this.ataquesPorNivel = ataquesPorNivel;
+	}
+	
 	public void printAll(){
 		int i = 0;
 		System.out.println("--------Ataques Atuais --------");

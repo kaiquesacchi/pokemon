@@ -244,48 +244,49 @@ public class CarregaTxt {
     
     
     public static PokemonBase[] leitor2Pokemon(String path, Ataque[] ataques) throws IOException{
-    	 BufferedReader buffRead = new BufferedReader(new FileReader(path));
-    	 PokemonBase[] pokemons = new PokemonBase[152];
-         for(int i=1; i<=151; i++){
-        	 int id = Integer.parseInt(buffRead.readLine());
-        	 String nome = buffRead.readLine();
-        	 String[] tipos = buffRead.readLine().split(",");
-        	 if(tipos.length == 2) pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), tipos[1].toUpperCase());
-        	 else pokemons[i] = new PokemonBase(id, nome, tipos[0]);
-        	 
-        	 //Ataques Atuais
-        	 Ataque[] ataquesAtuais = new Ataque[4];
-        	 buffRead.readLine();
-        	 String[] aux = buffRead.readLine().split(",");
-    	 	 for(int j=0; j<4; j++){
-    	 		 if(j < aux.length){
-    	 		 	int k = 0;
-    	 			while (k < ataques.length && !(ataques[k].getNome().equals(aux))) k++;
+    	BufferedReader buffRead = new BufferedReader(new FileReader(path));
+    	PokemonBase[] pokemons = new PokemonBase[152];
+    	for(int i=1; i<=151; i++){
+    		int id = Integer.parseInt(buffRead.readLine());
+    		String nome = buffRead.readLine();
+    		String[] tipos = buffRead.readLine().split(",");
+    		
+    		
+    		//Ataques Atuais
+    		Ataque[] ataquesAtuais = new Ataque[4];
+    		buffRead.readLine();
+    		String[] aux = buffRead.readLine().split(",");
+    		for(int j=0; j<4; j++){
+    			if(j < aux.length){
+    				int k = 0;
+    	 			while (k < ataques.length && !(ataques[k].getNome().equals(aux[j]))) k++;
     	 			if (k < ataques.length) ataquesAtuais[j] = ataques[k];
     	 			else ataquesAtuais[j] = null;
 	        	}
-	         }
+    		}
     	 	 
-    	 	 //tms Recebiveis
-    	 	 buffRead.readLine();
-    	 	 aux = buffRead.readLine().split(",");
-    	 	 int[] tmsRecebiveis = new int[aux.length];
-    	 	 for(int j=0; j<aux.length; j++){
-    	 		 tmsRecebiveis[j] = Integer.parseInt(aux[j]);
-    	 	 }
-    	 	 
-    	 	 //Ataques por nivel
-    	 	 buffRead.readLine();
-    	 	 String[][] learnSet = new String[10][2];
-    	 	 String linha;
-    	 	 int j = 0;
-    	 	 while(!((linha = buffRead.readLine()).equals("||||"))){
-    	 		aux = linha.split(" - ");
+    		//tms Recebiveis
+    		buffRead.readLine();
+    		aux = buffRead.readLine().split(",");
+    		int[] tmsRecebiveis = new int[aux.length];
+    		for(int j=0; j<aux.length; j++){
+    			tmsRecebiveis[j] = Integer.parseInt(aux[j]);
+    		}
+    		
+    		//Ataques por nivel
+    		buffRead.readLine();
+    		String[][] learnSet = new String[10][2];
+    		String linha;
+    		int j = 0;
+    		while(!((linha = buffRead.readLine()).equals("||||"))){
+    			aux = linha.split(" - ");
     	 		learnSet[j] = aux;
     	 		j++;
     	 	}
-    	 	 
-    	 	 
+    	 	
+    	 	AtkPool atkpool = new AtkPool(ataquesAtuais, tmsRecebiveis, learnSet);
+    	 	if(tipos.length == 2) pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), tipos[1].toUpperCase(), atkpool);
+    		else pokemons[i] = new PokemonBase(id, nome, tipos[0], atkpool);
     	 	 
  		 }
          return pokemons;

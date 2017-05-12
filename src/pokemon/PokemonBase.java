@@ -12,16 +12,16 @@ public class PokemonBase {
 	protected int id;
 	
 	//Construtor	
-	public PokemonBase(int id, String nome, String tipo1, String tipo2) throws IOException{
+	public PokemonBase(int id, String nome, String tipo1, String tipo2, AtkPool atkPool) throws IOException{
 		this.nome = nome;
 		this.id = id;
 		this.tipo1 = tipo1;
 		this.tipo2 = tipo2;
 		this.statsSol = new Status(nome);
-		this.atkPool = new AtkPool(nome);
+		this.atkPool = atkPool;
 	}
-	public PokemonBase(int id, String nome, String tipo1) throws IOException{
-		this(id, nome, tipo1, "");
+	public PokemonBase(int id, String nome, String tipo1, AtkPool atkPool) throws IOException{
+		this(id, nome, tipo1, "", atkPool);
 	}
 	
 	//Métodos
