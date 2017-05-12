@@ -1,6 +1,8 @@
-001
+1
 Bulbasaur
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+49,49,65,45,45
 --------Ataques Atuais --------
 TACKLE,GROWL,
 ------tms Recebiveis-------
@@ -14,9 +16,11 @@ TACKLE,GROWL,
 41 - SLEEP POWDER
 48 - SOLARBEAM
 ||||
-002
+2
 Ivysaur
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+62,63,80,60,60
 --------Ataques Atuais --------
 TACKLE,GROWL,LEECH SEED,
 ------tms Recebiveis-------
@@ -30,9 +34,11 @@ TACKLE,GROWL,LEECH SEED,
 46 - SLEEP POWDER
 54 - SOLARBEAM
 ||||
-003
+3
 Venusaur
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+82,83,100,80,80
 --------Ataques Atuais --------
 TACKLE,GROWL,LEECH SEED,VINE WHIP,
 ------tms Recebiveis-------
@@ -46,9 +52,11 @@ TACKLE,GROWL,LEECH SEED,VINE WHIP,
 55 - SLEEP POWDER
 65 - SOLARBEAM
 ||||
-004
+4
 Charmander
-Fire,
+Fire,null
+----------Status-----------
+52,43,50,65,39
 --------Ataques Atuais --------
 SCRATCH,GROWL,
 ------tms Recebiveis-------
@@ -61,9 +69,11 @@ SCRATCH,GROWL,
 38 - FLAMETHROWER
 46 - FIRE SPIN
 ||||
-005
+5
 Charmeleon
-Fire,
+Fire,null
+----------Status-----------
+64,58,65,80,58
 --------Ataques Atuais --------
 SCRATCH,GROWL,EMBER,
 ------tms Recebiveis-------
@@ -76,9 +86,11 @@ SCRATCH,GROWL,EMBER,
 42 - FLAMETHROWER
 56 - FIRE SPIN
 ||||
-006
+6
 Charizard
-Fire,Flying
+FIRE,FLYING
+----------Status-----------
+84,78,85,100,78
 --------Ataques Atuais --------
 SCRATCH,GROWL,EMBER,LEER,
 ------tms Recebiveis-------
@@ -91,9 +103,11 @@ SCRATCH,GROWL,EMBER,LEER,
 46 - FLAMETHROWER
 55 - FIRE SPIN
 ||||
-007
+7
 Squirtle
-Water,
+Water,null
+----------Status-----------
+48,65,50,43,44
 --------Ataques Atuais --------
 TACKLE,TAIL WHIP,
 ------tms Recebiveis-------
@@ -106,9 +120,11 @@ TACKLE,TAIL WHIP,
 35 - SKULL BASH
 42 - HYDRO PUMP
 ||||
-008
+8
 Wartortle
-Water,
+Water,null
+----------Status-----------
+63,80,65,58,59
 --------Ataques Atuais --------
 TACKLE,TAIL WHIP,BUBBLE,
 ------tms Recebiveis-------
@@ -121,9 +137,11 @@ TACKLE,TAIL WHIP,BUBBLE,
 39 - SKULL BASH
 47 - HYDRO PUMP
 ||||
-009
+9
 Blastoise
-Water,
+Water,null
+----------Status-----------
+83,100,85,78,79
 --------Ataques Atuais --------
 TACKLE,TAIL WHIP,BUBBLE,WATER GUN,
 ------tms Recebiveis-------
@@ -136,27 +154,33 @@ TACKLE,TAIL WHIP,BUBBLE,WATER GUN,
 42 - SKULL BASH
 52 - HYDRO PUMP
 ||||
-010
+10
 Caterpie
-Bug,
+Bug,null
+----------Status-----------
+30,35,20,45,45
 --------Ataques Atuais --------
 TACKLE,STRING SHOT,
 ------tms Recebiveis-------
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
-011
+11
 Metapod
-Bug,
+Bug,null
+----------Status-----------
+20,55,25,30,50
 --------Ataques Atuais --------
 HARDEN,
 ------tms Recebiveis-------
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
-012
+12
 Butterfree
-Bug,Flying
+BUG,FLYING
+----------Status-----------
+45,50,80,70,60
 --------Ataques Atuais --------
 CONFUSION,
 ------tms Recebiveis-------
@@ -170,27 +194,33 @@ CONFUSION,
 26 - WHIRLWIND
 32 - PSYBEAM
 ||||
-013
+13
 Weedle
-Bug,Poison
+BUG,POISON
+----------Status-----------
+35,30,20,50,40
 --------Ataques Atuais --------
 POISON STING,STRING SHOT,
 ------tms Recebiveis-------
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
-014
+14
 Kakuna
-Bug,Poison
+BUG,POISON
+----------Status-----------
+25,50,25,35,45
 --------Ataques Atuais --------
 HARDEN,
 ------tms Recebiveis-------
 0,0,0,0,0,0,0,0,
 -------Ataques Por Nivel-------
 ||||
-015
+15
 Beedrill
-Bug,Poison
+BUG,POISON
+----------Status-----------
+80,40,45,75,65
 --------Ataques Atuais --------
 FURY ATTACK,
 ------tms Recebiveis-------
@@ -203,9 +233,11 @@ FURY ATTACK,
 30 - PIN MISSILE
 35 - AGILITY
 ||||
-016
+16
 Pidgey
-Normal,Flying
+NORMAL,FLYING
+----------Status-----------
+45,40,35,56,40
 --------Ataques Atuais --------
 GUST,
 ------tms Recebiveis-------
@@ -218,9 +250,11 @@ GUST,
 36 - AGILITY
 44 - MIRROR MOVE
 ||||
-017
+17
 Pidgeotto
-Normal,Flying
+NORMAL,FLYING
+----------Status-----------
+60,55,50,71,63
 --------Ataques Atuais --------
 GUST,SAND ATTACK,
 ------tms Recebiveis-------
@@ -233,9 +267,11 @@ GUST,SAND ATTACK,
 40 - AGILITY
 49 - MIRROR MOVE
 ||||
-018
+18
 Pidgeot
-Normal,Flying
+NORMAL,FLYING
+----------Status-----------
+80,75,70,91,83
 --------Ataques Atuais --------
 GUST,SAND ATTACK,QUICK ATTACK,
 ------tms Recebiveis-------
@@ -248,9 +284,11 @@ GUST,SAND ATTACK,QUICK ATTACK,
 44 - AGILITY
 54 - MIRROR MOVE
 ||||
-019
+19
 Rattata
-Normal,
+Normal,null
+----------Status-----------
+56,35,25,72,30
 --------Ataques Atuais --------
 TACKLE,TAIL WHIP,
 ------tms Recebiveis-------
@@ -261,9 +299,11 @@ TACKLE,TAIL WHIP,
 23 - FOCUS ENERGY
 34 - SUPER FANG
 ||||
-020
+20
 Raticate
-Normal,
+Normal,null
+----------Status-----------
+81,60,50,97,55
 --------Ataques Atuais --------
 TACKLE,TAIL WHIP,QUICK ATTACK,
 ------tms Recebiveis-------
@@ -274,9 +314,11 @@ TACKLE,TAIL WHIP,QUICK ATTACK,
 27 - FOCUS ENERGY
 41 - SUPER FANG
 ||||
-021
+21
 Spearow
-Normal,Flying
+NORMAL,FLYING
+----------Status-----------
+60,30,31,70,40
 --------Ataques Atuais --------
 PECK,GROWL,
 ------tms Recebiveis-------
@@ -288,9 +330,11 @@ PECK,GROWL,
 29 - DRILL PECK
 36 - AGILITY
 ||||
-022
+22
 Fearow
-Normal,Flying
+NORMAL,FLYING
+----------Status-----------
+90,65,61,100,65
 --------Ataques Atuais --------
 PECK,GROWL,LEER,
 ------tms Recebiveis-------
@@ -302,9 +346,11 @@ PECK,GROWL,LEER,
 34 - DRILL PECK
 43 - AGILITY
 ||||
-023
+23
 Ekans
-Poison,
+Poison,null
+----------Status-----------
+60,44,40,55,35
 --------Ataques Atuais --------
 WRAP,LEER,
 ------tms Recebiveis-------
@@ -316,9 +362,11 @@ WRAP,LEER,
 31 - SCREECH
 38 - ACID
 ||||
-024
+24
 Arbok
-Poison,
+Poison,null
+----------Status-----------
+85,69,65,80,60
 --------Ataques Atuais --------
 WRAP,LEER,POISON STING,
 ------tms Recebiveis-------
@@ -330,9 +378,11 @@ WRAP,LEER,POISON STING,
 36 - SCREECH
 47 - ACID
 ||||
-025
+25
 Pikachu
-Electric,
+Electric,null
+----------Status-----------
+55,30,50,90,35
 --------Ataques Atuais --------
 THUNDERSHOCK,GROWL,
 ------tms Recebiveis-------
@@ -344,18 +394,22 @@ THUNDERSHOCK,GROWL,
 33 - AGILITY
 43 - THUNDER
 ||||
-026
+26
 Raichu
-Electric,
+Electric,null
+----------Status-----------
+90,55,90,100,60
 --------Ataques Atuais --------
 THUNDERSHOCK,GROWL,THUNDER WAVE,
 ------tms Recebiveis-------
 1,5,6,8,9,10,15,16,17,19,20,24,25,31,32,33,34,39,40,44,45,50,55,0,
 -------Ataques Por Nivel-------
 ||||
-027
+27
 Sandshrew
-Ground,
+Ground,null
+----------Status-----------
+75,85,30,40,50
 --------Ataques Atuais --------
 SCRATCH,
 ------tms Recebiveis-------
@@ -367,9 +421,11 @@ SCRATCH,
 31 - SWIFT
 38 - FURY SWIPES
 ||||
-028
+28
 Sandslash
-Ground,
+Ground,null
+----------Status-----------
+100,110,55,65,75
 --------Ataques Atuais --------
 SCRATCH,SAND ATTACK,
 ------tms Recebiveis-------
@@ -381,9 +437,11 @@ SCRATCH,SAND ATTACK,
 36 - SWIFT
 47 - FURY SWIPES
 ||||
-029
+29
 NidoranF
-Poison,
+Poison,null
+----------Status-----------
+47,52,40,41,55
 --------Ataques Atuais --------
 GROWL,TACKLE,
 ------tms Recebiveis-------
@@ -396,9 +454,11 @@ GROWL,TACKLE,
 36 - FURY SWIPES
 43 - DOUBLE KICK
 ||||
-030
+30
 Nidorina
-Poison,
+Poison,null
+----------Status-----------
+62,67,55,56,70
 --------Ataques Atuais --------
 GROWL,TACKLE,SCRATCH,
 ------tms Recebiveis-------
@@ -411,9 +471,11 @@ GROWL,TACKLE,SCRATCH,
 41 - FURY SWIPES
 50 - DOUBLE KICK
 ||||
-031
+31
 Nidoqueen
-Poison,Ground
+POISON,GROUND
+----------Status-----------
+82,87,75,76,90
 --------Ataques Atuais --------
 TACKLE,SCRATCH,TAIL WHIP,BODY SLAM,
 ------tms Recebiveis-------
@@ -423,9 +485,11 @@ TACKLE,SCRATCH,TAIL WHIP,BODY SLAM,
 14 - POISON STING
 23 - BODY SLAM
 ||||
-032
+32
 NidoranM
-Poison,
+Poison,null
+----------Status-----------
+57,40,40,50,46
 --------Ataques Atuais --------
 LEER,TACKLE,
 ------tms Recebiveis-------
@@ -438,9 +502,11 @@ LEER,TACKLE,
 36 - HORN DRILL
 43 - DOUBLE KICK
 ||||
-033
+33
 Nidorino
-Poison,
+Poison,null
+----------Status-----------
+72,57,55,65,61
 --------Ataques Atuais --------
 LEER,TACKLE,HORN ATTACK,
 ------tms Recebiveis-------
@@ -453,9 +519,11 @@ LEER,TACKLE,HORN ATTACK,
 41 - HORN DRILL
 50 - DOUBLE KICK
 ||||
-034
+34
 Nidoking
-Poison,Ground
+POISON,GROUND
+----------Status-----------
+92,77,75,85,81
 --------Ataques Atuais --------
 TACKLE,HORN ATTACK,POISON STING,THRASH,
 ------tms Recebiveis-------
@@ -465,9 +533,11 @@ TACKLE,HORN ATTACK,POISON STING,THRASH,
 14 - POISON STING
 23 - THRASH
 ||||
-035
+35
 Clefairy
-Fairy,
+Fairy,null
+----------Status-----------
+45,48,60,35,70
 --------Ataques Atuais --------
 POUND,GROWL,
 ------tms Recebiveis-------
@@ -480,18 +550,22 @@ POUND,GROWL,
 39 - DEFENSE CURL
 48 - LIGHT SCREEN
 ||||
-036
+36
 Clefable
-Fairy,
+Fairy,null
+----------Status-----------
+70,73,85,60,95
 --------Ataques Atuais --------
 SING,DOUBLESLAP,MINIMIZE,METRONOME,
 ------tms Recebiveis-------
 1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,22,24,25,29,30,31,32,33,34,35,38,40,44,45,46,49,50,54,55,0,
 -------Ataques Por Nivel-------
 ||||
-037
+37
 Vulpix
-Fire,
+Fire,null
+----------Status-----------
+41,40,65,65,38
 --------Ataques Atuais --------
 EMBER,TAIL WHIP,
 ------tms Recebiveis-------
@@ -503,18 +577,22 @@ EMBER,TAIL WHIP,
 35 - FLAMETHROWER
 42 - FIRE SPIN
 ||||
-038
+38
 Ninetales
-Fire,
+Fire,null
+----------Status-----------
+76,75,100,100,73
 --------Ataques Atuais --------
 EMBER,TAIL WHIP,QUICK ATTACK,ROAR,
 ------tms Recebiveis-------
 6,8,9,10,15,20,28,31,32,33,34,38,39,40,44,50,0,
 -------Ataques Por Nivel-------
 ||||
-039
+39
 Jigglypuff
-Normal,Fairy
+NORMAL,FAIRY
+----------Status-----------
+45,20,25,20,115
 --------Ataques Atuais --------
 SING,
 ------tms Recebiveis-------
@@ -528,18 +606,22 @@ SING,
 34 - BODY SLAM
 39 - DOUBLE EDGE
 ||||
-040
+40
 Wigglytuff
-Normal,Fairy
+NORMAL,FAIRY
+----------Status-----------
+70,45,50,45,140
 --------Ataques Atuais --------
 SING,DISABLE,DEFENSE CURL,DOUBLESLAP,
 ------tms Recebiveis-------
 1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,22,24,25,29,30,31,32,33,34,38,40,44,45,46,49,50,54,55,0,
 -------Ataques Por Nivel-------
 ||||
-041
+41
 Zubat
-Poison,Flying
+POISON,FLYING
+----------Status-----------
+45,35,40,55,40
 --------Ataques Atuais --------
 LEECH LIFE,
 ------tms Recebiveis-------
@@ -551,9 +633,11 @@ LEECH LIFE,
 28 - WING ATTACK
 36 - HAZE
 ||||
-042
+42
 Golbat
-Poison,Flying
+POISON,FLYING
+----------Status-----------
+80,70,75,90,75
 --------Ataques Atuais --------
 LEECH LIFE,SCREECH,BITE,
 ------tms Recebiveis-------
@@ -565,9 +649,11 @@ LEECH LIFE,SCREECH,BITE,
 32 - WING ATTACK
 43 - HAZE
 ||||
-043
+43
 Oddish
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+50,55,75,30,45
 --------Ataques Atuais --------
 ABSORB,
 ------tms Recebiveis-------
@@ -580,9 +666,11 @@ ABSORB,
 33 - PETAL DANCE
 46 - SOLARBEAM
 ||||
-044
+44
 Gloom
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+65,70,85,40,60
 --------Ataques Atuais --------
 ABSORB,POISONPOWDER,STUN SPORE,
 ------tms Recebiveis-------
@@ -595,9 +683,11 @@ ABSORB,POISONPOWDER,STUN SPORE,
 38 - PETAL DANCE
 52 - SOLARBEAM
 ||||
-045
+45
 Vileplume
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+80,85,100,50,75
 --------Ataques Atuais --------
 STUN SPORE,SLEEP POWDER,ACID,PETAL DANCE,
 ------tms Recebiveis-------
@@ -607,9 +697,11 @@ STUN SPORE,SLEEP POWDER,ACID,PETAL DANCE,
 17 - STUN SPORE
 19 - SLEEP POWDER
 ||||
-046
+46
 Paras
-Bug,Grass
+BUG,GRASS
+----------Status-----------
+70,55,55,25,35
 --------Ataques Atuais --------
 SCRATCH,
 ------tms Recebiveis-------
@@ -621,9 +713,11 @@ SCRATCH,
 34 - SLASH
 41 - GROWTH
 ||||
-047
+47
 Parasect
-Bug,Grass
+BUG,GRASS
+----------Status-----------
+95,80,80,30,60
 --------Ataques Atuais --------
 SCRATCH,STUN SPORE,LEECH LIFE,
 ------tms Recebiveis-------
@@ -635,9 +729,11 @@ SCRATCH,STUN SPORE,LEECH LIFE,
 39 - SLASH
 48 - GROWTH
 ||||
-048
+48
 Venonat
-Bug,Poison
+BUG,POISON
+----------Status-----------
+55,50,40,45,60
 --------Ataques Atuais --------
 TACKLE,DISABLE,
 ------tms Recebiveis-------
@@ -650,9 +746,11 @@ TACKLE,DISABLE,
 38 - SLEEP POWDER
 43 - PSYCHIC M
 ||||
-049
+49
 Venomoth
-Bug,Poison
+BUG,POISON
+----------Status-----------
+65,60,90,90,70
 --------Ataques Atuais --------
 TACKLE,DISABLE,POISONPOWDER,LEECH LIFE,
 ------tms Recebiveis-------
@@ -665,9 +763,11 @@ TACKLE,DISABLE,POISONPOWDER,LEECH LIFE,
 43 - SLEEP POWDER
 50 - PSYCHIC M
 ||||
-050
+50
 Diglett
-Ground,
+Ground,null
+----------Status-----------
+55,25,45,95,10
 --------Ataques Atuais --------
 SCRATCH,
 ------tms Recebiveis-------
@@ -679,9 +779,11 @@ SCRATCH,
 31 - SLASH
 40 - EARTHQUAKE
 ||||
-051
+51
 Dugtrio
-Ground,
+Ground,null
+----------Status-----------
+80,50,70,120,35
 --------Ataques Atuais --------
 SCRATCH,GROWL,DIG,
 ------tms Recebiveis-------
@@ -693,9 +795,11 @@ SCRATCH,GROWL,DIG,
 35 - SLASH
 47 - EARTHQUAKE
 ||||
-052
+52
 Meowth
-Normal,
+Normal,null
+----------Status-----------
+45,35,40,90,40
 --------Ataques Atuais --------
 SCRATCH,GROWL,
 ------tms Recebiveis-------
@@ -707,9 +811,11 @@ SCRATCH,GROWL,
 33 - FURY SWIPES
 44 - SLASH
 ||||
-053
+53
 Persian
-Normal,
+Normal,null
+----------Status-----------
+70,60,65,115,65
 --------Ataques Atuais --------
 SCRATCH,GROWL,BITE,SCREECH,
 ------tms Recebiveis-------
@@ -721,9 +827,11 @@ SCRATCH,GROWL,BITE,SCREECH,
 37 - FURY SWIPES
 51 - SLASH
 ||||
-054
+54
 Psyduck
-Water,
+Water,null
+----------Status-----------
+52,48,50,55,50
 --------Ataques Atuais --------
 SCRATCH,
 ------tms Recebiveis-------
@@ -735,9 +843,11 @@ SCRATCH,
 43 - FURY SWIPES
 52 - HYDRO PUMP
 ||||
-055
+55
 Golduck
-Water,
+Water,null
+----------Status-----------
+82,78,80,85,80
 --------Ataques Atuais --------
 SCRATCH,TAIL WHIP,DISABLE,
 ------tms Recebiveis-------
@@ -749,9 +859,11 @@ SCRATCH,TAIL WHIP,DISABLE,
 48 - FURY SWIPES
 59 - HYDRO PUMP
 ||||
-056
+56
 Mankey
-Fighting,
+Fighting,null
+----------Status-----------
+80,35,35,70,40
 --------Ataques Atuais --------
 SCRATCH,LEER,
 ------tms Recebiveis-------
@@ -763,9 +875,11 @@ SCRATCH,LEER,
 33 - SEISMIC TOSS
 39 - THRASH
 ||||
-057
+57
 Primeape
-Fighting,
+Fighting,null
+----------Status-----------
+105,60,60,95,65
 --------Ataques Atuais --------
 SCRATCH,LEER,KARATE CHOP,FURY SWIPES,
 ------tms Recebiveis-------
@@ -777,9 +891,11 @@ SCRATCH,LEER,KARATE CHOP,FURY SWIPES,
 37 - SEISMIC TOSS
 46 - THRASH
 ||||
-058
+58
 Growlithe
-Fire,
+Fire,null
+----------Status-----------
+70,45,50,60,55
 --------Ataques Atuais --------
 BITE,ROAR,
 ------tms Recebiveis-------
@@ -791,18 +907,22 @@ BITE,ROAR,
 39 - AGILITY
 50 - FLAMETHROWER
 ||||
-059
+59
 Arcanine
-Fire,
+Fire,null
+----------Status-----------
+110,80,80,95,90
 --------Ataques Atuais --------
 ROAR,EMBER,LEER,TAKE DOWN,
 ------tms Recebiveis-------
 6,8,9,10,15,20,23,28,30,31,32,33,34,38,39,40,44,50,0,
 -------Ataques Por Nivel-------
 ||||
-060
+60
 Poliwag
-Water,
+Water,null
+----------Status-----------
+50,40,40,90,40
 --------Ataques Atuais --------
 BUBBLE,
 ------tms Recebiveis-------
@@ -815,9 +935,11 @@ BUBBLE,
 38 - AMNESIA
 45 - HYDRO PUMP
 ||||
-061
+61
 Poliwhirl
-Water,
+Water,null
+----------Status-----------
+65,65,50,90,65
 --------Ataques Atuais --------
 BUBBLE,HYPNOSIS,WATER GUN,
 ------tms Recebiveis-------
@@ -830,9 +952,11 @@ BUBBLE,HYPNOSIS,WATER GUN,
 41 - AMNESIA
 49 - HYDRO PUMP
 ||||
-062
+62
 Poliwrath
-Water,Fighting
+WATER,FIGHTING
+----------Status-----------
+85,95,70,70,90
 --------Ataques Atuais --------
 HYPNOSIS,WATER GUN,DOUBLESLAP,BODY SLAM,
 ------tms Recebiveis-------
@@ -841,18 +965,22 @@ HYPNOSIS,WATER GUN,DOUBLESLAP,BODY SLAM,
 16 - HYPNOSIS
 19 - WATER GUN
 ||||
-063
+63
 Abra
-Psychic,
+Psychic,null
+----------Status-----------
+20,15,105,90,25
 --------Ataques Atuais --------
 TELEPORT,
 ------tms Recebiveis-------
 1,5,6,8,9,10,17,18,19,20,29,30,31,32,33,34,35,40,44,45,46,49,50,55,0,
 -------Ataques Por Nivel-------
 ||||
-064
+64
 Kadabra
-Psychic,
+Psychic,null
+----------Status-----------
+35,30,120,105,40
 --------Ataques Atuais --------
 TELEPORT,CONFUSION,DISABLE,
 ------tms Recebiveis-------
@@ -865,9 +993,11 @@ TELEPORT,CONFUSION,DISABLE,
 38 - PSYCHIC M
 42 - REFLECT
 ||||
-065
+65
 Alakazam
-Psychic,
+Psychic,null
+----------Status-----------
+50,45,135,120,55
 --------Ataques Atuais --------
 TELEPORT,CONFUSION,DISABLE,
 ------tms Recebiveis-------
@@ -880,9 +1010,11 @@ TELEPORT,CONFUSION,DISABLE,
 38 - PSYCHIC M
 42 - REFLECT
 ||||
-066
+66
 Machop
-Fighting,
+Fighting,null
+----------Status-----------
+80,50,35,35,70
 --------Ataques Atuais --------
 KARATE CHOP,
 ------tms Recebiveis-------
@@ -894,9 +1026,11 @@ KARATE CHOP,
 39 - SEISMIC TOSS
 46 - SUBMISSION
 ||||
-067
+67
 Machoke
-Fighting,
+Fighting,null
+----------Status-----------
+100,70,50,45,80
 --------Ataques Atuais --------
 KARATE CHOP,LOW KICK,LEER,
 ------tms Recebiveis-------
@@ -908,9 +1042,11 @@ KARATE CHOP,LOW KICK,LEER,
 44 - SEISMIC TOSS
 52 - SUBMISSION
 ||||
-068
+68
 Machamp
-Fighting,
+Fighting,null
+----------Status-----------
+130,80,65,55,90
 --------Ataques Atuais --------
 KARATE CHOP,LOW KICK,LEER,
 ------tms Recebiveis-------
@@ -922,9 +1058,11 @@ KARATE CHOP,LOW KICK,LEER,
 44 - SEISMIC TOSS
 52 - SUBMISSION
 ||||
-069
+69
 Bellsprout
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+75,35,70,40,50
 --------Ataques Atuais --------
 VINE WHIP,GROWTH,
 ------tms Recebiveis-------
@@ -938,9 +1076,11 @@ VINE WHIP,GROWTH,
 33 - RAZOR LEAF
 42 - SLAM
 ||||
-070
+70
 Weepinbell
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+90,50,85,55,65
 --------Ataques Atuais --------
 VINE WHIP,GROWTH,WRAP,
 ------tms Recebiveis-------
@@ -954,9 +1094,11 @@ VINE WHIP,GROWTH,WRAP,
 38 - RAZOR LEAF
 49 - SLAM
 ||||
-071
+71
 Victreebel
-Grass,Poison
+GRASS,POISON
+----------Status-----------
+105,65,100,70,80
 --------Ataques Atuais --------
 SLEEP POWDER,STUN SPORE,ACID,RAZOR LEAF,
 ------tms Recebiveis-------
@@ -966,9 +1108,11 @@ SLEEP POWDER,STUN SPORE,ACID,RAZOR LEAF,
 15 - POISONPOWDER
 18 - SLEEP POWDER
 ||||
-072
+72
 Tentacool
-Water,Poison
+WATER,POISON
+----------Status-----------
+40,35,100,70,40
 --------Ataques Atuais --------
 ACID,
 ------tms Recebiveis-------
@@ -983,9 +1127,11 @@ ACID,
 40 - SCREECH
 48 - HYDRO PUMP
 ||||
-073
+73
 Tentacruel
-Water,Poison
+WATER,POISON
+----------Status-----------
+70,65,120,100,80
 --------Ataques Atuais --------
 ACID,SUPERSONIC,WRAP,
 ------tms Recebiveis-------
@@ -1000,9 +1146,11 @@ ACID,SUPERSONIC,WRAP,
 43 - SCREECH
 50 - HYDRO PUMP
 ||||
-074
+74
 Geodude
-Rock,Ground
+ROCK,GROUND
+----------Status-----------
+80,100,30,20,40
 --------Ataques Atuais --------
 TACKLE,
 ------tms Recebiveis-------
@@ -1015,9 +1163,11 @@ TACKLE,
 31 - EARTHQUAKE
 36 - EXPLOSION
 ||||
-075
+75
 Graveler
-Rock,Ground
+ROCK,GROUND
+----------Status-----------
+95,115,45,35,55
 --------Ataques Atuais --------
 TACKLE,DEFENSE CURL,
 ------tms Recebiveis-------
@@ -1030,9 +1180,11 @@ TACKLE,DEFENSE CURL,
 36 - EARTHQUAKE
 43 - EXPLOSION
 ||||
-076
+76
 Golem
-Rock,Ground
+ROCK,GROUND
+----------Status-----------
+110,130,55,45,80
 --------Ataques Atuais --------
 TACKLE,DEFENSE CURL,
 ------tms Recebiveis-------
@@ -1045,9 +1197,11 @@ TACKLE,DEFENSE CURL,
 36 - EARTHQUAKE
 43 - EXPLOSION
 ||||
-077
+77
 Ponyta
-Fire,
+Fire,null
+----------Status-----------
+85,55,65,90,50
 --------Ataques Atuais --------
 EMBER,
 ------tms Recebiveis-------
@@ -1060,9 +1214,11 @@ EMBER,
 43 - TAKE DOWN
 48 - AGILITY
 ||||
-078
+78
 Rapidash
-Fire,
+Fire,null
+----------Status-----------
+100,70,80,105,65
 --------Ataques Atuais --------
 EMBER,TAIL WHIP,STOMP,GROWL,
 ------tms Recebiveis-------
@@ -1075,9 +1231,11 @@ EMBER,TAIL WHIP,STOMP,GROWL,
 47 - TAKE DOWN
 55 - AGILITY
 ||||
-079
+79
 Slowpoke
-Water,Psychic
+WATER,PSYCHIC
+----------Status-----------
+65,65,40,15,90
 --------Ataques Atuais --------
 CONFUSION,
 ------tms Recebiveis-------
@@ -1090,9 +1248,11 @@ CONFUSION,
 40 - AMNESIA
 48 - PSYCHIC M
 ||||
-080
+80
 Slowbro
-Water,Psychic
+WATER,PSYCHIC
+----------Status-----------
+75,110,80,30,95
 --------Ataques Atuais --------
 CONFUSION,DISABLE,HEADBUTT,
 ------tms Recebiveis-------
@@ -1106,9 +1266,11 @@ CONFUSION,DISABLE,HEADBUTT,
 44 - AMNESIA
 55 - PSYCHIC M
 ||||
-081
+81
 Magnemite
-Electric,Steel
+ELECTRIC,STEEL
+----------Status-----------
+35,70,95,45,25
 --------Ataques Atuais --------
 TACKLE,
 ------tms Recebiveis-------
@@ -1121,9 +1283,11 @@ TACKLE,
 41 - SWIFT
 47 - SCREECH
 ||||
-082
+82
 Magneton
-Electric,Steel
+ELECTRIC,STEEL
+----------Status-----------
+60,95,120,70,50
 --------Ataques Atuais --------
 TACKLE,SONICBOOM,THUNDERSHOCK,
 ------tms Recebiveis-------
@@ -1136,9 +1300,11 @@ TACKLE,SONICBOOM,THUNDERSHOCK,
 46 - SWIFT
 54 - SCREECH
 ||||
-083
+83
 Farfetch'd
-Normal,Flying
+NORMAL,FLYING
+----------Status-----------
+65,55,58,60,52
 --------Ataques Atuais --------
 PECK,SAND ATTACK,
 ------tms Recebiveis-------
@@ -1150,9 +1316,11 @@ PECK,SAND ATTACK,
 31 - AGILITY
 39 - SLASH
 ||||
-084
+84
 Doduo
-Normal,Flying
+NORMAL,FLYING
+----------Status-----------
+85,45,35,75,35
 --------Ataques Atuais --------
 PECK,
 ------tms Recebiveis-------
@@ -1165,9 +1333,11 @@ PECK,
 40 - TRI ATTACK
 44 - AGILITY
 ||||
-085
+85
 Dodrio
-Normal,Flying
+NORMAL,FLYING
+----------Status-----------
+110,70,60,100,60
 --------Ataques Atuais --------
 PECK,GROWL,FURY ATTACK,
 ------tms Recebiveis-------
@@ -1180,9 +1350,11 @@ PECK,GROWL,FURY ATTACK,
 45 - TRI ATTACK
 51 - AGILITY
 ||||
-086
+86
 Seel
-Water,
+Water,null
+----------Status-----------
+45,55,70,45,65
 --------Ataques Atuais --------
 HEADBUTT,
 ------tms Recebiveis-------
@@ -1194,9 +1366,11 @@ HEADBUTT,
 45 - TAKE DOWN
 50 - ICE BEAM
 ||||
-087
+87
 Dewgong
-Water,Ice
+WATER,ICE
+----------Status-----------
+70,80,95,70,90
 --------Ataques Atuais --------
 HEADBUTT,GROWL,AURORA BEAM,
 ------tms Recebiveis-------
@@ -1208,9 +1382,11 @@ HEADBUTT,GROWL,AURORA BEAM,
 50 - TAKE DOWN
 56 - ICE BEAM
 ||||
-088
+88
 Grimer
-Poison,
+Poison,null
+----------Status-----------
+80,50,40,25,80
 --------Ataques Atuais --------
 POUND,DISABLE,
 ------tms Recebiveis-------
@@ -1223,9 +1399,11 @@ POUND,DISABLE,
 48 - SCREECH
 55 - ACID ARMOR
 ||||
-089
+89
 Muk
-Poison,
+Poison,null
+----------Status-----------
+105,75,65,50,105
 --------Ataques Atuais --------
 POUND,DISABLE,POISON GAS,
 ------tms Recebiveis-------
@@ -1238,9 +1416,11 @@ POUND,DISABLE,POISON GAS,
 53 - SCREECH
 60 - ACID ARMOR
 ||||
-090
+90
 Shellder
-Water,
+Water,null
+----------Status-----------
+65,100,45,40,30
 --------Ataques Atuais --------
 TACKLE,WITHDRAW,
 ------tms Recebiveis-------
@@ -1252,9 +1432,11 @@ TACKLE,WITHDRAW,
 39 - LEER
 50 - ICE BEAM
 ||||
-091
+91
 Cloyster
-Water,Ice
+WATER,ICE
+----------Status-----------
+95,180,85,70,50
 --------Ataques Atuais --------
 WITHDRAW,SUPERSONIC,CLAMP,AURORA BEAM,
 ------tms Recebiveis-------
@@ -1262,9 +1444,11 @@ WITHDRAW,SUPERSONIC,CLAMP,AURORA BEAM,
 -------Ataques Por Nivel-------
 50 - SPIKE CANNON
 ||||
-092
+92
 Gastly
-Ghost,Poison
+GHOST,POISON
+----------Status-----------
+35,30,100,80,30
 --------Ataques Atuais --------
 LICK,CONFUSE RAY,NIGHT SHADE,
 ------tms Recebiveis-------
@@ -1273,9 +1457,11 @@ LICK,CONFUSE RAY,NIGHT SHADE,
 27 - HYPNOSIS
 35 - DREAM EATER
 ||||
-093
+93
 Haunter
-Ghost,Poison
+GHOST,POISON
+----------Status-----------
+50,45,115,95,45
 --------Ataques Atuais --------
 LICK,CONFUSE RAY,NIGHT SHADE,
 ------tms Recebiveis-------
@@ -1284,9 +1470,11 @@ LICK,CONFUSE RAY,NIGHT SHADE,
 29 - HYPNOSIS
 38 - DREAM EATER
 ||||
-094
+94
 Gengar
-Ghost,Poison
+GHOST,POISON
+----------Status-----------
+65,60,130,110,60
 --------Ataques Atuais --------
 LICK,CONFUSE RAY,NIGHT SHADE,
 ------tms Recebiveis-------
@@ -1295,9 +1483,11 @@ LICK,CONFUSE RAY,NIGHT SHADE,
 29 - HYPNOSIS
 38 - DREAM EATER
 ||||
-095
+95
 Onix
-Rock,Ground
+ROCK,GROUND
+----------Status-----------
+45,160,30,70,35
 --------Ataques Atuais --------
 TACKLE,SCREECH,
 ------tms Recebiveis-------
@@ -1309,9 +1499,11 @@ TACKLE,SCREECH,
 33 - SLAM
 43 - HARDEN
 ||||
-096
+96
 Drowzee
-Psychic,
+Psychic,null
+----------Status-----------
+48,45,90,42,60
 --------Ataques Atuais --------
 POUND,HYPNOSIS,
 ------tms Recebiveis-------
@@ -1324,9 +1516,11 @@ POUND,HYPNOSIS,
 32 - PSYCHIC M
 37 - MEDITATE
 ||||
-097
+97
 Hypno
-Psychic,
+Psychic,null
+----------Status-----------
+73,70,115,67,85
 --------Ataques Atuais --------
 POUND,HYPNOSIS,DISABLE,CONFUSION,
 ------tms Recebiveis-------
@@ -1339,9 +1533,11 @@ POUND,HYPNOSIS,DISABLE,CONFUSION,
 37 - PSYCHIC M
 43 - MEDITATE
 ||||
-098
+98
 Krabby
-Water,
+Water,null
+----------Status-----------
+105,90,25,50,30
 --------Ataques Atuais --------
 BUBBLE,LEER,
 ------tms Recebiveis-------
@@ -1353,9 +1549,11 @@ BUBBLE,LEER,
 35 - CRABHAMMER
 40 - HARDEN
 ||||
-099
+99
 Kingler
-Water,
+Water,null
+----------Status-----------
+130,115,50,75,55
 --------Ataques Atuais --------
 BUBBLE,LEER,VICEGRIP,
 ------tms Recebiveis-------
@@ -1369,7 +1567,9 @@ BUBBLE,LEER,VICEGRIP,
 ||||
 100
 Voltorb
-Electric,
+Electric,null
+----------Status-----------
+30,50,55,100,40
 --------Ataques Atuais --------
 TACKLE,SCREECH,
 ------tms Recebiveis-------
@@ -1383,7 +1583,9 @@ TACKLE,SCREECH,
 ||||
 101
 Electrode
-Electric,
+Electric,null
+----------Status-----------
+50,70,80,140,60
 --------Ataques Atuais --------
 TACKLE,SCREECH,SONICBOOM,
 ------tms Recebiveis-------
@@ -1397,7 +1599,9 @@ TACKLE,SCREECH,SONICBOOM,
 ||||
 102
 Exeggcute
-Grass,Psychic
+GRASS,PSYCHIC
+----------Status-----------
+40,80,60,40,60
 --------Ataques Atuais --------
 BARRAGE,HYPNOSIS,
 ------tms Recebiveis-------
@@ -1412,7 +1616,9 @@ BARRAGE,HYPNOSIS,
 ||||
 103
 Exeggutor
-Grass,Psychic
+GRASS,PSYCHIC
+----------Status-----------
+95,85,125,55,95
 --------Ataques Atuais --------
 BARRAGE,HYPNOSIS,
 ------tms Recebiveis-------
@@ -1422,7 +1628,9 @@ BARRAGE,HYPNOSIS,
 ||||
 104
 Cubone
-Ground,
+Ground,null
+----------Status-----------
+50,95,40,35,50
 --------Ataques Atuais --------
 BONE CLUB,GROWL,
 ------tms Recebiveis-------
@@ -1436,7 +1644,9 @@ BONE CLUB,GROWL,
 ||||
 105
 Marowak
-Ground,
+Ground,null
+----------Status-----------
+80,110,50,45,60
 --------Ataques Atuais --------
 BONE CLUB,GROWL,LEER,FOCUS ENERGY,
 ------tms Recebiveis-------
@@ -1450,7 +1660,9 @@ BONE CLUB,GROWL,LEER,FOCUS ENERGY,
 ||||
 106
 Hitmonlee
-Fighting,
+Fighting,null
+----------Status-----------
+120,53,35,87,50
 --------Ataques Atuais --------
 DOUBLE KICK,MEDITATE,
 ------tms Recebiveis-------
@@ -1464,7 +1676,9 @@ DOUBLE KICK,MEDITATE,
 ||||
 107
 Hitmonchan
-Fighting,
+Fighting,null
+----------Status-----------
+105,79,35,76,50
 --------Ataques Atuais --------
 COMET PUNCH,AGILITY,
 ------tms Recebiveis-------
@@ -1478,7 +1692,9 @@ COMET PUNCH,AGILITY,
 ||||
 108
 Lickitung
-Normal,
+Normal,null
+----------Status-----------
+55,75,60,30,90
 --------Ataques Atuais --------
 WRAP,SUPERSONIC,
 ------tms Recebiveis-------
@@ -1492,7 +1708,9 @@ WRAP,SUPERSONIC,
 ||||
 109
 Koffing
-Poison,
+Poison,null
+----------Status-----------
+65,95,60,35,40
 --------Ataques Atuais --------
 TACKLE,SMOG,
 ------tms Recebiveis-------
@@ -1506,7 +1724,9 @@ TACKLE,SMOG,
 ||||
 110
 Weezing
-Poison,
+Poison,null
+----------Status-----------
+90,120,85,60,65
 --------Ataques Atuais --------
 TACKLE,SMOG,SLUDGE,
 ------tms Recebiveis-------
@@ -1520,7 +1740,9 @@ TACKLE,SMOG,SLUDGE,
 ||||
 111
 Rhyhorn
-Ground,Rock
+GROUND,ROCK
+----------Status-----------
+85,95,30,25,80
 --------Ataques Atuais --------
 HORN ATTACK,
 ------tms Recebiveis-------
@@ -1535,7 +1757,9 @@ HORN ATTACK,
 ||||
 112
 Rhydon
-Ground,Rock
+GROUND,ROCK
+----------Status-----------
+130,120,45,40,105
 --------Ataques Atuais --------
 HORN ATTACK,STOMP,TAIL WHIP,FURY ATTACK,
 ------tms Recebiveis-------
@@ -1550,7 +1774,9 @@ HORN ATTACK,STOMP,TAIL WHIP,FURY ATTACK,
 ||||
 113
 Chansey
-Normal,
+Normal,null
+----------Status-----------
+5,5,105,50,250
 --------Ataques Atuais --------
 POUND,DOUBLESLAP,
 ------tms Recebiveis-------
@@ -1565,7 +1791,9 @@ POUND,DOUBLESLAP,
 ||||
 114
 Tangela
-Grass,
+Grass,null
+----------Status-----------
+55,115,100,60,65
 --------Ataques Atuais --------
 CONSTRICT,BIND,
 ------tms Recebiveis-------
@@ -1580,7 +1808,9 @@ CONSTRICT,BIND,
 ||||
 115
 Kangaskhan
-Normal,
+Normal,null
+----------Status-----------
+95,80,40,90,105
 --------Ataques Atuais --------
 COMET PUNCH,RAGE,
 ------tms Recebiveis-------
@@ -1594,7 +1824,9 @@ COMET PUNCH,RAGE,
 ||||
 116
 Horsea
-Water,
+Water,null
+----------Status-----------
+40,70,70,60,30
 --------Ataques Atuais --------
 BUBBLE,
 ------tms Recebiveis-------
@@ -1608,7 +1840,9 @@ BUBBLE,
 ||||
 117
 Seadra
-Water,
+Water,null
+----------Status-----------
+65,95,95,85,55
 --------Ataques Atuais --------
 BUBBLE,SMOKESCREEN,
 ------tms Recebiveis-------
@@ -1622,7 +1856,9 @@ BUBBLE,SMOKESCREEN,
 ||||
 118
 Goldeen
-Water,
+Water,null
+----------Status-----------
+67,60,50,63,45
 --------Ataques Atuais --------
 PECK,TAIL WHIP,
 ------tms Recebiveis-------
@@ -1637,7 +1873,9 @@ PECK,TAIL WHIP,
 ||||
 119
 Seaking
-Water,
+Water,null
+----------Status-----------
+92,65,80,68,80
 --------Ataques Atuais --------
 PECK,TAIL WHIP,SUPERSONIC,
 ------tms Recebiveis-------
@@ -1652,7 +1890,9 @@ PECK,TAIL WHIP,SUPERSONIC,
 ||||
 120
 Staryu
-Water,
+Water,null
+----------Status-----------
+45,55,70,85,30
 --------Ataques Atuais --------
 TACKLE,
 ------tms Recebiveis-------
@@ -1668,7 +1908,9 @@ TACKLE,
 ||||
 121
 Starmie
-Water,Psychic
+WATER,PSYCHIC
+----------Status-----------
+75,85,100,115,60
 --------Ataques Atuais --------
 TACKLE,WATER GUN,HARDEN,
 ------tms Recebiveis-------
@@ -1677,7 +1919,9 @@ TACKLE,WATER GUN,HARDEN,
 ||||
 122
 Mr. Mime
-Psychic,Fairy
+PSYCHIC,FAIRY
+----------Status-----------
+45,65,100,90,40
 --------Ataques Atuais --------
 CONFUSION,BARRIER,
 ------tms Recebiveis-------
@@ -1691,7 +1935,9 @@ CONFUSION,BARRIER,
 ||||
 123
 Scyther
-Bug,Flying
+BUG,FLYING
+----------Status-----------
+110,80,55,105,70
 --------Ataques Atuais --------
 QUICK ATTACK,
 ------tms Recebiveis-------
@@ -1706,7 +1952,9 @@ QUICK ATTACK,
 ||||
 124
 Jynx
-Ice,Psychic
+ICE,PSYCHIC
+----------Status-----------
+50,35,95,95,65
 --------Ataques Atuais --------
 POUND,LOVELY KISS,
 ------tms Recebiveis-------
@@ -1721,7 +1969,9 @@ POUND,LOVELY KISS,
 ||||
 125
 Electabuzz
-Electric,
+Electric,null
+----------Status-----------
+83,57,85,105,65
 --------Ataques Atuais --------
 QUICK ATTACK,LEER,
 ------tms Recebiveis-------
@@ -1735,7 +1985,9 @@ QUICK ATTACK,LEER,
 ||||
 126
 Magmar
-Fire,
+Fire,null
+----------Status-----------
+95,57,85,93,65
 --------Ataques Atuais --------
 EMBER,
 ------tms Recebiveis-------
@@ -1750,7 +2002,9 @@ EMBER,
 ||||
 127
 Pinsir
-Bug,
+Bug,null
+----------Status-----------
+125,100,55,85,65
 --------Ataques Atuais --------
 VICEGRIP,
 ------tms Recebiveis-------
@@ -1765,7 +2019,9 @@ VICEGRIP,
 ||||
 128
 Tauros
-Normal,
+Normal,null
+----------Status-----------
+100,95,70,110,75
 --------Ataques Atuais --------
 TACKLE,
 ------tms Recebiveis-------
@@ -1779,7 +2035,9 @@ TACKLE,
 ||||
 129
 Magikarp
-Water,
+Water,null
+----------Status-----------
+10,55,20,80,20
 --------Ataques Atuais --------
 SPLASH,
 ------tms Recebiveis-------
@@ -1789,7 +2047,9 @@ SPLASH,
 ||||
 130
 Gyarados
-Water,Flying
+WATER,FLYING
+----------Status-----------
+125,79,100,81,95
 --------Ataques Atuais --------
 BITE,DRAGON RAGE,LEER,HYDRO PUMP,
 ------tms Recebiveis-------
@@ -1803,7 +2063,9 @@ BITE,DRAGON RAGE,LEER,HYDRO PUMP,
 ||||
 131
 Lapras
-Water,Ice
+WATER,ICE
+----------Status-----------
+85,80,95,60,130
 --------Ataques Atuais --------
 WATER GUN,GROWL,
 ------tms Recebiveis-------
@@ -1818,7 +2080,9 @@ WATER GUN,GROWL,
 ||||
 132
 Ditto
-Normal,
+Normal,null
+----------Status-----------
+48,48,48,48,48
 --------Ataques Atuais --------
 TRANSFORM,
 ------tms Recebiveis-------
@@ -1827,7 +2091,9 @@ TRANSFORM,
 ||||
 133
 Eevee
-Normal,
+Normal,null
+----------Status-----------
+55,50,65,55,55
 --------Ataques Atuais --------
 TACKLE,SAND ATTACK,
 ------tms Recebiveis-------
@@ -1840,7 +2106,9 @@ TACKLE,SAND ATTACK,
 ||||
 134
 Vaporeon
-Water,
+Water,null
+----------Status-----------
+65,60,110,65,130
 --------Ataques Atuais --------
 TACKLE,SAND ATTACK,QUICK ATTACK,WATER GUN,
 ------tms Recebiveis-------
@@ -1857,7 +2125,9 @@ TACKLE,SAND ATTACK,QUICK ATTACK,WATER GUN,
 ||||
 135
 Jolteon
-Electric,
+Electric,null
+----------Status-----------
+65,60,110,130,65
 --------Ataques Atuais --------
 TACKLE,SAND ATTACK,QUICK ATTACK,THUNDERSHOCK,
 ------tms Recebiveis-------
@@ -1874,7 +2144,9 @@ TACKLE,SAND ATTACK,QUICK ATTACK,THUNDERSHOCK,
 ||||
 136
 Flareon
-Fire,
+Fire,null
+----------Status-----------
+130,60,110,65,65
 --------Ataques Atuais --------
 TACKLE,SAND ATTACK,QUICK ATTACK,EMBER,
 ------tms Recebiveis-------
@@ -1891,7 +2163,9 @@ TACKLE,SAND ATTACK,QUICK ATTACK,EMBER,
 ||||
 137
 Porygon
-Normal,
+Normal,null
+----------Status-----------
+60,70,75,40,65
 --------Ataques Atuais --------
 TACKLE,SHARPEN,CONVERSION,
 ------tms Recebiveis-------
@@ -1904,7 +2178,9 @@ TACKLE,SHARPEN,CONVERSION,
 ||||
 138
 Omanyte
-Rock,Water
+ROCK,WATER
+----------Status-----------
+40,100,90,35,35
 --------Ataques Atuais --------
 WATER GUN,WITHDRAW,
 ------tms Recebiveis-------
@@ -1917,7 +2193,9 @@ WATER GUN,WITHDRAW,
 ||||
 139
 Omastar
-Rock,Water
+ROCK,WATER
+----------Status-----------
+60,125,115,55,70
 --------Ataques Atuais --------
 WATER GUN,WITHDRAW,HORN ATTACK,
 ------tms Recebiveis-------
@@ -1930,7 +2208,9 @@ WATER GUN,WITHDRAW,HORN ATTACK,
 ||||
 140
 Kabuto
-Rock,Water
+ROCK,WATER
+----------Status-----------
+80,90,45,55,30
 --------Ataques Atuais --------
 SCRATCH,HARDEN,
 ------tms Recebiveis-------
@@ -1943,7 +2223,9 @@ SCRATCH,HARDEN,
 ||||
 141
 Kabutops
-Rock,Water
+ROCK,WATER
+----------Status-----------
+115,105,70,80,60
 --------Ataques Atuais --------
 SCRATCH,HARDEN,ABSORB,
 ------tms Recebiveis-------
@@ -1956,7 +2238,9 @@ SCRATCH,HARDEN,ABSORB,
 ||||
 142
 Aerodactyl
-Rock,Flying
+ROCK,FLYING
+----------Status-----------
+105,65,60,130,80
 --------Ataques Atuais --------
 WING ATTACK,AGILITY,
 ------tms Recebiveis-------
@@ -1969,7 +2253,9 @@ WING ATTACK,AGILITY,
 ||||
 143
 Snorlax
-Normal,
+Normal,null
+----------Status-----------
+110,65,65,30,160
 --------Ataques Atuais --------
 HEADBUTT,AMNESIA,REST,
 ------tms Recebiveis-------
@@ -1982,7 +2268,9 @@ HEADBUTT,AMNESIA,REST,
 ||||
 144
 Articuno
-Ice,Flying
+ICE,FLYING
+----------Status-----------
+85,100,125,85,90
 --------Ataques Atuais --------
 PECK,ICE BEAM,
 ------tms Recebiveis-------
@@ -1994,7 +2282,9 @@ PECK,ICE BEAM,
 ||||
 145
 Zapdos
-Electric,Flying
+ELECTRIC,FLYING
+----------Status-----------
+90,85,125,100,90
 --------Ataques Atuais --------
 THUNDERSHOCK,DRILL PECK,
 ------tms Recebiveis-------
@@ -2006,7 +2296,9 @@ THUNDERSHOCK,DRILL PECK,
 ||||
 146
 Moltres
-Fire,Flying
+FIRE,FLYING
+----------Status-----------
+100,90,125,90,90
 --------Ataques Atuais --------
 PECK,FIRE SPIN,
 ------tms Recebiveis-------
@@ -2018,7 +2310,9 @@ PECK,FIRE SPIN,
 ||||
 147
 Dratini
-Dragon,
+Dragon,null
+----------Status-----------
+64,45,50,50,41
 --------Ataques Atuais --------
 WRAP,LEER,
 ------tms Recebiveis-------
@@ -2032,7 +2326,9 @@ WRAP,LEER,
 ||||
 148
 Dragonair
-Dragon,
+Dragon,null
+----------Status-----------
+84,65,70,70,61
 --------Ataques Atuais --------
 WRAP,LEER,THUNDER WAVE,
 ------tms Recebiveis-------
@@ -2046,7 +2342,9 @@ WRAP,LEER,THUNDER WAVE,
 ||||
 149
 Dragonite
-Dragon,Flying
+DRAGON,FLYING
+----------Status-----------
+134,95,100,80,91
 --------Ataques Atuais --------
 WRAP,LEER,THUNDER WAVE,AGILITY,
 ------tms Recebiveis-------
@@ -2060,7 +2358,9 @@ WRAP,LEER,THUNDER WAVE,AGILITY,
 ||||
 150
 Mewtwo
-Psychic,
+Psychic,null
+----------Status-----------
+110,90,154,130,106
 --------Ataques Atuais --------
 CONFUSION,DISABLE,SWIFT,PSYCHIC M,
 ------tms Recebiveis-------
@@ -2074,7 +2374,9 @@ CONFUSION,DISABLE,SWIFT,PSYCHIC M,
 ||||
 151
 Mew
-Psychic,
+Psychic,null
+----------Status-----------
+100,100,100,100,100
 --------Ataques Atuais --------
 POUND,
 ------tms Recebiveis-------

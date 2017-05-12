@@ -251,11 +251,15 @@ public class CarregaTxt {
     		String nome = buffRead.readLine();
     		String[] tipos = buffRead.readLine().split(",");
     		
+    		//Status
+    		buffRead.readLine();
+    		String[] aux = buffRead.readLine().split(",");
+    		Status status = new Status(aux);
     		
     		//Ataques Atuais
     		Ataque[] ataquesAtuais = new Ataque[4];
     		buffRead.readLine();
-    		String[] aux = buffRead.readLine().split(",");
+    		aux = buffRead.readLine().split(",");
     		for(int j=0; j<4; j++){
     			if(j < aux.length){
     				int k = 0;
@@ -285,8 +289,8 @@ public class CarregaTxt {
     	 	}
     	 	
     	 	AtkPool atkpool = new AtkPool(ataquesAtuais, tmsRecebiveis, learnSet);
-    	 	if(tipos.length == 2) pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), tipos[1].toUpperCase(), atkpool);
-    		else pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), atkpool);
+    	 	if(tipos.length == 2) pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), tipos[1].toUpperCase(), status, atkpool);
+    		else pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), status, atkpool);
     	 	 
  		 }
          return pokemons;

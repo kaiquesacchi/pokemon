@@ -14,13 +14,12 @@ public class Status {
 	private double accuracy;
 	private double evasion;
 	//Construtor	
-	public Status(String nome) throws IOException{
-		int[] aux = CarregaTxt.leitorStatus("txt/baseStats/", nome);
-		this.atk = aux[1];
-		this.def = aux[2];
-		this.spd = aux[3];
-		this.spc = aux[4];
-		this.hp = aux[0];
+	public Status(String[] stats) throws IOException{
+		this.atk = Integer.parseInt(stats[0]);
+		this.def = Integer.parseInt(stats[1]);
+		this.spd = Integer.parseInt(stats[2]);
+		this.spc = Integer.parseInt(stats[3]);
+		this.hp  = Integer.parseInt(stats[4]);
 		accuracy=1;
 		evasion=1;
 	}
@@ -84,7 +83,6 @@ public class Status {
 	}
 	public void printAll(){
 		System.out.println("----------Status-----------");
-		System.out.println("atk: " + atk + "   def: " + def + "   spc: " + spc);
-		System.out.println("spd: " + spd + "           maxHP: " + hp);
+		System.out.println(atk+ "," + def + "," + spc + "," + spd + "," + hp);
 	}
 }

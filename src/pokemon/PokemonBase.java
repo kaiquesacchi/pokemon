@@ -12,17 +12,17 @@ public class PokemonBase {
 	protected int id;
 	
 	//Construtor	
-	public PokemonBase(int id, String nome, String tipo1, String tipo2, AtkPool atkPool) throws IOException{
+	public PokemonBase(int id, String nome, String tipo1, String tipo2, Status status, AtkPool atkPool) throws IOException{
 		this.nome = nome;
 		this.id = id;
 		this.tipo1 = tipo1;
 		this.tipo2 = tipo2;
-		this.statsSol = new Status(nome);
+		this.statsSol = status;
 		this.atkPool = atkPool;
 	}
 
-	public PokemonBase(int id, String nome, String tipo1, AtkPool atkPool) throws IOException{
-		this(id, nome, tipo1, null, atkPool);
+	public PokemonBase(int id, String nome, String tipo1, Status status, AtkPool atkPool) throws IOException{
+		this(id, nome, tipo1, null, status, atkPool);
 	}
 	
 	//Métodos
@@ -65,6 +65,7 @@ public class PokemonBase {
 		System.out.println(id);
 		System.out.println(nome);
 		System.out.println(tipo1 + "," + tipo2);
+		this.statsSol.printAll();
 		this.atkPool.printAll();
 	}
 }

@@ -279,7 +279,7 @@ public class Pokemon extends PokemonBase{
 		}
 	//Construtor
 	public Pokemon(PokemonBase base) throws IOException{
-		super(base.getId(), base.getNome(), base.getTipo1(), base.getTipo2(), base.getAtkPool());
+		super(base.getId(), base.getNome(), base.getTipo1(), base.getTipo2(), base.statsSol, base.getAtkPool());
 		this.lv=1;
 		this.curHp=base.getMaxHp();
 		for(int a=0;a<6;a++) this.effect[a] = false;
