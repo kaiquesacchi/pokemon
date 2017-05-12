@@ -6,7 +6,8 @@ public class PkmPool {
 	
 	//Métodos
 	public Pokemon getPokemon(int x){
-		return pokemons[x];
+		if(pokemons.length < x)return pokemons[x];
+		else return null;
 	}
 	public void switchPokemon(int a){
 		Pokemon aux = pokemons[a];

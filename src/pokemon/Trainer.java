@@ -16,6 +16,27 @@ public class Trainer {
 	public int getGold(){
 		return gold;
 	}
+	//Testes
+	public void printPokemons(){
+		Pokemon poke = pool.getPokemon(0);
+		int a=0;
+		while(true){
+			poke = pool.getPokemon(a);
+			if(poke.equals(null)) break;
+			else{
+				System.out.println("Poke "+a+":");
+				poke.printAll();
+			}
+			a++;
+		}
+	}
+	public void printTrainer(){
+		System.out.println("nome: "+nome);
+		System.out.println("Pokemons:");
+		printPokemons();
+		System.out.println("gold: "+gold);
+	}
+	
 	
 	
 	//Construtor
