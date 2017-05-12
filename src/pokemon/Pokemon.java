@@ -8,8 +8,21 @@ public class Pokemon extends PokemonBase{
 	private int curHp;
 	private boolean[] effect = new boolean[6]; //paralyze, poison, burn, freeze, sleep, confuse
 	private Status statsVol;
+	//Atrobutos de batalha
 	private boolean chargeEffect;
 	private Ataque habChargeEffect;
+	private boolean invulneravel;
+	private int bindDur;
+	private Ataque habBind;
+	private boolean flinch; //always reset
+	private int thrashPetal;
+	private Ataque habThrashPetal;
+	private int disable;
+	private Ataque habDisable;
+	private boolean recharge;
+	private boolean leechSeed;
+	private boolean lightScreen;
+	private boolean reflect;
 	
 	//Metodos
 		//getters
@@ -69,10 +82,10 @@ public class Pokemon extends PokemonBase{
 				if(auxSol.getSpd() * 0.29 < auxVol.getSpd()) return -(int)(auxSol.getSpd() * 0.15);
 				else return 0;
 			case "ACCURACY":
-				if(0.29 < auxVol.getAccuracy())return 0.15;
+				if(0.29 < auxVol.getAccuracy())return -0.15;
 				else return 0;
 			case "EVASION":
-				if(0.29 < auxVol.getEvasion())return 0.15;
+				if(0.29 < auxVol.getEvasion())return -0.15;
 				else return 0;
 			default:
 				throw new IllegalArgumentException("Invalid Status: " + stat);
@@ -105,6 +118,9 @@ public class Pokemon extends PokemonBase{
 		public boolean chargeEffect(){
 			return chargeEffect;
 		}
+		public Ataque getChargeEffect(){
+			return habChargeEffect;
+		}
 		public void addChargeEffect(Ataque hab){
 			chargeEffect = true;
 			habChargeEffect = hab;
@@ -113,6 +129,99 @@ public class Pokemon extends PokemonBase{
 		public void removeChargeEffect(){
 			chargeEffect = false;
 			habChargeEffect = null;
+		}
+		public boolean getInvulneravel(){
+			return invulneravel;
+		}
+		public void addInvulneravel(){
+			invulneravel=true;
+		}
+		public void removeInvulneravel(){
+			invulneravel=false;
+		}
+		public int getBindDur(){
+			return bindDur;
+		}
+		public void addBind(Ataque hab, int a){
+			habBind = hab;
+			bindDur = a;
+		}
+		public void removeBind(int a){
+			bindDur-=a;
+		}
+		public Ataque getHabBind(){
+			return habBind;
+		}
+		public void addFlinch(){
+			flinch=true;
+		}
+		public boolean getFlinch(){
+			return flinch;
+		}
+		public void removeFlinch(){
+			flinch = false;
+		}
+		public void addThrashPetal(Ataque hab, int a){
+			habThrashPetal = hab;
+			thrashPetal=a;
+		}
+		public int getThrashPetal(){
+			return thrashPetal;
+		}
+		public Ataque getHabThrashPetal(){
+			return habThrashPetal;
+		}
+		public void removeThrashPetal(int a){
+			thrashPetal-=a;
+		}
+		public void addDisable(Ataque hab, int a){
+			habDisable=hab;
+			disable=a;
+		}
+		public int getDisable(){
+			return disable;
+		}
+		public Ataque getHabDisable(){
+			return habDisable;
+		}
+		public void removeDisable(int a){
+			disable-=a;
+		}
+		public void addRecharge(){
+			recharge=true;
+		}
+		public boolean getRecharge(){
+			return recharge;
+		}
+		public void removeRecharge(){
+			recharge=false;
+		}
+		public void addLeechSeed(){
+			leechSeed=true;
+		}
+		public boolean getLeechSeed(){
+			return leechSeed;
+		}
+		public void removeLeechSeed(){
+			leechSeed=false;
+		}
+		public void addLightScreen(){
+			lightScreen=true;
+		}
+		public boolean getLightScreen(){
+			return lightScreen;
+		}
+		public void removeLightScreen(){
+			lightScreen=false;
+		}
+		public void addReflect(){
+			reflect=true;
+		}
+		public boolean getReflect(){
+			return reflect;
+		}
+		public void removeReflect(){
+			reflect=false;
 		}
 		public void addEffect(String effect){
 			switch (effect){
@@ -165,6 +274,9 @@ public class Pokemon extends PokemonBase{
 			}
 			
 		}
+		public void resetStats(){
+			this.statsVol=this.getStatsSol();
+		}
 	//Construtor
 	public Pokemon(PokemonBase base) throws IOException{
 		super(base.getId(), base.getNome(), base.getTipo1(), base.getTipo2());
@@ -174,6 +286,16 @@ public class Pokemon extends PokemonBase{
 		this.statsVol=null;
 		this.chargeEffect=false;
 		this.habChargeEffect=null;
+		this.invulneravel=false;
+		this.bindDur=0;
+		this.habBind=null;
+		this.flinch=false;
+		this.thrashPetal=0;
+		this.disable=0;
+		this.habDisable=null;
+		this.recharge=false;
+		this.leechSeed=false;
+		this.lightScreen=false;
 	}
 	
 	
