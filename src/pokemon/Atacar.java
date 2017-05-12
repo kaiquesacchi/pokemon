@@ -95,14 +95,12 @@ public class Atacar extends Event{
 			return;
 		}
 		hab.usePP();
-		//System.out.println("Here");
 		if(calcPrecisao(hab)){
 			hab.printAll();
 			switch(hab.getEfeito()){
 			case "NO ADDITIONAL EFFECT":
-				System.out.println("Here 1");
 				defensor.takeDamage(dano);
-				//System.out.println("LEVOU FODENDOS " + dano + "DE DANOSO");
+				System.out.println("LEVOU FODENDOS " + dano + " DE DANOSO");
 				break;
 			case "TWO TO FIVE ATTACKS EFFECT":
 				rand = (int)(Math.random() * 4) + 2;

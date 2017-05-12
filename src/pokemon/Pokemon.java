@@ -96,7 +96,6 @@ public class Pokemon extends PokemonBase{
 		}
 		public void takeDamage(int dmg){
 			if(curHp>=dmg){
-				System.out.println("here2");
 				statsVol.addHp(-dmg);
 				curHp-=dmg;
 			}
@@ -284,7 +283,8 @@ public class Pokemon extends PokemonBase{
 		this.lv=1;
 		this.curHp=base.getMaxHp();
 		for(int a=0;a<6;a++) this.effect[a] = false;
-		this.statsVol=statsSol;
+		this.statsVol=new Status(nome);
+		statsVol.attr(statsSol);
 		this.chargeEffect=false;
 		this.habChargeEffect=null;
 		this.invulneravel=false;

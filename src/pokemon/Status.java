@@ -72,6 +72,16 @@ public class Status {
 	public void addEvasion(double a){
 		evasion+=a;
 	}
+	public void attr(Status sol){
+		this.atk = sol.getAtk();
+		this.def = sol.getDef();
+		this.spc = sol.getSpc();
+		this.spd = sol.getSpd();
+		this.hp =  sol.getHp();
+		this.accuracy = sol.getAccuracy();
+		this.evasion =  sol.getEvasion();
+		
+	}
 	public void printAll(){
 		System.out.println("----------Status-----------");
 		System.out.println("atk: " + atk + "   def: " + def + "   spc: " + spc);

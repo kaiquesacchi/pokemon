@@ -16,9 +16,9 @@ public class Index {
 		UsarItem itens1 = new UsarItem(null , battleItems, elixeres, pokeballs, potions, statusRestores);
 		String[] aux = itens1.getBattleItems();
 
-		for(int i=1; i<=151; i++){
+		/*for(int i=1; i<=151; i++){
 			pokemons[i].printAll();
-		}
+		}*/
 		
 		
 		
@@ -52,31 +52,40 @@ public class Index {
 		
 		
 		
-		/*
+		
 		Pokemon[] pk1 = new Pokemon[2];
+		Pokemon[] pk2 = new Pokemon[5];
 		pk1[0] = new Pokemon(pokemons[5]);
 		pk1[1] = new Pokemon(pokemons[122]);
+		pk2[0] = new Pokemon(pokemons[45]);
+		pk2[1] = new Pokemon(pokemons[150]);
+		pk2[2] = new Pokemon(pokemons[86]);
+		pk2[3] = new Pokemon(pokemons[101]);
+		pk2[4] = new Pokemon(pokemons[77]);
+		
 		
 		PkmPool pkmpool = new PkmPool(pk1);
+		PkmPool pkmpool2 = new PkmPool(pk2);
 		
 		Trainer treinador1 = new Trainer("Fernando Collor", pkmpool, 0);
-		Trainer treinador2 = new Trainer("Sergio Moro do Top Gear", pkmpool, 0);
+		Trainer treinador2 = new Trainer("Sergio Moro do Top Gear", pkmpool2, 0);
 		Atacar ataque1 = new Atacar(treinador1.getPool(), treinador2.getPool(), tipos);
-		
-		treinador1.getPool().getPokemon(0).getStatsSol().addAtk(10); //emoji lindao
-		treinador1.getPool().getPokemon(0).getStatsSol().printAll();
-		//ataque1.action(0);
-		//treinador1.getPool().getPokemon(0).printAll();
-		//treinador1.getPool().getPokemon(0).getStatsSol().printAll();
+		Atacar ataque2 = new Atacar(treinador2.getPool(), treinador1.getPool(), tipos);
+		/*treinador1.getPool().getPokemon(0).getStatsSol().printAll();
+		treinador2.getPool().getPokemon(0).getStatsSol().printAll();
+		ataque1.action(0);
 		treinador1.getPool().getPokemon(0).getStatsVol().printAll();
+		ataque2.action(0);
+		//treinador1.getPool().getPokemon(0).printAll();
+		treinador1.getPool().getPokemon(0).getStatsVol().printAll();
+		*/
 		
 		
 		
 		
 		
 		
-		
-		EventQueue.invokeLater(new Runnable() {
+		/*EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					GUI window = new GUI(treinador1, treinador2);
@@ -85,7 +94,7 @@ public class Index {
 					e.printStackTrace();
 				}
 			}
-		});
-		*/
+		});*/
+		
 	}
 }
