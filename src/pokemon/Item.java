@@ -4,6 +4,7 @@ package pokemon;
 	//Atributos
 	private String nome;
 	private int preco;
+	
 	//metodos
 	public String getNome(){
 		return nome;
@@ -11,6 +12,7 @@ package pokemon;
 	public int getPreco(){
 		return preco;
 	}
+	
 	//construtor
 	public Item(String nome, int preco){
 		this.nome=nome;

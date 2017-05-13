@@ -283,7 +283,7 @@ public class Pokemon extends PokemonBase{
 		this.lv=1;
 		this.curHp=base.getMaxHp();
 		for(int a=0;a<6;a++) this.effect[a] = false;
-		this.statsVol=new Status(nome);
+		this.statsVol=base.statsSol; //CORRIGIR
 		statsVol.attr(statsSol);
 		this.chargeEffect=false;
 		this.habChargeEffect=null;

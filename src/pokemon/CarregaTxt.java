@@ -5,46 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 	 
 public class CarregaTxt {
-	 
-   /* public static PokemonBase[] leitorPokemon(String path) throws IOException {
-    	PokemonBase[] pokemons = new PokemonBase[152];
-        BufferedReader buffRead = new BufferedReader(new FileReader(path));
-        String linha = buffRead.readLine();
-        int i=1;
-        while (true) {
-            if (linha != null) {
-                String[] aux = linha.split(",");
-                if (aux.length == 3)
-                	pokemons[i] = new PokemonBase(aux[0], aux[1], aux[2].toUpperCase());
-                else
-                	pokemons[i] = new PokemonBase(aux[0], aux[1], aux[2].toUpperCase(), aux[3].toUpperCase()); 
-	        } 
-            else break;
-	        linha = buffRead.readLine();
-	        i++;
-	    }
-	    buffRead.close();
-	    System.out.println("[CarregaPokemons] Pokemons gerados com sucesso");
-	    return pokemons;
-	}*/
-    
-    
-    public static int[] leitorStatus(String path, String nome) throws IOException {
-    	if (nome.equals("Mr. Mime")) path += "mrmime.asm";
-    	else if (nome.equals("Farfetch'd")) path += "farfetchd.asm";
-    	else path += (nome.toLowerCase() + ".asm");
-    	int[] aux = new int[5];
-        BufferedReader buffRead = new BufferedReader(new FileReader(path));
-        buffRead.readLine(); // Pula a primeira linha.
-        for (int i = 0;i < 5; i++) {
-        	String linha = buffRead.readLine();
-            String[] aux2 = linha.split(" ", 2);
-	        aux[i] = Integer.parseInt(aux2[0]);
-	    }
-	    buffRead.close();
-	    return aux;
-	}
-    
+	     
     public static Ataque[] leitorAtaque(String path) throws IOException {
     	Ataque[] ataques = new Ataque[165];
         BufferedReader buffRead = new BufferedReader(new FileReader(path));
@@ -61,73 +22,9 @@ public class CarregaTxt {
 	        i++;
 	    }
 	    buffRead.close();
-	    //System.out.println("[CarregaAtaques] Ataques gerados com sucesso");
+	    System.out.println("[CarregaAtaques] Ataques gerados com sucesso");
 	    return ataques;
 	}
-    
-    public static int[] leitorTmsRecebiveis(String path, String nome) throws IOException {
-    	if (nome.equals("Mr. Mime")) path += "mrmime.asm";
-    	else if (nome.equals("Farfetch'd")) path += "farfetchd.asm";
-    	else path += (nome.toLowerCase() + ".asm");
-        BufferedReader buffRead = new BufferedReader(new FileReader(path));
-        for (int i = 0; i<19; i++) buffRead.readLine(); // Pula 20 linhas.
-        String linha = buffRead.readLine();
-        String[] aux = linha.split(",");
-        int[] aux2 = new int[aux.length];
-	    for (int i = 1; i<aux.length; i++){
-	    	aux2[i-1] = Integer.parseInt(aux[i]);
-	    }
-	    buffRead.close();
-	    return aux2;
-	}
-    
-    public static Ataque[] leitorAtksBase(String path, String nome, Ataque[] ataques) throws IOException {
-    	if (nome.equals("Mr. Mime")) path += "mrmime.asm";
-    	else if (nome.equals("Farfetch'd")) path += "farfetchd.asm";
-    	else path += (nome.toLowerCase() + ".asm");
-    	Ataque[] aux = new Ataque[4];
-        BufferedReader buffRead = new BufferedReader(new FileReader(path));
-        for (int i = 0; i<14; i++) buffRead.readLine(); // Pula 14 linhas.
-        for (int i = 0; i<4; i++){
-        	String aux2 = buffRead.readLine();
-        	if (aux2.equals("0")) aux[i] = null;
-        	else {
-        		int j = 0;
-        		while(j < ataques.length && !(ataques[j].getNome().equals(aux2))){
-        			j++;
-        		}
-        		aux[i] = ataques[j];
-        	}
-        }
-        buffRead.close();
-        return aux;
-	}
-    
-    
-    
-    public static String[][] leitorLearnSet(String path, String nome, Ataque[] ataques) throws IOException {
-    	if (nome.equals("Mr. Mime")) nome = "MR MIME";
-    	else if (nome.equals("Farfetch'd")) nome = "FARFETCHD";
-    	else nome = nome.toUpperCase();
-        BufferedReader buffRead = new BufferedReader(new FileReader(path));
-        String linha = buffRead.readLine();
-        while (!(nome.equals(linha))) linha = buffRead.readLine(); // Pula linhas até encontrar o pokemon correspondente.
-        while (!(linha.equals("Learnset"))) linha = buffRead.readLine();
-        String[][] aux = new String[10][2];
-        int i=0;
-        while (!((linha = buffRead.readLine()).equals("0"))){
-        	aux[i] = (linha.split(","));
-        	i++;
-        }
-        buffRead.close();
-        return (aux);
-	}
-    
-    
-    
-    
-    
-    
     
     public static Potion[] leitorPotions(String path) throws IOException {
     	Potion[] potions = new Potion[8];
@@ -243,10 +140,12 @@ public class CarregaTxt {
 	}
     
     
-    public static PokemonBase[] leitor2Pokemon(String path, Ataque[] ataques) throws IOException{
+    public static PokemonBase[] leitorPokemon(String path, Ataque[] ataques) throws IOException{
     	BufferedReader buffRead = new BufferedReader(new FileReader(path));
     	PokemonBase[] pokemons = new PokemonBase[152];
     	for(int i=1; i<=151; i++){
+    		
+    		//Dados Basicos
     		int id = Integer.parseInt(buffRead.readLine());
     		String nome = buffRead.readLine();
     		String[] tipos = buffRead.readLine().split(",");
@@ -293,6 +192,7 @@ public class CarregaTxt {
     		else pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), status, atkpool);
     	 	 
  		 }
+    	buffRead.close();
          return pokemons;
     	
     }
