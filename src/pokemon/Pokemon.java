@@ -277,13 +277,19 @@ public class Pokemon extends PokemonBase{
 		public void resetStats(){
 			this.statsVol=this.getStatsSol();
 		}
+		public int calcHp(Status stats){
+			return ((stats.getHp()*2*this.lv)/100 + this.lv +10);
+		}
 	//Construtor
-	public Pokemon(PokemonBase base) throws IOException{
+	public Pokemon(PokemonBase base) throws IOException{//criar novo atributo statusBase, para calcular os status reais
 		super(base.getId(), base.getNome(), base.getTipo1(), base.getTipo2(), base.statsSol, base.getAtkPool());
 		this.lv=1;
-		this.curHp=base.getMaxHp();
+		statsSol.addHp(-statsSol.getHp() + 15); //tirar quando implementar corretamente statsBase
+		//this.curHp=calcHp(statsSol); descomentar quando implementar corretamente statsBase
+		this.curHp=statsSol.getHp();
 		for(int a=0;a<6;a++) this.effect[a] = false;
-		this.statsVol=new Status(nome);
+		String[] auxiliar = {"1","1","1","1","1"};
+		this.statsVol=new Status(auxiliar);
 		statsVol.attr(statsSol);
 		this.chargeEffect=false;
 		this.habChargeEffect=null;

@@ -289,7 +289,8 @@ public class CarregaTxt {
     	 	}
     	 	
     	 	AtkPool atkpool = new AtkPool(ataquesAtuais, tmsRecebiveis, learnSet);
-    	 	if(tipos.length == 2) pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), tipos[1].toUpperCase(), status, atkpool);
+    	 	if(tipos.length == 2 && !(tipos[1].equals("null"))) pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), tipos[1].toUpperCase(), status, atkpool);
+    	 	else if(tipos.length == 2) pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), null, status, atkpool);
     		else pokemons[i] = new PokemonBase(id, nome, tipos[0].toUpperCase(), status, atkpool);
     	 	 
  		 }

@@ -22,8 +22,6 @@ public class Index {
 		}*/
 		
 		
-		
-		
 		Pokemon[] pk1 = new Pokemon[2];
 		Pokemon[] pk2 = new Pokemon[5];
 		pk1[0] = new Pokemon(pokemons[5]);
@@ -42,18 +40,14 @@ public class Index {
 		Trainer treinador2 = new Trainer("Sergio Moro do Top Gear", pkmpool2, 0);
 		Atacar ataque1 = new Atacar(treinador1.getPool(), treinador2.getPool(), tipos);
 		Atacar ataque2 = new Atacar(treinador2.getPool(), treinador1.getPool(), tipos);
-		/*treinador1.getPool().getPokemon(0).getStatsSol().printAll();
-		treinador2.getPool().getPokemon(0).getStatsSol().printAll();
 		ataque1.action(0);
-		treinador1.getPool().getPokemon(0).getStatsVol().printAll();
-		ataque2.action(0);
-		//treinador1.getPool().getPokemon(0).printAll();
-		treinador1.getPool().getPokemon(0).getStatsVol().printAll();
-		*/
+		treinador2.getPool().getPokemon(0).getStatsSol().printAll();
+		treinador2.getPool().getPokemon(0).getStatsVol().printAll();
 		
 		
 		
-		EventQueue.invokeLater(new Runnable() {
+		
+	/*	EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					GUI window = new GUI(treinador1, treinador2);
@@ -63,7 +57,7 @@ public class Index {
 				}
 			}
 
-		});
+		});*/
 		
 	}
 }

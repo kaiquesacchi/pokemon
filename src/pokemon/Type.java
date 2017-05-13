@@ -20,7 +20,7 @@ public class Type {
 			}
 		}
 		if((type2!=null)){
-			System.out.println("HERE"+type2);
+			//System.out.println("HERE"+type2);
 			while(!(type2.equals(colMatriz[c]))){
 				c++;
 				if(c>17){

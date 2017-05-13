@@ -31,8 +31,6 @@ public class Atacar extends Event{
 	
 	private boolean calcPrecisao(Ataque hab){
 		double a = Math.random() * 100;
-		System.out.println("a: "+a);
-		System.out.println("hab.getPrecisao():"+hab.getPrecisao());
 		if(a <= hab.getPrecisao() || hab.getEfeito().equals("CHARGE EFFECT") || hab.getEfeito().equals("FLY EFFECT") || hab.getEfeito().equals("JUMP KICK EFFECT") || hab.getEfeito().equals("SWIFT EFFECT")) return true; //para primeira instancia sempre ocorrendo
 		else return false;
 	}
@@ -58,6 +56,8 @@ public class Atacar extends Event{
 		}
 		else{
 			double d = (((2/5) * atacante.getLv() + 2) * power * atacante.getAtk()/defensor.getDef())/50 + 2;
+			//System.out.println("d = (((2/5) * "+atacante.getLv()+"+2) * "+power+" * "+atacante.getAtk()+"/"+defensor.getDef()+")/50 + 2");
+			//System.out.println("dano == "+d);
 			return (int)(d * multiCalc(type));
 		}
 	}
