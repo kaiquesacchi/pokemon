@@ -29,6 +29,7 @@ public class PokemonBase {
 	public String getNome(){
 		return nome;
 	}
+	
 	//getStats
 	public Status getStatsSol(){
 		return statsSol;
@@ -60,6 +61,8 @@ public class PokemonBase {
 	public AtkPool getAtkPool(){
 		return atkPool;
 	}
+	
+	//Debug
 	public void printAll(){
 		System.out.println("||||");
 		System.out.println(id);

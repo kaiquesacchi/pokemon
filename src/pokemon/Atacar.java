@@ -11,44 +11,43 @@ public class Atacar extends Event{
 	
 	private boolean probEffect(double a){
 		double aux = Math.random() * 100;
-		if(aux<a) return true;
-		else return false;
-	
+		return (aux<a);
 	}
 	
 	private int thrashPetalCalc(){
 		double a = Math.random() * 100;
 		if(a<50) return 3;
-		else return 4;
+		return 4;
 	}
+	
 	private int bindCalc(){
 		double a = Math.random() * 100;
 		if(a<=37.5) return 2;
 		else if(a<75) return 3;
 		else if (a<87.5) return 4;
-		else return 5;
+		return 5;
 	}
 	
 	private boolean calcPrecisao(Ataque hab){
 		double a = Math.random() * 100;
-		if(a <= hab.getPrecisao() || hab.getEfeito().equals("CHARGE EFFECT") || hab.getEfeito().equals("FLY EFFECT") || hab.getEfeito().equals("JUMP KICK EFFECT") || hab.getEfeito().equals("SWIFT EFFECT")) return true; //para primeira instancia sempre ocorrendo
-		else return false;
+		return (a <= hab.getPrecisao() || hab.getEfeito().equals("CHARGE EFFECT") || hab.getEfeito().equals("FLY EFFECT") || hab.getEfeito().equals("JUMP KICK EFFECT") || hab.getEfeito().equals("SWIFT EFFECT")); 
+		//para primeira instancia sempre ocorrendo
 	}
+	
 	private double calcType(String type){
 		return types.getTypeMult(type, defensor.getTipo1(), defensor.getTipo2());
-		
-		
 	}
+	
 	private double calcSTAB(String type){
-		if(type.equals(atacante.getTipo1()) || type.equals(atacante.getTipo2())){
-			return 1.5;
-		}
-		else return 1;
+		if(type.equals(atacante.getTipo1()) || type.equals(atacante.getTipo2())) return 1.5;
+		return 1;
 	}
+	
 	private double multiCalc(String type){
 		double mod = (Math.random()*(0.25) + 0.85) * calcSTAB(type) * calcType(type);
 		return mod;
 	}
+	
 	private int danoCalc(int power, String type){
 		if(defensor.getInvulneravel()){
 			System.out.println("Invulneravel");
@@ -61,6 +60,7 @@ public class Atacar extends Event{
 			return (int)(d * multiCalc(type));
 		}
 	}
+	
 	private int specialDanoCalc(int power, String type){
 		if(defensor.getInvulneravel()){
 			System.out.println("Invulneravel");
