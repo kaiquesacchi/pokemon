@@ -1,5 +1,7 @@
 package pokemon;
 
+import java.io.IOException;
+
 public class UsarItem extends Event {
 	//Atributos
 	private String typeOfItem;
@@ -176,14 +178,13 @@ public class UsarItem extends Event {
 		this.potions = potions;
 		this.statusRestores = statusRestores;
 	}
-	public UsarItem(String typeOfItem, BattleItem[] battleItems, Elixer[] elixeres, Pokeball[] pokeballs,
-			Potion[] potions, StatusRestore[] statusRestores, String itemName, int pke, int skill, PkmPool pool1) {
+	public UsarItem(String typeOfItem, String itemName, int pke, int skill, PkmPool pool1) throws IOException {
 		this.typeOfItem = typeOfItem;
-		this.battleItems = battleItems;
-		this.elixeres = elixeres;
-		this.pokeballs = pokeballs;
-		this.potions = potions;
-		this.statusRestores = statusRestores;
+		this.battleItems = CarregaTxt.leitorBattleItems("txt/Itens/BattleItem");
+		this.elixeres = CarregaTxt.leitorElixeres("txt/Itens/Elixer");
+		this.pokeballs = CarregaTxt.leitorPokeballs("txt/Itens/Pokeball");
+		this.potions = CarregaTxt.leitorPotions("txt/Itens/Potion");
+		this.statusRestores = CarregaTxt.leitorStatusRestore("txt/Itens/StatusRestore");
 		this.itemName = itemName;
 		this.pke = pke;
 		this.skill = skill;

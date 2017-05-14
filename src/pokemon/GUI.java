@@ -839,5 +839,26 @@ public class GUI {
 				}
 			}
 		});
+		
+		
+			//Usar Item
+		pots_btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					UsarItem usaritem = new UsarItem("Potion", "POTION", 0, 0, trainer1.getPool());
+					if(usaritem.viavel()) usaritem.action();
+					batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
+					batalha_lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer2));
+					mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
+					mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
+					mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
+					mostrador2_nome.setText(trainer2.getPool().getPokemon(0).getNome());
+					mostrador2_hpBar.setMaximum(trainer2.getPool().getPokemon(0).getMaxHp());
+					mostrador2_hpBar.setValue(trainer2.getPool().getPokemon(0).getCurHp());
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
 	}	
 }
