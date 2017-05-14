@@ -459,7 +459,7 @@ public class Atacar extends Event{
 		return;
 	}
 	public String description(){
-		return (atacante.getNome() + "usou" + atacante.getAtkPool().getAtaqueAtualX(a));
+		return (atacante.getNome() + " usou " + atacante.getAtkPool().getAtaqueAtualX(a).getNome());
 	}
 	
 	public boolean viavel() {
