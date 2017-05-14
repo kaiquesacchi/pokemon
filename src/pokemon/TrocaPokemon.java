@@ -12,7 +12,7 @@ public class TrocaPokemon extends Event{
 	}
 	
 	public String description(){
-		return ("Voce trocou para " + pool.getPokemon(0).getNome());
+		return (pool.getPokemon(a).getNome() + " foi trocado por " + pool.getPokemon(0).getNome());
 	}
 	
 	public void action() {

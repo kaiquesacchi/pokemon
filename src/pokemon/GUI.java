@@ -792,199 +792,18 @@ public class GUI {
 		
 		//Açoes
 			//Trocar Pokemon
-		poke2_btn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				TrocaPokemon troca = new TrocaPokemon(1, trainer1.getPool());
-				troca.action();
-				//GERAR AÇÃO ALEATORIA
-				if(trainer2.getPool().getPokemon(0).getCurHp() < (trainer2.getPool().getPokemon(0).getMaxHp()) * 0.1){
-					Event evento = new TrocaPokemon(1, trainer2.getPool());
-					evento.action();
-					batalha_txtBox.setText(troca.description() + "\n" + evento.description());
-				}
-				else{
-					Event evento;
-					try {
-						evento = new Atacar(trainer2.getPool(), trainer1.getPool(), (int)(Math.random()*100%2));
-						evento.action();
-						batalha_txtBox.setText(troca.description() + "\n" + evento.description());
-					} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-					
-				}
-				
-				//FIM GERAR AÇÃO ALEATORIA
-
-				painelBatalha.setVisible(true);
-				painelPokePool.setVisible(false);
-				batalha_botoesPrincipais.setVisible(false);
-				batalha_txtBox.setVisible(true);
-				batalha_botaoAvancar.setVisible(true);
-				botaoAvancar_btnOk.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e){
-						batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
-						mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
-						mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
-						mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
-						
-						batalha_botoesPrincipais.setVisible(true);
-						batalha_botaoAvancar.setVisible(false);
-						batalha_txtBox.setText("O que quer fazer?");
-					}
-				});
-			}
-		});
-		poke3_btn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				TrocaPokemon troca = new TrocaPokemon(2, trainer1.getPool());
-				troca.action();
-
-				painelBatalha.setVisible(true);
-				painelPokePool.setVisible(false);
-				batalha_botoesPrincipais.setVisible(false);
-				batalha_txtBox.setVisible(true);
-				batalha_botaoAvancar.setVisible(true);
-				
-				batalha_txtBox.setText(troca.description());
-				botaoAvancar_btnOk.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e){
-						batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
-						mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
-						mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
-						mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
-						
-						batalha_botoesPrincipais.setVisible(true);
-						batalha_botaoAvancar.setVisible(false);
-						batalha_txtBox.setText("O que quer fazer?");
-					}
-				});
-			}
-		});
+			gerarBtnTrocaPokemon(poke2_btn, 2, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnTrocaPokemon(poke3_btn, 3, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnTrocaPokemon(poke4_btn, 4, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnTrocaPokemon(poke5_btn, 5, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnTrocaPokemon(poke6_btn, 6, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+		
 
 			//Atacar
-		botoesAtaque_btn1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					//GERAR AÇÃO ALEATORIA
-					if(trainer2.getPool().getPokemon(0).getCurHp() < (trainer2.getPool().getPokemon(0).getMaxHp()) * 0.1){
-						Event evento = new TrocaPokemon(1, trainer2.getPool());
-						evento.action();
-					}
-					else{
-						Event evento = new Atacar(trainer2.getPool(), trainer1.getPool(), (int)(Math.random()*100%2));
-						evento.action();
-					}
-					
-					//FIM GERAR AÇÃO ALEATORIA
-					Atacar atacar = new Atacar(trainer1.getPool(), trainer2.getPool(), 0);
-					atacar.action();
-					
-					batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
-					batalha_lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer2));
-					mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
-					mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
-					mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
-					mostrador2_nome.setText(trainer2.getPool().getPokemon(0).getNome());
-					mostrador2_hpBar.setMaximum(trainer2.getPool().getPokemon(0).getMaxHp());
-					mostrador2_hpBar.setValue(trainer2.getPool().getPokemon(0).getCurHp());
-					
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-			}
-		});
-		botoesAtaque_btn2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					//GERAR AÇÃO ALEATORIA
-					if(trainer2.getPool().getPokemon(0).getCurHp() < (trainer2.getPool().getPokemon(0).getMaxHp()) * 0.1){
-						Event evento = new TrocaPokemon(1, trainer2.getPool());
-						evento.action();
-					}
-					else{
-						Event evento = new Atacar(trainer2.getPool(), trainer1.getPool(), (int)(Math.random()*100%2));
-						evento.action();
-					}
-					
-					//FIM GERAR AÇÃO ALEATORIA
-					Atacar atacar = new Atacar(trainer1.getPool(), trainer2.getPool(), 1);
-					atacar.action();
-					batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
-					batalha_lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer2));
-					mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
-					mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
-					mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
-					mostrador2_nome.setText(trainer2.getPool().getPokemon(0).getNome());
-					mostrador2_hpBar.setMaximum(trainer2.getPool().getPokemon(0).getMaxHp());
-					mostrador2_hpBar.setValue(trainer2.getPool().getPokemon(0).getCurHp());
-					
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-			}
-		});
-		botoesAtaque_btn3.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					//GERAR AÇÃO ALEATORIA
-					if(trainer2.getPool().getPokemon(0).getCurHp() < (trainer2.getPool().getPokemon(0).getMaxHp()) * 0.1){
-						Event evento = new TrocaPokemon(1, trainer2.getPool());
-						evento.action();
-					}
-					else{
-						Event evento = new Atacar(trainer2.getPool(), trainer1.getPool(), (int)(Math.random()*100%2));
-						evento.action();
-					}
-					
-					//FIM GERAR AÇÃO ALEATORIA
-					Atacar atacar = new Atacar(trainer1.getPool(), trainer2.getPool(), 2);
-					atacar.action();
-					batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
-					batalha_lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer2));
-					mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
-					mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
-					mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
-					mostrador2_nome.setText(trainer2.getPool().getPokemon(0).getNome());
-					mostrador2_hpBar.setMaximum(trainer2.getPool().getPokemon(0).getMaxHp());
-					mostrador2_hpBar.setValue(trainer2.getPool().getPokemon(0).getCurHp());
-					
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-			}
-		});
-		botoesAtaque_btn4.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					//GERAR AÇÃO ALEATORIA
-					if(trainer2.getPool().getPokemon(0).getCurHp() < (trainer2.getPool().getPokemon(0).getMaxHp()) * 0.1){
-						Event evento = new TrocaPokemon(1, trainer2.getPool());
-						evento.action();
-					}
-					else{
-						Event evento = new Atacar(trainer2.getPool(), trainer1.getPool(), (int)(Math.random()*100%2));
-						evento.action();
-					}
-					
-					//FIM GERAR AÇÃO ALEATORIA
-					Atacar atacar = new Atacar(trainer1.getPool(), trainer2.getPool(), 3);
-					atacar.action();
-					batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
-					batalha_lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer2));
-					mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
-					mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
-					mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
-					mostrador2_nome.setText(trainer2.getPool().getPokemon(0).getNome());
-					mostrador2_hpBar.setMaximum(trainer2.getPool().getPokemon(0).getMaxHp());
-					mostrador2_hpBar.setValue(trainer2.getPool().getPokemon(0).getCurHp());
-					
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-			}
-		});
+			gerarBtnAtacar(botoesAtaque_btn1, 1, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnAtacar(botoesAtaque_btn2, 2, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnAtacar(botoesAtaque_btn3, 3, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnAtacar(botoesAtaque_btn4, 4, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
 		
 		
 			//Usar Item
@@ -1017,5 +836,99 @@ public class GUI {
 				}
 			}
 		});
-	}	
+	}
+	
+	
+	
+	
+	private void gerarBtnTrocaPokemon(JButton BOTAO, int NUMERO, Trainer trainer1, Trainer trainer2, JTextPane batalha_txtBox, JPanel painelBatalha, JPanel painelPokePool, JPanel batalha_botoesPrincipais, JPanel batalha_botaoAvancar, JButton botaoAvancar_btnOk, JLabel batalha_lblPlayer1,
+			JLabel mostrador1_nome, JProgressBar mostrador1_hpBar){
+		BOTAO.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				TrocaPokemon troca = new TrocaPokemon(NUMERO-1, trainer1.getPool());
+				troca.action();
+				//GERAR AÇÃO ALEATORIA
+				if(trainer2.getPool().getPokemon(0).getCurHp() < (trainer2.getPool().getPokemon(0).getMaxHp()) * 0.1){
+					Event evento = new TrocaPokemon(1, trainer2.getPool());
+					evento.action();
+					batalha_txtBox.setText(troca.description() + "\n" + evento.description());
+				}
+				else{
+					Event evento;
+					try {
+						evento = new Atacar(trainer2.getPool(), trainer1.getPool(), (int)(Math.random()*100%2));
+						evento.action();
+						batalha_txtBox.setText(troca.description() + "\n" + evento.description());
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}	
+				}
+				painelBatalha.setVisible(true);
+				painelPokePool.setVisible(false);
+				batalha_botoesPrincipais.setVisible(false);
+				batalha_txtBox.setVisible(true);
+				batalha_botaoAvancar.setVisible(true);
+				botaoAvancar_btnOk.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e){
+						gerarTelaLog(batalha_lblPlayer1, trainer1, mostrador1_nome, mostrador1_hpBar, batalha_botoesPrincipais, batalha_botaoAvancar, batalha_txtBox);
+					}
+				});
+			}
+		});
+	}
+	
+	private void gerarBtnAtacar(JButton BOTAO, int NUMERO, Trainer trainer1, Trainer trainer2, JTextPane batalha_txtBox, JPanel painelBatalha, JPanel painelPokePool, JPanel batalha_botoesPrincipais, JPanel batalha_botoesAtaque, JPanel batalha_botaoAvancar,
+			JButton botaoAvancar_btnOk, JLabel batalha_lblPlayer1, JLabel mostrador1_nome, JProgressBar mostrador1_hpBar){
+		BOTAO.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					//GERAR AÇÃO ALEATORIA
+					if(trainer2.getPool().getPokemon(0).getCurHp() < (trainer2.getPool().getPokemon(0).getMaxHp()) * 0.1){
+						Event evento = new TrocaPokemon(1, trainer2.getPool());
+						evento.action();
+						Atacar atacar = new Atacar(trainer1.getPool(), trainer2.getPool(), NUMERO-1);
+						atacar.action();
+						batalha_txtBox.setText(evento.description() + "\n" + atacar.description());
+					}
+					else{
+						Event evento = new Atacar(trainer2.getPool(), trainer1.getPool(), (int)(Math.random()*100%2));
+						evento.action();
+						Atacar atacar = new Atacar(trainer1.getPool(), trainer2.getPool(), NUMERO-1);
+						atacar.action();
+						batalha_txtBox.setText(atacar.description() + "\n" + evento.description());
+					}
+					
+					//FIM GERAR AÇÃO ALEATORIA
+					
+					painelBatalha.setVisible(true);
+					painelPokePool.setVisible(false);
+					batalha_botoesPrincipais.setVisible(false);
+					batalha_botoesAtaque.setVisible(false);
+					batalha_txtBox.setVisible(true);
+					batalha_botaoAvancar.setVisible(true);
+					botaoAvancar_btnOk.addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent e){
+							gerarTelaLog(batalha_lblPlayer1, trainer1, mostrador1_nome, mostrador1_hpBar, batalha_botoesPrincipais, batalha_botaoAvancar, batalha_txtBox);
+						}
+					});
+					
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+	}
+	
+	private void gerarTelaLog(JLabel batalha_lblPlayer1, Trainer trainer1, JLabel mostrador1_nome, JProgressBar mostrador1_hpBar, JPanel batalha_botoesPrincipais, JPanel batalha_botaoAvancar, JTextPane batalha_txtBox){
+		batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
+		mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
+		mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
+		mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
+		
+		batalha_botoesPrincipais.setVisible(true);
+		batalha_botaoAvancar.setVisible(false);
+		batalha_txtBox.setText("O que quer fazer?");
+	}
+	
 }

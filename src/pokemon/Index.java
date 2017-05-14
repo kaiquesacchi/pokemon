@@ -22,10 +22,11 @@ public class Index {
 		}*/
 		
 		
-		Pokemon[] pk1 = new Pokemon[2];
+		Pokemon[] pk1 = new Pokemon[3];
 		Pokemon[] pk2 = new Pokemon[5];
 		pk1[0] = new Pokemon(pokemons[5]);
 		pk1[1] = new Pokemon(pokemons[122]);
+		pk1[2] = new Pokemon(pokemons[32]);
 		pk2[0] = new Pokemon(pokemons[3]);
 		pk2[1] = new Pokemon(pokemons[150]);
 		pk2[2] = new Pokemon(pokemons[6]);
