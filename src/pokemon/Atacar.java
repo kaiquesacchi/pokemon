@@ -1,5 +1,7 @@
 package pokemon;
 
+import java.io.IOException;
+
 public class Atacar extends Event{
 	//Atributos
 	private PkmPool pool2;
@@ -73,7 +75,7 @@ public class Atacar extends Event{
 		}
 	}
 
-	public int action(){
+	public void action(){
 		Ataque hab = atacante.getAtkPool().getAtaquesAtuais()[a];
 		int rand, dano = danoCalc(hab.getDano(),hab.getTipo());
 		if(defensor.getLeechSeed()){
@@ -93,7 +95,7 @@ public class Atacar extends Event{
 		if(atacante.getRecharge()){
 			System.out.println("Ta em recharge");
 			atacante.removeRecharge();
-			return 0;
+			return;
 		}
 		hab.usePP();
 		if(calcPrecisao(hab)){
@@ -454,19 +456,25 @@ public class Atacar extends Event{
 			}
 		}
 		else System.out.println("ERROOOOW");
-		return 0;
+		return;
 	}
 	public String description(){
 		return (atacante.getNome() + "usou" + atacante.getAtkPool().getAtaqueAtualX(a));
 	}
 	
+	public boolean viavel() {
+		return true;
+	}
 	
 	//Construtor
-	public Atacar(PkmPool pool1, PkmPool pool2, Type types, int a){
+	public Atacar(PkmPool pool1, PkmPool pool2, int a) throws IOException{
 		atacante=pool1.getPokemon(0);
 		defensor=pool2.getPokemon(0);
-		this.types=types;
+		this.types = CarregaTxt.leitorTypeChart("txt/type.txt");
 		this.a = a;
+		this.prioridade = 0;
 	}
+
+
 
 }

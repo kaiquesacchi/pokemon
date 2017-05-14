@@ -12,6 +12,7 @@ import javax.swing.JProgressBar;
 import javax.swing.JTextPane;
 import java.awt.Font;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.awt.event.ActionEvent;
 
 
@@ -22,7 +23,6 @@ public class GUI {
 	public GUI(Trainer trainer1, Trainer trainer2) {
 		initialize(trainer1, trainer2);
 	}
-
 	private ImageIcon resize(String path, JLabel label) {
 		ImageIcon MyImage;
 		Image img;
@@ -669,16 +669,17 @@ public class GUI {
 				
 				batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
 				batalha_lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer2));
-				batalha_mostrador1.setVisible(true);
-				batalha_mostrador2.setVisible(true);
-				batalha_lblMostrador1.setVisible(true);
-				batalha_lblMostrador2.setVisible(true);
 				mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
 				mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
 				mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
 				mostrador2_nome.setText(trainer2.getPool().getPokemon(0).getNome());
 				mostrador2_hpBar.setMaximum(trainer2.getPool().getPokemon(0).getMaxHp());
 				mostrador2_hpBar.setValue(trainer2.getPool().getPokemon(0).getCurHp());
+				
+				batalha_mostrador1.setVisible(true);
+				batalha_mostrador2.setVisible(true);
+				batalha_lblMostrador1.setVisible(true);
+				batalha_lblMostrador2.setVisible(true);
 			}
 		});
 		
@@ -793,20 +794,50 @@ public class GUI {
 			//Trocar Pokemon
 		poke2_btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				trainer1.getPool().switchPokemon(1);
-				batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
-				mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
-				mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
-				mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
-				
+				TrocaPokemon troca = new TrocaPokemon(1, trainer1.getPool());
+				troca.action();
+
 				painelBatalha.setVisible(true);
 				painelPokePool.setVisible(false);
 				batalha_botoesPrincipais.setVisible(false);
+				batalha_txtBox.setVisible(true);
+				batalha_botaoAvancar.setVisible(true);
 				
-				
-				pokepool_btnCancelar.doClick();
+				batalha_txtBox.setText(troca.description());
+				botaoAvancar_btnOk.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e){
+						batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
+						mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
+						mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
+						mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
+						
+						batalha_botoesPrincipais.setVisible(true);
+						batalha_botaoAvancar.setVisible(false);
+						batalha_txtBox.setText("O que quer fazer?");
+					}
+				});
 			}
 		});
-	
-	}
+
+			//Atacar
+		botoesAtaque_btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Atacar atacar = new Atacar(trainer1.getPool(), trainer2.getPool(), 0);
+					atacar.action();
+					batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
+					batalha_lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer2));
+					mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
+					mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
+					mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
+					mostrador2_nome.setText(trainer2.getPool().getPokemon(0).getNome());
+					mostrador2_hpBar.setMaximum(trainer2.getPool().getPokemon(0).getMaxHp());
+					mostrador2_hpBar.setValue(trainer2.getPool().getPokemon(0).getCurHp());
+					
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+			}
+		});
+	}	
 }

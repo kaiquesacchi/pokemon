@@ -1,25 +1,30 @@
 package pokemon;
 
 public class TrocaPokemon extends Event{
+	
 	//Atributos
-	int a;
-	PkmPool pool;
+	private int a;
+	private PkmPool pool;
+	
 	//Metodos
-	public int action(){
-		if(pool.getPokemon(0).getBindDur() == 0 && pool.getPokemon(0).getThrashPetal() == 0){
-			pool.switchPokemon(a);
-			return 0;
-		}
-		System.out.println("TA PRESO");
-		return 1;
+	public boolean viavel(){
+		return (pool.getPokemon(0).getBindDur() == 0 && pool.getPokemon(0).getThrashPetal() == 0);
 	}
 	
 	public String description(){
-		return ("Voce trocou para " + pool.getPokemon(a).getNome());
+		return ("Voce trocou para " + pool.getPokemon(0).getNome());
 	}
+	
+	public void action() {
+		pool.switchPokemon(a);
+	}
+	
+	//Construtor
 
 	public TrocaPokemon(int a, PkmPool pool) {
 		this.a = a;
 		this.pool = pool;
-	}	
+		this.prioridade = 1;
+	}
+	
 }

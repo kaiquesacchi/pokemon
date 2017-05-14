@@ -49,7 +49,7 @@ public class UsarItem extends Event {
 		}
 		return aux;
 	}
-	public int action(){
+	public void action(){
 		Pokemon poke = pool1.getPokemon(pke);
 		switch(typeOfItem){
 		case "BattleItem":
@@ -157,13 +157,15 @@ public class UsarItem extends Event {
 		default:
 			System.out.println("deu bosta no UsarItemAction");
 		}
-		return 0;
+		return;
 	}
 	public String description(){
 		return("Voce usou " + itemName);
 	}
 	
-	
+	public boolean viavel() {
+		return (pool1.getPokemon(pke).getCurHp() > 0);
+	}
 
 	//Construtor
 	public UsarItem(PkmPool pool, BattleItem[] battleItems, Elixer[] elixeres, Pokeball[] pokeballs, Potion[] potions, StatusRestore[] statusRestores){
@@ -186,8 +188,9 @@ public class UsarItem extends Event {
 		this.pke = pke;
 		this.skill = skill;
 		this.pool1 = pool1;
-		
+		this.prioridade = 2;
 	}
+
 	
 
 }
