@@ -2,7 +2,6 @@ package pokemon;
 
 import java.awt.Color;
 import java.awt.Container;
-import java.awt.EventQueue;
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
@@ -20,19 +19,6 @@ import java.awt.event.ActionEvent;
 public class GUI {
 
 	JFrame frame;
-
-	/*public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					GUI window = new GUI();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}*/
 
 	public GUI(Trainer trainer1, Trainer trainer2) {
 		initialize(trainer1, trainer2);
@@ -55,6 +41,7 @@ public class GUI {
 		return (new ImageIcon(img));
 	}
 	
+	@SuppressWarnings("deprecation")
 	private void initialize(Trainer trainer1, Trainer trainer2) {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 800, 500);
@@ -69,30 +56,30 @@ public class GUI {
 	
 		
 	//	Declaraçao dos Paineis	
-		JPanel PainelBatalha = new JPanel();
-		JPanel PainelPokePool = new JPanel();
-		JPanel PainelItem = new JPanel();
+		JPanel painelBatalha = new JPanel();
+		JPanel painelPokePool = new JPanel();
+		JPanel painelItem = new JPanel();
 		JPanel batalha_botoesPrincipais = new JPanel();
 		JPanel botoesAtaque = new JPanel();
 		JTextPane batalha_txtBox = new JTextPane();
 		batalha_txtBox.setForeground(Color.WHITE);
-		JPanel balls = new JPanel();
-		JPanel pots = new JPanel();
-		JPanel elix = new JPanel();
+		JPanel item_balls = new JPanel();
+		JPanel item_pots = new JPanel();
+		JPanel item_elix = new JPanel();
 		
 	/*
 	 * PRIMEIRO PAINEL ====== BATALHA
 	 */ 	
 		
-		PainelBatalha.setBounds(0, 0, 784, 461);
-		PainelBatalha.setLayout(null);
-		container.add(PainelBatalha);
+		painelBatalha.setBounds(0, 0, 784, 461);
+		painelBatalha.setLayout(null);
+		container.add(painelBatalha);
 	
 		
 	//	Mostradores
 		JPanel batalha_mostrador1 = new JPanel();
 		batalha_mostrador1.setBounds(552, 256, 189, 79);
-		PainelBatalha.add(batalha_mostrador1);
+		painelBatalha.add(batalha_mostrador1);
 		batalha_mostrador1.setLayout(null);
 		batalha_mostrador1.setOpaque(false);
 
@@ -109,7 +96,7 @@ public class GUI {
 		JPanel batalha_mostrador2 = new JPanel();
 		batalha_mostrador2.setBackground(Color.WHITE);
 		batalha_mostrador2.setBounds(74, 50, 189, 85);
-		PainelBatalha.add(batalha_mostrador2);
+		painelBatalha.add(batalha_mostrador2);
 		batalha_mostrador2.setLayout(null);
 		batalha_mostrador2.setOpaque(false);
 		
@@ -125,13 +112,13 @@ public class GUI {
 		
 		JLabel lblMostrador1 = new JLabel("");
 		lblMostrador1.setBounds(519, 242, 222, 93);
-		PainelBatalha.add(lblMostrador1);
+		painelBatalha.add(lblMostrador1);
 		//Adicionando Icone
 		lblMostrador1.setIcon(resize("/imagens/Moldura/mostrador.png", lblMostrador1));
 		
 		JLabel lblMostrador2 = new JLabel("");
 		lblMostrador2.setBounds(41, 42, 222, 93);
-		PainelBatalha.add(lblMostrador2);
+		painelBatalha.add(lblMostrador2);
 		//Adicionando Icone
 		lblMostrador2.setIcon(resize("/imagens/Moldura/mostrador.png", lblMostrador2));
 		
@@ -144,14 +131,14 @@ public class GUI {
 		batalha_lblPlayer1.setBounds(57, 189, 282, 198);
 			//Adicionando Icone
 		batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
-		PainelBatalha.add(batalha_lblPlayer1);
+		painelBatalha.add(batalha_lblPlayer1);
 		
 	//		Jogador 2
 		JLabel lblPlayer2 = new JLabel("");
 		lblPlayer2.setBounds(434, 38, 275, 219);
 	//			Adicionando Icone
 		lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", lblPlayer2));
-		PainelBatalha.add(lblPlayer2);
+		painelBatalha.add(lblPlayer2);
 		
 		
 	//		Background de Batalha
@@ -159,13 +146,13 @@ public class GUI {
 		batalha_lblBackground.setBounds(0, 0, 784, 369);
 	//			Adicionando Icone
 		batalha_lblBackground.setIcon(resize("/imagens/Background/Terreno/battles(1).png", batalha_lblBackground));
-		PainelBatalha.add(batalha_lblBackground);
+		painelBatalha.add(batalha_lblBackground);
 		
 		
 	//	Menu
 		batalha_botoesPrincipais.setBounds(476, 380, 282, 70);
 		batalha_botoesPrincipais.setOpaque(false);
-		PainelBatalha.add(batalha_botoesPrincipais);
+		painelBatalha.add(batalha_botoesPrincipais);
 		
 			JButton botoesPrincipais_btn1 = new JButton("Atacar");
 			botoesPrincipais_btn1.setBounds(7, 7, 122, 26);
@@ -188,9 +175,9 @@ public class GUI {
 			botoesPrincipais_btn2.setIconTextGap(-130);
 			botoesPrincipais_btn2.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					PainelBatalha.setVisible(false);
-					PainelPokePool.setVisible(true);
-					PainelItem.setVisible(false);
+					painelBatalha.setVisible(false);
+					painelPokePool.setVisible(true);
+					painelItem.setVisible(false);
 				}
 			});
 			batalha_botoesPrincipais.add(botoesPrincipais_btn2);
@@ -211,13 +198,13 @@ public class GUI {
 			botoesPrincipais_btn4.setIconTextGap(-100);
 			botoesPrincipais_btn4.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					PainelBatalha.setVisible(false);
-					PainelPokePool.setVisible(false);
-					PainelItem.setVisible(true);
+					painelBatalha.setVisible(false);
+					painelPokePool.setVisible(false);
+					painelItem.setVisible(true);
 					
-					balls.setVisible(true);
-					elix.setVisible(false);
-					pots.setVisible(false);
+					item_balls.setVisible(true);
+					item_elix.setVisible(false);
+					item_pots.setVisible(false);
 					
 				}
 			});
@@ -225,7 +212,7 @@ public class GUI {
 
 		botoesAtaque.setBounds(25, 380, 733, 70);
 		botoesAtaque.setOpaque(false);
-		PainelBatalha.add(botoesAtaque);
+		painelBatalha.add(botoesAtaque);
 		botoesAtaque.setLayout(null);
 		
 			JButton botoesAtaque_btn1 = new JButton();
@@ -281,12 +268,12 @@ public class GUI {
 		batalha_txtBox.setOpaque(false);
 		batalha_txtBox.setText("O que quer fazer?");
 		batalha_txtBox.setBounds(41, 380, 402, 70);
-		PainelBatalha.add(batalha_txtBox);
+		painelBatalha.add(batalha_txtBox);
 		
-		JLabel lblMenuBack = new JLabel("");
-		lblMenuBack.setBounds(0, 368, 784, 93);
-		lblMenuBack.setIcon(resize("/imagens/Menu/Frame.png", lblMenuBack));
-		PainelBatalha.add(lblMenuBack);
+		JLabel batalha_lblMenuBackground = new JLabel("");
+		batalha_lblMenuBackground.setBounds(0, 368, 784, 93);
+		batalha_lblMenuBackground.setIcon(resize("/imagens/Menu/Frame.png", batalha_lblMenuBackground));
+		painelBatalha.add(batalha_lblMenuBackground);
 	/*
 	 * FIM PRIMEIRO PAINEL ====== BATALHA
 	 */
@@ -297,175 +284,175 @@ public class GUI {
 	 * SEGUNDO PAINEL ====== TROCAR POKEMON
 	 */
 		
-		PainelPokePool.setBounds(0, 0, 784, 461);
-		frame.getContentPane().add(PainelPokePool);
-		PainelPokePool.setLayout(null);
+		painelPokePool.setBounds(0, 0, 784, 461);
+		frame.getContentPane().add(painelPokePool);
+		painelPokePool.setLayout(null);
 		
-		JPanel poke1 = new JPanel();
-		poke1.setBounds(41, 32, 222, 103);
-		PainelPokePool.add(poke1);
-			poke1.setLayout(null);
-			poke1.setOpaque(false);
+		JPanel pokepool_poke1 = new JPanel();
+		pokepool_poke1.setBounds(41, 32, 222, 103);
+		painelPokePool.add(pokepool_poke1);
+			pokepool_poke1.setLayout(null);
+			pokepool_poke1.setOpaque(false);
 		
-			JProgressBar HPBar1 = new JProgressBar();
-			HPBar1.setBounds(80, 72, 130, 12);
-			poke1.add(HPBar1);
+			JProgressBar poke1_hpBar = new JProgressBar();
+			poke1_hpBar.setBounds(80, 72, 130, 12);
+			pokepool_poke1.add(poke1_hpBar);
 			
-			JButton btnPoke1 = new JButton();
-			btnPoke1.setBounds(64, 24, 130, 23);
-			poke1.add(btnPoke1);
+			JButton poke1_btn = new JButton();
+			poke1_btn.setBounds(64, 24, 130, 23);
+			pokepool_poke1.add(poke1_btn);
 			
-			JLabel lblPoke1 = new JLabel();
-			lblPoke1.setBounds(0, 0, 222, 103);
-			lblPoke1.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke1));
-			poke1.add(lblPoke1);
+			JLabel poke1_lbl = new JLabel();
+			poke1_lbl.setBounds(0, 0, 222, 103);
+			poke1_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke1_lbl));
+			pokepool_poke1.add(poke1_lbl);
 			
 			if(trainer1.getPool().getPokemon(0) != null){
-				btnPoke1.setLabel(trainer1.getPool().getPokemon(0).getNome());
-				btnPoke1.setEnabled(true);
+				poke1_btn.setLabel(trainer1.getPool().getPokemon(0).getNome());
+				poke1_btn.setEnabled(true);
 			}
-			else btnPoke1.setEnabled(false);
+			else poke1_btn.setEnabled(false);
 			
 		
-		JPanel poke2 = new JPanel();
-		poke2.setBounds(41, 158, 222, 103);
-		PainelPokePool.add(poke2);
-		poke2.setLayout(null);
-		poke2.setOpaque(false);
+		JPanel pokepool_poke2 = new JPanel();
+		pokepool_poke2.setBounds(41, 158, 222, 103);
+		painelPokePool.add(pokepool_poke2);
+		pokepool_poke2.setLayout(null);
+		pokepool_poke2.setOpaque(false);
 		
-			JProgressBar HPBar2 = new JProgressBar();
-			HPBar2.setBounds(80, 72, 130, 12);
-			poke2.add(HPBar2);
+			JProgressBar poke2_hpBar = new JProgressBar();
+			poke2_hpBar.setBounds(80, 72, 130, 12);
+			pokepool_poke2.add(poke2_hpBar);
 			
-			JButton btnPoke2 = new JButton("New button");
-			btnPoke2.setBounds(64, 24, 130, 23);
-			poke2.add(btnPoke2);
+			JButton poke2_btn = new JButton("New button");
+			poke2_btn.setBounds(64, 24, 130, 23);
+			pokepool_poke2.add(poke2_btn);
 			
-			JLabel lblPoke2 = new JLabel();
-			lblPoke2.setBounds(0, 0, 222, 103);
-			lblPoke2.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke2));
-			poke2.add(lblPoke2);
+			JLabel poke2_lbl = new JLabel();
+			poke2_lbl.setBounds(0, 0, 222, 103);
+			poke2_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke2_lbl));
+			pokepool_poke2.add(poke2_lbl);
 			
 			if(trainer1.getPool().getPokemon(1) != null){
-				btnPoke2.setLabel(trainer1.getPool().getPokemon(1).getNome());
-				btnPoke2.setEnabled(true);
+				poke2_btn.setLabel(trainer1.getPool().getPokemon(1).getNome());
+				poke2_btn.setEnabled(true);
 			}
-			else btnPoke2.setEnabled(false);
+			else poke2_btn.setEnabled(false);
 		
-		JPanel poke3 = new JPanel();
-		poke3.setBounds(41, 294, 222, 103);
-		PainelPokePool.add(poke3);
-		poke3.setLayout(null);
-		poke3.setOpaque(false);
+		JPanel pokepool_poke3 = new JPanel();
+		pokepool_poke3.setBounds(41, 294, 222, 103);
+		painelPokePool.add(pokepool_poke3);
+		pokepool_poke3.setLayout(null);
+		pokepool_poke3.setOpaque(false);
 		
-			JProgressBar HPBar3 = new JProgressBar();
-			HPBar3.setBounds(80, 72, 130, 12);
-			poke3.add(HPBar3);
+			JProgressBar poke3_hpBar = new JProgressBar();
+			poke3_hpBar.setBounds(80, 72, 130, 12);
+			pokepool_poke3.add(poke3_hpBar);
 			
-			JButton btnPoke3 = new JButton("New button");
-			btnPoke3.setBounds(64, 24, 130, 23);
-			poke3.add(btnPoke3);
+			JButton poke3_btn = new JButton("New button");
+			poke3_btn.setBounds(64, 24, 130, 23);
+			pokepool_poke3.add(poke3_btn);
 			
-			JLabel lblPoke3 = new JLabel();
-			lblPoke3.setBounds(0, 0, 222, 103);
-			lblPoke3.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke3));
-			poke3.add(lblPoke3);
+			JLabel poke3_lbl = new JLabel();
+			poke3_lbl.setBounds(0, 0, 222, 103);
+			poke3_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke3_lbl));
+			pokepool_poke3.add(poke3_lbl);
 			
 			if(trainer1.getPool().getPokemon(2) != null){
-				btnPoke3.setLabel(trainer1.getPool().getPokemon(2).getNome());
-				btnPoke3.setEnabled(true);
+				poke3_btn.setLabel(trainer1.getPool().getPokemon(2).getNome());
+				poke3_btn.setEnabled(true);
 			}
-			else btnPoke3.setEnabled(false);
+			else poke3_btn.setEnabled(false);
 		
-		JPanel poke4 = new JPanel();
-		poke4.setBounds(510, 32, 222, 103);
-		PainelPokePool.add(poke4);
-		poke4.setLayout(null);
-		poke4.setOpaque(false);
+		JPanel pokepool_poke4 = new JPanel();
+		pokepool_poke4.setBounds(510, 32, 222, 103);
+		painelPokePool.add(pokepool_poke4);
+		pokepool_poke4.setLayout(null);
+		pokepool_poke4.setOpaque(false);
 		
-			JProgressBar HPBar4 = new JProgressBar();
-			HPBar4.setBounds(80, 72, 130, 12);
-			poke4.add(HPBar4);
+			JProgressBar poke4_hpBar = new JProgressBar();
+			poke4_hpBar.setBounds(80, 72, 130, 12);
+			pokepool_poke4.add(poke4_hpBar);
 			
-			JButton btnPoke4 = new JButton("New button");
-			btnPoke4.setBounds(64, 24, 130, 23);
-			poke4.add(btnPoke4);
+			JButton poke4_btn = new JButton("New button");
+			poke4_btn.setBounds(64, 24, 130, 23);
+			pokepool_poke4.add(poke4_btn);
 			
-			JLabel lblPoke4 = new JLabel();
-			lblPoke4.setBounds(0, 0, 222, 103);
-			lblPoke4.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke4));
-			poke4.add(lblPoke4);
+			JLabel poke4_lbl = new JLabel();
+			poke4_lbl.setBounds(0, 0, 222, 103);
+			poke4_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke4_lbl));
+			pokepool_poke4.add(poke4_lbl);
 			
 			if(trainer1.getPool().getPokemon(3) != null){
-				btnPoke4.setLabel(trainer1.getPool().getPokemon(3).getNome());
-				btnPoke4.setEnabled(true);
+				poke4_btn.setLabel(trainer1.getPool().getPokemon(3).getNome());
+				poke4_btn.setEnabled(true);
 			}
-			else btnPoke4.setEnabled(false);
+			else poke4_btn.setEnabled(false);
 		
-		JPanel poke5 = new JPanel();
-		poke5.setBounds(510, 158, 222, 103);
-		PainelPokePool.add(poke5);
-		poke5.setLayout(null);
-		poke5.setOpaque(false);
+		JPanel pokepool_poke5 = new JPanel();
+		pokepool_poke5.setBounds(510, 158, 222, 103);
+		painelPokePool.add(pokepool_poke5);
+		pokepool_poke5.setLayout(null);
+		pokepool_poke5.setOpaque(false);
 		
-			JProgressBar HPBar5 = new JProgressBar();
-			HPBar5.setBounds(80, 72, 130, 12);
-			poke5.add(HPBar5);
+			JProgressBar poke5_hpBar = new JProgressBar();
+			poke5_hpBar.setBounds(80, 72, 130, 12);
+			pokepool_poke5.add(poke5_hpBar);
 			
-			JButton btnPoke5 = new JButton("New button");
-			btnPoke5.setBounds(64, 24, 130, 23);
-			poke5.add(btnPoke5);
+			JButton poke5_btn = new JButton("New button");
+			poke5_btn.setBounds(64, 24, 130, 23);
+			pokepool_poke5.add(poke5_btn);
 			
-			JLabel lblPoke5 = new JLabel();
-			lblPoke5.setBounds(0, 0, 222, 103);
-			lblPoke5.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke5));
-			poke5.add(lblPoke5);
+			JLabel poke5_lbl = new JLabel();
+			poke5_lbl.setBounds(0, 0, 222, 103);
+			poke5_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke5_lbl));
+			pokepool_poke5.add(poke5_lbl);
 			
 			if(trainer1.getPool().getPokemon(4) != null){
-				btnPoke5.setLabel(trainer1.getPool().getPokemon(4).getNome());
-				btnPoke5.setEnabled(true);
+				poke5_btn.setLabel(trainer1.getPool().getPokemon(4).getNome());
+				poke5_btn.setEnabled(true);
 			}
-			else btnPoke5.setEnabled(false);
+			else poke5_btn.setEnabled(false);
 			
-		JPanel poke6 = new JPanel();
-		poke6.setBounds(510, 294, 222, 103);
-		PainelPokePool.add(poke6);
-		poke6.setLayout(null);
-		poke6.setOpaque(false);
+		JPanel pokepool_poke6 = new JPanel();
+		pokepool_poke6.setBounds(510, 294, 222, 103);
+		painelPokePool.add(pokepool_poke6);
+		pokepool_poke6.setLayout(null);
+		pokepool_poke6.setOpaque(false);
 		
-			JProgressBar HPBar6 = new JProgressBar();
-			HPBar6.setBounds(80, 72, 130, 12);
-			poke6.add(HPBar6);
+			JProgressBar poke6_hpBar6 = new JProgressBar();
+			poke6_hpBar6.setBounds(80, 72, 130, 12);
+			pokepool_poke6.add(poke6_hpBar6);
 			
-			JButton btnPoke6 = new JButton("New button");
-			btnPoke6.setBounds(64, 24, 130, 23);
-			poke6.add(btnPoke6);
+			JButton poke6_btn = new JButton("New button");
+			poke6_btn.setBounds(64, 24, 130, 23);
+			pokepool_poke6.add(poke6_btn);
 			
-			JLabel lblPoke6 = new JLabel();
-			lblPoke6.setBounds(0, 0, 222, 103);
-			lblPoke6.setIcon(resize("/imagens/Moldura/mostrador.png", lblPoke6));
-			poke6.add(lblPoke6);
+			JLabel poke6_lbl = new JLabel();
+			poke6_lbl.setBounds(0, 0, 222, 103);
+			poke6_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke6_lbl));
+			pokepool_poke6.add(poke6_lbl);
 			
 			if(trainer1.getPool().getPokemon(5) != null){
-				btnPoke6.setLabel(trainer1.getPool().getPokemon(5).getNome());
-				btnPoke6.setEnabled(true);
+				poke6_btn.setLabel(trainer1.getPool().getPokemon(5).getNome());
+				poke6_btn.setEnabled(true);
 			}
-			else btnPoke6.setEnabled(false);
+			else poke6_btn.setEnabled(false);
 		
-		JButton btnCancelar = new JButton("Cancelar");
-		btnCancelar.addActionListener(new ActionListener() {
+		JButton pokepool_btnCancelar = new JButton("Cancelar");
+		pokepool_btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PainelBatalha.setVisible(true);
-				PainelPokePool.setVisible(false);
+				painelBatalha.setVisible(true);
+				painelPokePool.setVisible(false);
 			}
 		});
-		btnCancelar.setBounds(643, 427, 89, 23);
-		PainelPokePool.add(btnCancelar);
+		pokepool_btnCancelar.setBounds(643, 427, 89, 23);
+		painelPokePool.add(pokepool_btnCancelar);
 		
-		JLabel lblBackPokePool = new JLabel("");
-		lblBackPokePool.setBounds(0, 0, 784, 461);
-		lblBackPokePool.setIcon(resize("/imagens/Background/Menu/Itens.png", lblBackPokePool));
-		PainelPokePool.add(lblBackPokePool);
+		JLabel pokepool_lblBackground = new JLabel("");
+		pokepool_lblBackground.setBounds(0, 0, 784, 461);
+		pokepool_lblBackground.setIcon(resize("/imagens/Background/Menu/Itens.png", pokepool_lblBackground));
+		painelPokePool.add(pokepool_lblBackground);
 	
 	/*
 	 * FIM SEGUNDO PAINEL ====== TROCAR POKEMON
@@ -477,231 +464,231 @@ public class GUI {
 	 * TERCEIRO PAINEL ====== ITENS
 	 */	
 		
-		PainelItem.setBounds(0, 0, 784, 461);
-		frame.getContentPane().add(PainelItem);
-		PainelItem.setLayout(null);
+		painelItem.setBounds(0, 0, 784, 461);
+		frame.getContentPane().add(painelItem);
+		painelItem.setLayout(null);
 		
 		
-		balls.setBounds(0, 0, 611, 461);
-		PainelItem.add(balls);
-		balls.setLayout(null);
-		balls.setOpaque(false);
+		item_balls.setBounds(0, 0, 611, 461);
+		painelItem.add(item_balls);
+		item_balls.setLayout(null);
+		item_balls.setOpaque(false);
 		
-			JLabel lbl_ball1 = new JLabel();
-			lbl_ball1.setBounds(64, 0, 177, 177);
-			lbl_ball1.setIcon(resize("/imagens/Item/poke-ball.png", lbl_ball1));
-			balls.add(lbl_ball1);
+			JLabel balls_lbl1 = new JLabel();
+			balls_lbl1.setBounds(64, 0, 177, 177);
+			balls_lbl1.setIcon(resize("/imagens/Item/poke-ball.png", balls_lbl1));
+			item_balls.add(balls_lbl1);
 			
-			JLabel lbl_ball2 = new JLabel();
-			lbl_ball2.setBounds(369, 0, 177, 177);
-			lbl_ball2.setIcon(resize("/imagens/Item/great-ball.png", lbl_ball2));
-			balls.add(lbl_ball2);
+			JLabel balls_lbl2 = new JLabel();
+			balls_lbl2.setBounds(369, 0, 177, 177);
+			balls_lbl2.setIcon(resize("/imagens/Item/great-ball.png", balls_lbl2));
+			item_balls.add(balls_lbl2);
 			
-			JButton btn_ball1 = new JButton("Pokeball");
-			btn_ball1.setBounds(0, 188, 305, 42);
-			balls.add(btn_ball1);
+			JButton balls_btn1 = new JButton("Pokeball");
+			balls_btn1.setBounds(0, 188, 305, 42);
+			item_balls.add(balls_btn1);
 			
-			JButton btn_ball2 = new JButton("Greatball");
-			btn_ball2.setBounds(305, 188, 305, 42);
-			balls.add(btn_ball2);
+			JButton balls_btn2 = new JButton("Greatball");
+			balls_btn2.setBounds(305, 188, 305, 42);
+			item_balls.add(balls_btn2);
 			
-			JLabel lbl_ball3 = new JLabel();
-			lbl_ball3.setBounds(64, 230, 177, 177);
-			lbl_ball3.setIcon(resize("/imagens/Item/ultra-ball.png", lbl_ball3));
-			balls.add(lbl_ball3);
+			JLabel balls_lbl3 = new JLabel();
+			balls_lbl3.setBounds(64, 230, 177, 177);
+			balls_lbl3.setIcon(resize("/imagens/Item/ultra-ball.png", balls_lbl3));
+			item_balls.add(balls_lbl3);
 			
-			JLabel lbl_ball4 = new JLabel();
-			lbl_ball4.setBounds(369, 230, 177, 177);
-			lbl_ball4.setIcon(resize("/imagens/Item/master-ball.png", lbl_ball4));
-			balls.add(lbl_ball4);
+			JLabel balls_lbl4 = new JLabel();
+			balls_lbl4.setBounds(369, 230, 177, 177);
+			balls_lbl4.setIcon(resize("/imagens/Item/master-ball.png", balls_lbl4));
+			item_balls.add(balls_lbl4);
 			
-			JButton btn_ball3 = new JButton("Ultraball");
-			btn_ball3.setBounds(0, 418, 305, 42);
-			balls.add(btn_ball3);
+			JButton balls_btn3 = new JButton("Ultraball");
+			balls_btn3.setBounds(0, 418, 305, 42);
+			item_balls.add(balls_btn3);
 			
-			JButton btn_ball4 = new JButton("Masterball");
-			btn_ball4.setBounds(305, 418, 305, 42);
-			balls.add(btn_ball4);
+			JButton balls_btn4 = new JButton("Masterball");
+			balls_btn4.setBounds(305, 418, 305, 42);
+			item_balls.add(balls_btn4);
 		
-		pots.setBounds(0, 0, 610, 461);
-		PainelItem.add(pots);
-		pots.setLayout(null);
-		pots.setOpaque(false);
+		item_pots.setBounds(0, 0, 610, 461);
+		painelItem.add(item_pots);
+		item_pots.setLayout(null);
+		item_pots.setOpaque(false);
 		
-			JLabel lbl_pot1 = new JLabel();
-			lbl_pot1.setBounds(7, 29, 146, 146);
-			lbl_pot1.setIcon(resize("/imagens/Item/potion.png", lbl_pot1));
-			pots.add(lbl_pot1);
+			JLabel pots_lbl1 = new JLabel();
+			pots_lbl1.setBounds(7, 29, 146, 146);
+			pots_lbl1.setIcon(resize("/imagens/Item/potion.png", pots_lbl1));
+			item_pots.add(pots_lbl1);
 			
-			JLabel lbl_pot2 = new JLabel();
-			lbl_pot2.setBounds(157, 29, 146, 146);
-			lbl_pot2.setIcon(resize("/imagens/Item/super-potion.png", lbl_pot2));
-			pots.add(lbl_pot2);
+			JLabel pots_lbl2 = new JLabel();
+			pots_lbl2.setBounds(157, 29, 146, 146);
+			pots_lbl2.setIcon(resize("/imagens/Item/super-potion.png", pots_lbl2));
+			item_pots.add(pots_lbl2);
 			
-			JLabel lbl_pot3 = new JLabel();
-			lbl_pot3.setBounds(307, 29, 146, 146);
-			lbl_pot3.setIcon(resize("/imagens/Item/hyper-potion.png", lbl_pot3));
-			pots.add(lbl_pot3);
+			JLabel pots_lbl3 = new JLabel();
+			pots_lbl3.setBounds(307, 29, 146, 146);
+			pots_lbl3.setIcon(resize("/imagens/Item/hyper-potion.png", pots_lbl3));
+			item_pots.add(pots_lbl3);
 			
-			JLabel lbl_pot4 = new JLabel();
-			lbl_pot4.setBounds(457, 29, 146, 146);
-			lbl_pot4.setIcon(resize("/imagens/Item/max-potion.png", lbl_pot4));
-			pots.add(lbl_pot4);
+			JLabel pots_lbl4 = new JLabel();
+			pots_lbl4.setBounds(457, 29, 146, 146);
+			pots_lbl4.setIcon(resize("/imagens/Item/max-potion.png", pots_lbl4));
+			item_pots.add(pots_lbl4);
 			
-			JButton btn_pot1 = new JButton("Potion");
-			btn_pot1.setBounds(7, 186, 146, 23);
-			pots.add(btn_pot1);
+			JButton pots_btn1 = new JButton("Potion");
+			pots_btn1.setBounds(7, 186, 146, 23);
+			item_pots.add(pots_btn1);
 			
-			JButton btn_pot2 = new JButton("Super Potion");
-			btn_pot2.addActionListener(new ActionListener() {
+			JButton pots_btn2 = new JButton("Super Potion");
+			pots_btn2.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 				}
 			});
-			btn_pot2.setBounds(157, 186, 146, 23);
-			pots.add(btn_pot2);
+			pots_btn2.setBounds(157, 186, 146, 23);
+			item_pots.add(pots_btn2);
 			
-			JButton btn_pot3 = new JButton("Hyper Potion");
-			btn_pot3.setBounds(307, 186, 146, 23);
-			pots.add(btn_pot3);
+			JButton pots_btn3 = new JButton("Hyper Potion");
+			pots_btn3.setBounds(307, 186, 146, 23);
+			item_pots.add(pots_btn3);
 			
-			JButton btn_pot4 = new JButton("Max Potion");
-			btn_pot4.addActionListener(new ActionListener() {
+			JButton pots_btn4 = new JButton("Max Potion");
+			pots_btn4.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
 				}
 			});
-			btn_pot4.setBounds(457, 186, 146, 23);
-			pots.add(btn_pot4);
+			pots_btn4.setBounds(457, 186, 146, 23);
+			item_pots.add(pots_btn4);
 			
-			JLabel lbl_pot5 = new JLabel();
-			lbl_pot5.setBounds(7, 270, 146, 146);
-			lbl_pot5.setIcon(resize("/imagens/Item/full-restore.png", lbl_pot5));
-			pots.add(lbl_pot5);
+			JLabel pots_lbl5 = new JLabel();
+			pots_lbl5.setBounds(7, 270, 146, 146);
+			pots_lbl5.setIcon(resize("/imagens/Item/full-restore.png", pots_lbl5));
+			item_pots.add(pots_lbl5);
 			
-			JLabel lbl_pot6 = new JLabel();
-			lbl_pot6.setBounds(157, 270, 146, 146);
-			lbl_pot6.setIcon(resize("/imagens/Item/fresh-water.png", lbl_pot6));
-			pots.add(lbl_pot6);
+			JLabel pots_lbl6 = new JLabel();
+			pots_lbl6.setBounds(157, 270, 146, 146);
+			pots_lbl6.setIcon(resize("/imagens/Item/fresh-water.png", pots_lbl6));
+			item_pots.add(pots_lbl6);
 			
-			JLabel lbl_pot7 = new JLabel();
-			lbl_pot7.setBounds(307, 270, 146, 146);
-			lbl_pot7.setIcon(resize("/imagens/Item/soda-pop.png", lbl_pot7));
-			pots.add(lbl_pot7);
+			JLabel pots_lbl7 = new JLabel();
+			pots_lbl7.setBounds(307, 270, 146, 146);
+			pots_lbl7.setIcon(resize("/imagens/Item/soda-pop.png", pots_lbl7));
+			item_pots.add(pots_lbl7);
 			
-			JLabel lbl_pot8 = new JLabel();
-			lbl_pot8.setBounds(457, 270, 146, 146);
-			lbl_pot8.setIcon(resize("/imagens/Item/lemonade.png", lbl_pot8));
-			pots.add(lbl_pot8);
+			JLabel pots_lbl8 = new JLabel();
+			pots_lbl8.setBounds(457, 270, 146, 146);
+			pots_lbl8.setIcon(resize("/imagens/Item/lemonade.png", pots_lbl8));
+			item_pots.add(pots_lbl8);
 			
-			JButton btn_pot5 = new JButton("Full Restore");
-			btn_pot5.setBounds(7, 427, 146, 23);
-			pots.add(btn_pot5);
+			JButton pots_btn5 = new JButton("Full Restore");
+			pots_btn5.setBounds(7, 427, 146, 23);
+			item_pots.add(pots_btn5);
 			
-			JButton btn_pot6 = new JButton("Fresh Water");
-			btn_pot6.addActionListener(new ActionListener() {
+			JButton pots_btn6 = new JButton("Fresh Water");
+			pots_btn6.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
 				}
 			});
-			btn_pot6.setBounds(157, 427, 146, 23);
-			pots.add(btn_pot6);
+			pots_btn6.setBounds(157, 427, 146, 23);
+			item_pots.add(pots_btn6);
 			
-			JButton btn_pot7 = new JButton("Soda Pop");
-			btn_pot7.setBounds(307, 427, 146, 23);
-			pots.add(btn_pot7);
+			JButton pots_btn7 = new JButton("Soda Pop");
+			pots_btn7.setBounds(307, 427, 146, 23);
+			item_pots.add(pots_btn7);
 			
-			JButton btn_pot8 = new JButton("Lemonade");
-			btn_pot8.setBounds(457, 427, 146, 23);
-			pots.add(btn_pot8);
+			JButton pots_btn8 = new JButton("Lemonade");
+			pots_btn8.setBounds(457, 427, 146, 23);
+			item_pots.add(pots_btn8);
 		
-		elix.setBounds(0, 0, 611, 461);
-		PainelItem.add(elix);
-		elix.setLayout(null);
-		elix.setOpaque(false);
+		item_elix.setBounds(0, 0, 611, 461);
+		painelItem.add(item_elix);
+		item_elix.setLayout(null);
+		item_elix.setOpaque(false);
 		
-			JLabel lbl_elix1 = new JLabel();
-			lbl_elix1.setBounds(64, 0, 177, 177);
-			lbl_elix1.setIcon(resize("/imagens/Item/ether.png", lbl_elix1));
-			elix.add(lbl_elix1);
+			JLabel elix_lbl1 = new JLabel();
+			elix_lbl1.setBounds(64, 0, 177, 177);
+			elix_lbl1.setIcon(resize("/imagens/Item/ether.png", elix_lbl1));
+			item_elix.add(elix_lbl1);
 			
-			JLabel lbl_elix2 = new JLabel();
-			lbl_elix2.setBounds(369, 0, 177, 177);
-			lbl_elix2.setIcon(resize("/imagens/Item/max-ether.png", lbl_elix2));
-			elix.add(lbl_elix2);
+			JLabel elix_lbl2 = new JLabel();
+			elix_lbl2.setBounds(369, 0, 177, 177);
+			elix_lbl2.setIcon(resize("/imagens/Item/max-ether.png", elix_lbl2));
+			item_elix.add(elix_lbl2);
 			
-			JButton btn_elix1 = new JButton("Ether");
-			btn_elix1.setBounds(0, 188, 305, 42);
-			elix.add(btn_elix1);
+			JButton elix_btn1 = new JButton("Ether");
+			elix_btn1.setBounds(0, 188, 305, 42);
+			item_elix.add(elix_btn1);
 			
-			JButton btn_elix2 = new JButton("Max Ether");
-			btn_elix2.setBounds(305, 188, 305, 42);
-			elix.add(btn_elix2);
+			JButton elix_btn2 = new JButton("Max Ether");
+			elix_btn2.setBounds(305, 188, 305, 42);
+			item_elix.add(elix_btn2);
 			
-			JLabel lbl_elix3 = new JLabel();
-			lbl_elix3.setBounds(64, 230, 177, 177);
-			lbl_elix3.setIcon(resize("/imagens/Item/elixir.png", lbl_elix3));
-			elix.add(lbl_elix3);
+			JLabel elix_lbl3 = new JLabel();
+			elix_lbl3.setBounds(64, 230, 177, 177);
+			elix_lbl3.setIcon(resize("/imagens/Item/elixir.png", elix_lbl3));
+			item_elix.add(elix_lbl3);
 			
-			JLabel lbl_elix4 = new JLabel();
-			lbl_elix4.setBounds(369, 230, 177, 177);
-			lbl_elix4.setIcon(resize("/imagens/Item/max-elixir.png", lbl_elix4));
-			elix.add(lbl_elix4);
+			JLabel elix_lbl4 = new JLabel();
+			elix_lbl4.setBounds(369, 230, 177, 177);
+			elix_lbl4.setIcon(resize("/imagens/Item/max-elixir.png", elix_lbl4));
+			item_elix.add(elix_lbl4);
 			
-			JButton btn_elix3 = new JButton("Elixir");
-			btn_elix3.setBounds(0, 418, 305, 42);
-			elix.add(btn_elix3);
+			JButton elix_btn3 = new JButton("Elixir");
+			elix_btn3.setBounds(0, 418, 305, 42);
+			item_elix.add(elix_btn3);
 			
-			JButton btn_elix4 = new JButton("Max Elixir");
-			btn_elix4.setBounds(305, 418, 305, 42);
-			elix.add(btn_elix4);
+			JButton elix_btn4 = new JButton("Max Elixir");
+			elix_btn4.setBounds(305, 418, 305, 42);
+			item_elix.add(elix_btn4);
 			
 			
-		JButton btn_item1 = new JButton("Balls");
-		btn_item1.addActionListener(new ActionListener() {
+		JButton item_btn1 = new JButton("Balls");
+		item_btn1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				balls.setVisible(true);
-				pots.setVisible(false);
-				elix.setVisible(false);
+				item_balls.setVisible(true);
+				item_pots.setVisible(false);
+				item_elix.setVisible(false);
 			}
 		});
-		btn_item1.setBounds(621, 11, 153, 86);
-		PainelItem.add(btn_item1);
+		item_btn1.setBounds(621, 11, 153, 86);
+		painelItem.add(item_btn1);
 		
-		JButton btn_item2 = new JButton("Pots");
-		btn_item2.addActionListener(new ActionListener() {
+		JButton item_btn2 = new JButton("Pots");
+		item_btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				balls.setVisible(false);
-				pots.setVisible(true);
-				elix.setVisible(false);
+				item_balls.setVisible(false);
+				item_pots.setVisible(true);
+				item_elix.setVisible(false);
 			}
 		});
-		btn_item2.setBounds(621, 129, 153, 86);
-		PainelItem.add(btn_item2);
+		item_btn2.setBounds(621, 129, 153, 86);
+		painelItem.add(item_btn2);
 		
-		JButton btn_item3 = new JButton("Elix");
-		btn_item3.addActionListener(new ActionListener() {
+		JButton item_btn3 = new JButton("Elix");
+		item_btn3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				balls.setVisible(false);
-				pots.setVisible(false);
-				elix.setVisible(true);
+				item_balls.setVisible(false);
+				item_pots.setVisible(false);
+				item_elix.setVisible(true);
 			}
 		});
-		btn_item3.setBounds(621, 245, 153, 86);
-		PainelItem.add(btn_item3);
+		item_btn3.setBounds(621, 245, 153, 86);
+		painelItem.add(item_btn3);
 		
-		JButton btn_item_voltar = new JButton("Voltar");
-		btn_item_voltar.addActionListener(new ActionListener() {
+		JButton item_btnVoltar = new JButton("Voltar");
+		item_btnVoltar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				PainelBatalha.setVisible(true);
-				PainelPokePool.setVisible(false);
-				PainelItem.setVisible(false);
+				painelBatalha.setVisible(true);
+				painelPokePool.setVisible(false);
+				painelItem.setVisible(false);
 			}
 		});
-		btn_item_voltar.setBounds(621, 364, 153, 86);
-		PainelItem.add(btn_item_voltar);
+		item_btnVoltar.setBounds(621, 364, 153, 86);
+		painelItem.add(item_btnVoltar);
 		
-		JLabel lblItensBack = new JLabel();
-		lblItensBack.setBounds(0, 0, 784, 461);
-		lblItensBack.setIcon(resize("/imagens/Background/Menu/Itens.png", lblItensBack));
-		PainelItem.add(lblItensBack);
+		JLabel item_lblBackground = new JLabel();
+		item_lblBackground.setBounds(0, 0, 784, 461);
+		item_lblBackground.setIcon(resize("/imagens/Background/Menu/Itens.png", item_lblBackground));
+		painelItem.add(item_lblBackground);
 		
 		
 		/*
@@ -710,9 +697,9 @@ public class GUI {
 		
 		
 		
-		PainelBatalha.setVisible(true);
-		PainelPokePool.setVisible(false);
-		PainelItem.setVisible(false);
+		painelBatalha.setVisible(true);
+		painelPokePool.setVisible(false);
+		painelItem.setVisible(false);
 		batalha_botoesPrincipais.setVisible(true);
 		botoesAtaque.setVisible(false);
 	
