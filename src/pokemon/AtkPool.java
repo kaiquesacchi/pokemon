@@ -8,6 +8,9 @@ public class AtkPool {
 	
 	
 	//Métodos
+	public void setHab(int a, Ataque hab){
+		ataquesAtuais[a] =  hab;
+	}
 	public Ataque[] getAtaquesAtuais(){
 		return ataquesAtuais;
 	}

@@ -280,6 +280,9 @@ public class Pokemon extends PokemonBase{
 		public int calcHp(Status stats){
 			return ((stats.getHp()*2*this.lv)/100 + this.lv +10);
 		}
+		public void setHab(int a, Ataque hab){
+			atkPool.setHab(a, hab);
+		}
 	//Construtor
 	public Pokemon(PokemonBase base) throws IOException{//criar novo atributo statusBase, para calcular os status reais
 		super(base.getId(), base.getNome(), base.getTipo1(), base.getTipo2(), base.statsSol, base.getAtkPool());

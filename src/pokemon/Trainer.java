@@ -7,6 +7,9 @@ public class Trainer {
 	private int gold;
 	
 	//Metodos
+	public boolean lose(){
+		return pool.lose();
+	}
 	public String getNome(){
 		return nome;
 	}

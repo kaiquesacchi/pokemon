@@ -45,6 +45,9 @@ public class UsarItem extends Event {
 		}
 		return aux;
 	}
+	public void setPool(PkmPool pool){
+		this.pool1=pool;
+	}
 	public void action(String typeOfItem, String itemName, int pke, int skill){
 		Pokemon poke = pool1.getPokemon(pke);
 		switch(typeOfItem){

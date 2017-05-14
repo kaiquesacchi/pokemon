@@ -44,7 +44,8 @@ public class Atacar extends Event{
 	}
 	
 	private double multiCalc(String type){
-		double mod = (Math.random()*(0.25) + 0.85) * calcSTAB(type) * calcType(type);
+		//double mod = (Math.random()*(0.25) + 0.85) * calcSTAB(type) * calcType(type); //IMPLEMENTAÇÃO REAL
+		double mod = (calcSTAB(type) * calcType(type));
 		return mod;
 	}
 	
@@ -57,7 +58,7 @@ public class Atacar extends Event{
 			double d = (((2/5) * atacante.getLv() + 2) * power * atacante.getAtk()/defensor.getDef())/50 + 2;
 			//System.out.println("d = (((2/5) * "+atacante.getLv()+"+2) * "+power+" * "+atacante.getAtk()+"/"+defensor.getDef()+")/50 + 2");
 			//System.out.println("dano == "+d);
-			return (int)(d * multiCalc(type));
+			return (int)(d * multiCalc(type) + 10);
 		}
 	}
 	
@@ -75,7 +76,7 @@ public class Atacar extends Event{
 	public void action(int a){
 		Ataque hab = atacante.getAtkPool().getAtaquesAtuais()[a];
 		int rand, dano = danoCalc(hab.getDano(),hab.getTipo());
-		if(defensor.getLeechSeed()){
+		/*if(defensor.getLeechSeed()){                                   //IMPLEMENTAÇÕES OUTROS ATAQUES
 			defensor.takeDamage(danoCalc(10, "GRASS"));
 			atacante.heal(danoCalc(10, "GRASS"));
 			System.out.println("levou leech seed");
@@ -93,7 +94,7 @@ public class Atacar extends Event{
 			System.out.println("Ta em recharge");
 			atacante.removeRecharge();
 			return;
-		}
+		}*/
 		hab.usePP();
 		if(calcPrecisao(hab)){
 			hab.printAll();
