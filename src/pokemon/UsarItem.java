@@ -8,6 +8,10 @@ public class UsarItem extends Event {
 	private Pokeball [] pokeballs;
 	private Potion [] potions;
 	private StatusRestore [] statusRestores;
+	private String itemName;
+	private int pke;
+	private int skill;
+	private PkmPool pool1;
 	
 	//Métodos
 	public String[] getBattleItems(){
@@ -45,7 +49,7 @@ public class UsarItem extends Event {
 		}
 		return aux;
 	}
-	public void action(String typeOfItem, String itemName, int pke, int skill){
+	public int action(){
 		Pokemon poke = pool1.getPokemon(pke);
 		switch(typeOfItem){
 		case "BattleItem":
@@ -153,21 +157,35 @@ public class UsarItem extends Event {
 		default:
 			System.out.println("deu bosta no UsarItemAction");
 		}
-		
+		return 0;
 	}
 	public String description(){
-		return("Usa um item de batalha");
+		return("Voce usou " + itemName);
 	}
 	
 	
+
 	//Construtor
 	public UsarItem(PkmPool pool, BattleItem[] battleItems, Elixer[] elixeres, Pokeball[] pokeballs, Potion[] potions, StatusRestore[] statusRestores){
-		super(pool);
+		this.pool1 = pool;
 		this.battleItems = battleItems;
 		this.elixeres = elixeres;
 		this.pokeballs = pokeballs;
 		this.potions = potions;
 		this.statusRestores = statusRestores;
+	}
+	public UsarItem(String typeOfItem, BattleItem[] battleItems, Elixer[] elixeres, Pokeball[] pokeballs,
+			Potion[] potions, StatusRestore[] statusRestores, String itemName, int pke, int skill, PkmPool pool1) {
+		this.typeOfItem = typeOfItem;
+		this.battleItems = battleItems;
+		this.elixeres = elixeres;
+		this.pokeballs = pokeballs;
+		this.potions = potions;
+		this.statusRestores = statusRestores;
+		this.itemName = itemName;
+		this.pke = pke;
+		this.skill = skill;
+		this.pool1 = pool1;
 		
 	}
 	

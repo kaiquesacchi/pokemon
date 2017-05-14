@@ -1,21 +1,25 @@
 package pokemon;
 
 public class TrocaPokemon extends Event{
-	//Sem atributos adicionais
+	//Atributos
+	int a;
+	PkmPool pool;
 	//Metodos
-	public void action(int a){
-		if(pool1.getPokemon(0).getBindDur() == 0 && pool1.getPokemon(0).getThrashPetal() == 0)
-		pool1.switchPokemon(a);
-		else System.out.println("TA PRESO");
+	public int action(){
+		if(pool.getPokemon(0).getBindDur() == 0 && pool.getPokemon(0).getThrashPetal() == 0){
+			pool.switchPokemon(a);
+			return 0;
+		}
+		System.out.println("TA PRESO");
+		return 1;
 	}
 	
 	public String description(){
-		return "Troca a porra do pokemon caralho";
-	}
-	
-	//Construtor
-	public TrocaPokemon(PkmPool pool){
-		super(pool);
+		return ("Voce trocou para " + pool.getPokemon(a).getNome());
 	}
 
+	public TrocaPokemon(int a, PkmPool pool) {
+		this.a = a;
+		this.pool = pool;
+	}	
 }

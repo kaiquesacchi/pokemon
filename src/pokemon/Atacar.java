@@ -6,6 +6,7 @@ public class Atacar extends Event{
 	private Pokemon atacante;
 	private Pokemon defensor;
 	private Type types;
+	private int a;
 	
 	//Métodos
 	
@@ -72,7 +73,7 @@ public class Atacar extends Event{
 		}
 	}
 
-	public void action(int a){
+	public int action(){
 		Ataque hab = atacante.getAtkPool().getAtaquesAtuais()[a];
 		int rand, dano = danoCalc(hab.getDano(),hab.getTipo());
 		if(defensor.getLeechSeed()){
@@ -92,7 +93,7 @@ public class Atacar extends Event{
 		if(atacante.getRecharge()){
 			System.out.println("Ta em recharge");
 			atacante.removeRecharge();
-			return;
+			return 0;
 		}
 		hab.usePP();
 		if(calcPrecisao(hab)){
@@ -453,19 +454,19 @@ public class Atacar extends Event{
 			}
 		}
 		else System.out.println("ERROOOOW");
-		
+		return 0;
 	}
 	public String description(){
-		return "usa uma habilidade seu imbecil, acha que \"ataca\" faz o que seu cabaço";
+		return (atacante.getNome() + "usou" + atacante.getAtkPool().getAtaqueAtualX(a));
 	}
 	
 	
 	//Construtor
-	public Atacar(PkmPool pool1, PkmPool pool2, Type types){
-		super(pool1);
+	public Atacar(PkmPool pool1, PkmPool pool2, Type types, int a){
 		atacante=pool1.getPokemon(0);
 		defensor=pool2.getPokemon(0);
 		this.types=types;
+		this.a = a;
 	}
 
 }

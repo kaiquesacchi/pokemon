@@ -7,7 +7,7 @@ public class Index {
 	public static void main(String[] args) throws IOException{
 		//Carregadores de banco de dados
 		Ataque[] ataques = CarregaTxt.leitorAtaque("txt/moves.txt");
-		PokemonBase[] pokemons = CarregaTxt.leitorPokemon("resourse/pokemon.txt", ataques);
+		PokemonBase[] pokemons = CarregaTxt.leitorPokemon("resource/pokemon.txt", ataques);
 		Type tipos = CarregaTxt.leitorTypeChart("txt/type.txt");
 		Potion[] potions = CarregaTxt.leitorPotions("txt/Itens/Potion");
 		Pokeball[] pokeballs = CarregaTxt.leitorPokeballs("txt/Itens/Pokeball");
@@ -38,12 +38,6 @@ public class Index {
 		
 		Trainer treinador1 = new Trainer("Fernando Collor", pkmpool, 0);
 		Trainer treinador2 = new Trainer("Sergio Moro do Top Gear", pkmpool2, 0);
-		Atacar ataque1 = new Atacar(treinador1.getPool(), treinador2.getPool(), tipos);
-		Atacar ataque2 = new Atacar(treinador2.getPool(), treinador1.getPool(), tipos);
-		ataque1.action(0);
-		treinador2.getPool().getPokemon(0).getStatsSol().printAll();
-		treinador2.getPool().getPokemon(0).getStatsVol().printAll();
-		
 		
 		
 		

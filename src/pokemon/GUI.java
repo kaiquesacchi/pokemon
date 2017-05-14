@@ -3,7 +3,6 @@ package pokemon;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Image;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -41,7 +40,6 @@ public class GUI {
 		return (new ImageIcon(img));
 	}
 	
-	@SuppressWarnings("deprecation")
 	private void initialize(Trainer trainer1, Trainer trainer2) {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 800, 500);
@@ -60,7 +58,8 @@ public class GUI {
 		JPanel painelPokePool = new JPanel();
 		JPanel painelItem = new JPanel();
 		JPanel batalha_botoesPrincipais = new JPanel();
-		JPanel botoesAtaque = new JPanel();
+		JPanel batalha_botoesAtaque = new JPanel();
+		JPanel batalha_botaoAvancar = new JPanel();
 		JTextPane batalha_txtBox = new JTextPane();
 		batalha_txtBox.setForeground(Color.WHITE);
 		JPanel item_balls = new JPanel();
@@ -91,6 +90,7 @@ public class GUI {
 			
 			JProgressBar mostrador1_hpBar = new JProgressBar();
 			mostrador1_hpBar.setBounds(45, 50, 134, 12);
+			mostrador1_hpBar.setForeground(Color.GREEN);
 			batalha_mostrador1.add(mostrador1_hpBar);
 				
 		JPanel batalha_mostrador2 = new JPanel();
@@ -108,19 +108,20 @@ public class GUI {
 			
 			JProgressBar mostrador2_hpBar = new JProgressBar();
 			mostrador2_hpBar.setBounds(45, 57, 134, 12);
+			mostrador2_hpBar.setForeground(Color.GREEN);
 			batalha_mostrador2.add(mostrador2_hpBar);
 		
-		JLabel lblMostrador1 = new JLabel("");
-		lblMostrador1.setBounds(519, 242, 222, 93);
-		painelBatalha.add(lblMostrador1);
+		JLabel batalha_lblMostrador1 = new JLabel("");
+		batalha_lblMostrador1.setBounds(519, 242, 222, 93);
+		painelBatalha.add(batalha_lblMostrador1);
 		//Adicionando Icone
-		lblMostrador1.setIcon(resize("/imagens/Moldura/mostrador.png", lblMostrador1));
+		batalha_lblMostrador1.setIcon(resize("/imagens/Moldura/mostrador.png", batalha_lblMostrador1));
 		
-		JLabel lblMostrador2 = new JLabel("");
-		lblMostrador2.setBounds(41, 42, 222, 93);
-		painelBatalha.add(lblMostrador2);
+		JLabel batalha_lblMostrador2 = new JLabel("");
+		batalha_lblMostrador2.setBounds(41, 42, 222, 93);
+		painelBatalha.add(batalha_lblMostrador2);
 		//Adicionando Icone
-		lblMostrador2.setIcon(resize("/imagens/Moldura/mostrador.png", lblMostrador2));
+		batalha_lblMostrador2.setIcon(resize("/imagens/Moldura/mostrador.png", batalha_lblMostrador2));
 		
 		
 		
@@ -130,15 +131,13 @@ public class GUI {
 		JLabel batalha_lblPlayer1 = new JLabel("");
 		batalha_lblPlayer1.setBounds(57, 189, 282, 198);
 			//Adicionando Icone
-		batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
 		painelBatalha.add(batalha_lblPlayer1);
 		
 	//		Jogador 2
-		JLabel lblPlayer2 = new JLabel("");
-		lblPlayer2.setBounds(434, 38, 275, 219);
+		JLabel batalha_lblPlayer2 = new JLabel("");
+		batalha_lblPlayer2.setBounds(434, 38, 275, 219);
 	//			Adicionando Icone
-		lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", lblPlayer2));
-		painelBatalha.add(lblPlayer2);
+		painelBatalha.add(batalha_lblPlayer2);
 		
 		
 	//		Background de Batalha
@@ -158,14 +157,6 @@ public class GUI {
 			botoesPrincipais_btn1.setBounds(7, 7, 122, 26);
 			botoesPrincipais_btn1.setIcon(resize("/imagens/Botoes/Botao.png", botoesPrincipais_btn1));
 			botoesPrincipais_btn1.setIconTextGap(-80);
-			botoesPrincipais_btn1.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					botoesAtaque.setVisible(true);
-					batalha_botoesPrincipais.setVisible(false);
-					batalha_txtBox.setVisible(false);
-					
-				}
-			});
 			batalha_botoesPrincipais.setLayout(null);
 			batalha_botoesPrincipais.add(botoesPrincipais_btn1);
 			
@@ -173,13 +164,6 @@ public class GUI {
 			botoesPrincipais_btn2.setBounds(133, 7, 142, 26);
 			botoesPrincipais_btn2.setIcon(resize("/imagens/Botoes/Botao.png", botoesPrincipais_btn2));
 			botoesPrincipais_btn2.setIconTextGap(-130);
-			botoesPrincipais_btn2.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent e) {
-					painelBatalha.setVisible(false);
-					painelPokePool.setVisible(true);
-					painelItem.setVisible(false);
-				}
-			});
 			batalha_botoesPrincipais.add(botoesPrincipais_btn2);
 			
 			JButton botoesPrincipais_btn3 = new JButton("Fugir");
@@ -210,57 +194,34 @@ public class GUI {
 			});
 			batalha_botoesPrincipais.add(botoesPrincipais_btn4);
 
-		botoesAtaque.setBounds(25, 380, 733, 70);
-		botoesAtaque.setOpaque(false);
-		painelBatalha.add(botoesAtaque);
-		botoesAtaque.setLayout(null);
+		batalha_botoesAtaque.setBounds(25, 380, 733, 70);
+		batalha_botoesAtaque.setOpaque(false);
+		painelBatalha.add(batalha_botoesAtaque);
+		batalha_botoesAtaque.setLayout(null);
 		
 			JButton botoesAtaque_btn1 = new JButton();
-			if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(0) != null){
-				botoesAtaque_btn1.setLabel(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(0).getNome());
-				botoesAtaque_btn1.setEnabled(true);
-			}
-			else botoesAtaque_btn1.setEnabled(false);
 			botoesAtaque_btn1.setBounds(7, 7, 141, 56);
-			botoesAtaque.add(botoesAtaque_btn1);
-			
+			batalha_botoesAtaque.add(botoesAtaque_btn1);
 			JButton botoesAtaque_btn2 = new JButton();
-			if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(1) != null){
-				botoesAtaque_btn2.setLabel(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(1).getNome());
-				botoesAtaque_btn2.setEnabled(true);
-			}
-			else botoesAtaque_btn2.setEnabled(false);
 			botoesAtaque_btn2.setBounds(152, 7, 140, 56);
-			botoesAtaque.add(botoesAtaque_btn2);
-			
-			JButton botoesAtaque_btn3 = new JButton();
-			if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(2) != null){
-				botoesAtaque_btn3.setLabel(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(2).getNome());
-				botoesAtaque_btn3.setEnabled(true);
-			}
-			else botoesAtaque_btn3.setEnabled(false);
+			batalha_botoesAtaque.add(botoesAtaque_btn2);
+			JButton botoesAtaque_btn3 = new JButton();	
 			botoesAtaque_btn3.setBounds(296, 7, 141, 56);
-			botoesAtaque.add(botoesAtaque_btn3);
-			
+			batalha_botoesAtaque.add(botoesAtaque_btn3);
 			JButton botoesAtaque_btn4 = new JButton();
-			if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(3) != null){
-				botoesAtaque_btn4.setLabel(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(3).getNome());
-				botoesAtaque_btn4.setEnabled(true);
-			}
-			else botoesAtaque_btn4.setEnabled(false);
-			botoesAtaque_btn4.setBounds(441, 7, 140, 56);
-			botoesAtaque.add(botoesAtaque_btn4);
-			
 			JButton botoesAtaque_btnVoltar = new JButton("Voltar");
 			botoesAtaque_btnVoltar.setBounds(585, 7, 141, 56);
+			botoesAtaque_btn4.setBounds(441, 7, 140, 56);
+			batalha_botoesAtaque.add(botoesAtaque_btn4);
+			
 			botoesAtaque_btnVoltar.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					botoesAtaque.setVisible(false);
+					batalha_botoesAtaque.setVisible(false);
 					batalha_botoesPrincipais.setVisible(true);
 					batalha_txtBox.setVisible(true);
 				}
 			});
-			botoesAtaque.add(botoesAtaque_btnVoltar);
+			batalha_botoesAtaque.add(botoesAtaque_btnVoltar);
 		
 		batalha_txtBox.setFont(new Font("Monospaced", Font.BOLD, 20));
 		batalha_txtBox.setEditable(false);
@@ -269,6 +230,22 @@ public class GUI {
 		batalha_txtBox.setText("O que quer fazer?");
 		batalha_txtBox.setBounds(41, 380, 402, 70);
 		painelBatalha.add(batalha_txtBox);
+		
+		batalha_botaoAvancar.setBounds(25, 380, 733, 70);
+		batalha_botaoAvancar.setOpaque(false);
+		painelBatalha.add(batalha_botaoAvancar);
+		batalha_botaoAvancar.setLayout(null);
+		
+			JButton botaoAvancar_btnOk = new JButton("Continuar");
+			botaoAvancar_btnOk.setBounds(585, 7, 141, 56);
+			botaoAvancar_btnOk.setIcon(resize("/imagens/Botoes/Botao.png", botaoAvancar_btnOk));
+			botaoAvancar_btnOk.setIconTextGap(-95);
+			botaoAvancar_btnOk.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+				}
+			});
+		batalha_botaoAvancar.add(botaoAvancar_btnOk);
+		
 		
 		JLabel batalha_lblMenuBackground = new JLabel("");
 		batalha_lblMenuBackground.setBounds(0, 368, 784, 93);
@@ -307,12 +284,6 @@ public class GUI {
 			poke1_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke1_lbl));
 			pokepool_poke1.add(poke1_lbl);
 			
-			if(trainer1.getPool().getPokemon(0) != null){
-				poke1_btn.setLabel(trainer1.getPool().getPokemon(0).getNome());
-				poke1_btn.setEnabled(true);
-			}
-			else poke1_btn.setEnabled(false);
-			
 		
 		JPanel pokepool_poke2 = new JPanel();
 		pokepool_poke2.setBounds(41, 158, 222, 103);
@@ -332,12 +303,7 @@ public class GUI {
 			poke2_lbl.setBounds(0, 0, 222, 103);
 			poke2_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke2_lbl));
 			pokepool_poke2.add(poke2_lbl);
-			
-			if(trainer1.getPool().getPokemon(1) != null){
-				poke2_btn.setLabel(trainer1.getPool().getPokemon(1).getNome());
-				poke2_btn.setEnabled(true);
-			}
-			else poke2_btn.setEnabled(false);
+		
 		
 		JPanel pokepool_poke3 = new JPanel();
 		pokepool_poke3.setBounds(41, 294, 222, 103);
@@ -358,11 +324,6 @@ public class GUI {
 			poke3_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke3_lbl));
 			pokepool_poke3.add(poke3_lbl);
 			
-			if(trainer1.getPool().getPokemon(2) != null){
-				poke3_btn.setLabel(trainer1.getPool().getPokemon(2).getNome());
-				poke3_btn.setEnabled(true);
-			}
-			else poke3_btn.setEnabled(false);
 		
 		JPanel pokepool_poke4 = new JPanel();
 		pokepool_poke4.setBounds(510, 32, 222, 103);
@@ -383,11 +344,6 @@ public class GUI {
 			poke4_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke4_lbl));
 			pokepool_poke4.add(poke4_lbl);
 			
-			if(trainer1.getPool().getPokemon(3) != null){
-				poke4_btn.setLabel(trainer1.getPool().getPokemon(3).getNome());
-				poke4_btn.setEnabled(true);
-			}
-			else poke4_btn.setEnabled(false);
 		
 		JPanel pokepool_poke5 = new JPanel();
 		pokepool_poke5.setBounds(510, 158, 222, 103);
@@ -408,11 +364,6 @@ public class GUI {
 			poke5_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke5_lbl));
 			pokepool_poke5.add(poke5_lbl);
 			
-			if(trainer1.getPool().getPokemon(4) != null){
-				poke5_btn.setLabel(trainer1.getPool().getPokemon(4).getNome());
-				poke5_btn.setEnabled(true);
-			}
-			else poke5_btn.setEnabled(false);
 			
 		JPanel pokepool_poke6 = new JPanel();
 		pokepool_poke6.setBounds(510, 294, 222, 103);
@@ -420,9 +371,9 @@ public class GUI {
 		pokepool_poke6.setLayout(null);
 		pokepool_poke6.setOpaque(false);
 		
-			JProgressBar poke6_hpBar6 = new JProgressBar();
-			poke6_hpBar6.setBounds(80, 72, 130, 12);
-			pokepool_poke6.add(poke6_hpBar6);
+			JProgressBar poke6_hpBar = new JProgressBar();
+			poke6_hpBar.setBounds(80, 72, 130, 12);
+			pokepool_poke6.add(poke6_hpBar);
 			
 			JButton poke6_btn = new JButton("New button");
 			poke6_btn.setBounds(64, 24, 130, 23);
@@ -433,11 +384,6 @@ public class GUI {
 			poke6_lbl.setIcon(resize("/imagens/Moldura/mostrador.png", poke6_lbl));
 			pokepool_poke6.add(poke6_lbl);
 			
-			if(trainer1.getPool().getPokemon(5) != null){
-				poke6_btn.setLabel(trainer1.getPool().getPokemon(5).getNome());
-				poke6_btn.setEnabled(true);
-			}
-			else poke6_btn.setEnabled(false);
 		
 		JButton pokepool_btnCancelar = new JButton("Cancelar");
 		pokepool_btnCancelar.addActionListener(new ActionListener() {
@@ -697,11 +643,170 @@ public class GUI {
 		
 		
 		
+		/*
+		 * INICIO DA BATALHA
+		 */
+		
+		//Aviso de começo de batalha
 		painelBatalha.setVisible(true);
 		painelPokePool.setVisible(false);
 		painelItem.setVisible(false);
-		batalha_botoesPrincipais.setVisible(true);
-		botoesAtaque.setVisible(false);
+		
+		batalha_botoesPrincipais.setVisible(false);
+		batalha_botoesAtaque.setVisible(false);
+		batalha_botaoAvancar.setVisible(true);
+		batalha_txtBox.setVisible(true);
+		batalha_mostrador1.setVisible(false);
+		batalha_mostrador2.setVisible(false);
+		batalha_lblMostrador1.setVisible(false);
+		batalha_lblMostrador2.setVisible(false);
+		batalha_txtBox.setText("Você foi desafiado para uma batalha Pokemon!");
+		botaoAvancar_btnOk.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				batalha_botoesPrincipais.setVisible(true);
+				batalha_botaoAvancar.setVisible(false);
+				batalha_txtBox.setText("O que quer fazer?");
+				
+				batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
+				batalha_lblPlayer2.setIcon(resize("/imagens/Pokemon/front/"+ trainer2.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer2));
+				batalha_mostrador1.setVisible(true);
+				batalha_mostrador2.setVisible(true);
+				batalha_lblMostrador1.setVisible(true);
+				batalha_lblMostrador2.setVisible(true);
+				mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
+				mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
+				mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
+				mostrador2_nome.setText(trainer2.getPool().getPokemon(0).getNome());
+				mostrador2_hpBar.setMaximum(trainer2.getPool().getPokemon(0).getMaxHp());
+				mostrador2_hpBar.setValue(trainer2.getPool().getPokemon(0).getCurHp());
+			}
+		});
+		
+		//Funcoes Botoes Principais
+			//Atacar
+		botoesPrincipais_btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				batalha_botoesAtaque.setVisible(true);
+				batalha_botoesPrincipais.setVisible(false);
+				batalha_txtBox.setVisible(false);
+				
+				
+				if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(0) != null){
+					botoesAtaque_btn1.setText(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(0).getNome());
+					botoesAtaque_btn1.setEnabled(true);
+				}
+				else{
+					botoesAtaque_btn1.setText("");
+					botoesAtaque_btn1.setEnabled(false);
+				}
+		
+				if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(1) != null){
+					botoesAtaque_btn2.setText(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(1).getNome());
+					botoesAtaque_btn2.setEnabled(true);
+				}
+				else{
+					botoesAtaque_btn2.setText("");
+					botoesAtaque_btn2.setEnabled(false);
+				}
+			
+				if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(2) != null){
+					botoesAtaque_btn3.setText(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(2).getNome());
+					botoesAtaque_btn3.setEnabled(true);
+				}
+				else{
+					botoesAtaque_btn3.setText("");
+					botoesAtaque_btn3.setEnabled(false);
+				}
+			
+				if(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(3) != null){
+					botoesAtaque_btn4.setText(trainer1.getPool().getPokemon(0).getAtkPool().getAtaqueAtualX(3).getNome());
+					botoesAtaque_btn4.setEnabled(true);
+				}
+				else{
+					botoesAtaque_btn4.setText("");
+					botoesAtaque_btn4.setEnabled(false);
+				}
+
+			}
+		});
+		
+			//Trocar Pokemon
+		botoesPrincipais_btn2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				painelBatalha.setVisible(false);
+				painelPokePool.setVisible(true);
+				painelItem.setVisible(false);
+				
+				if(trainer1.getPool().getPokemon(0) != null){
+					poke1_btn.setText(trainer1.getPool().getPokemon(0).getNome());
+					poke1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
+					poke1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
+					if(trainer1.getPool().getPokemon(0).getCurHp() == 0) poke1_btn.setEnabled(false);
+				}
+				poke1_btn.setEnabled(false);
+				if(trainer1.getPool().getPokemon(1) != null){
+					poke2_btn.setText(trainer1.getPool().getPokemon(1).getNome());
+					poke2_btn.setEnabled(true);
+					poke2_hpBar.setMaximum(trainer1.getPool().getPokemon(1).getMaxHp());
+					poke2_hpBar.setValue(trainer1.getPool().getPokemon(1).getCurHp());
+					if(trainer1.getPool().getPokemon(1).getCurHp() == 0) poke2_btn.setEnabled(false);
+				}
+				else poke2_btn.setEnabled(false);
+				if(trainer1.getPool().getPokemon(2) != null){
+					poke3_btn.setText(trainer1.getPool().getPokemon(2).getNome());
+					poke3_btn.setEnabled(true);
+					poke3_hpBar.setMaximum(trainer1.getPool().getPokemon(2).getMaxHp());
+					poke3_hpBar.setValue(trainer1.getPool().getPokemon(2).getCurHp());
+					if(trainer1.getPool().getPokemon(2).getCurHp() == 0) poke3_btn.setEnabled(false);
+				}
+				else poke3_btn.setEnabled(false);
+				if(trainer1.getPool().getPokemon(3) != null){
+					poke4_btn.setText(trainer1.getPool().getPokemon(3).getNome());
+					poke4_btn.setEnabled(true);
+					poke4_hpBar.setMaximum(trainer1.getPool().getPokemon(3).getMaxHp());
+					poke4_hpBar.setValue(trainer1.getPool().getPokemon(3).getCurHp());
+					if(trainer1.getPool().getPokemon(3).getCurHp() == 0) poke4_btn.setEnabled(false);
+				}
+				else poke4_btn.setEnabled(false);
+				if(trainer1.getPool().getPokemon(4) != null){
+					poke5_btn.setText(trainer1.getPool().getPokemon(4).getNome());
+					poke5_btn.setEnabled(true);
+					poke5_hpBar.setMaximum(trainer1.getPool().getPokemon(4).getMaxHp());
+					poke5_hpBar.setValue(trainer1.getPool().getPokemon(4).getCurHp());
+					if(trainer1.getPool().getPokemon(4).getCurHp() == 0) poke5_btn.setEnabled(false);
+				}
+				else poke5_btn.setEnabled(false);
+				if(trainer1.getPool().getPokemon(5) != null){
+					poke6_btn.setText(trainer1.getPool().getPokemon(5).getNome());
+					poke6_btn.setEnabled(true);
+					poke6_hpBar.setMaximum(trainer1.getPool().getPokemon(5).getMaxHp());
+					poke6_hpBar.setValue(trainer1.getPool().getPokemon(5).getCurHp());
+					if(trainer1.getPool().getPokemon(5).getCurHp() == 0) poke1_btn.setEnabled(false);
+				}
+				else poke6_btn.setEnabled(false);
+			}
+		});
+
+			
+		
+		//Açoes
+			//Trocar Pokemon
+		poke2_btn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				trainer1.getPool().switchPokemon(1);
+				batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
+				mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
+				mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
+				mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
+				
+				painelBatalha.setVisible(true);
+				painelPokePool.setVisible(false);
+				batalha_botoesPrincipais.setVisible(false);
+				
+				
+				pokepool_btnCancelar.doClick();
+			}
+		});
 	
 	}
 }
