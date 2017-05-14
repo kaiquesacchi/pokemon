@@ -792,18 +792,18 @@ public class GUI {
 		
 		//Açoes
 			//Trocar Pokemon
-			gerarBtnTrocaPokemon(poke2_btn, 2, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
-			gerarBtnTrocaPokemon(poke3_btn, 3, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
-			gerarBtnTrocaPokemon(poke4_btn, 4, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
-			gerarBtnTrocaPokemon(poke5_btn, 5, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
-			gerarBtnTrocaPokemon(poke6_btn, 6, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnTrocaPokemon(poke2_btn, 2, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
+			gerarBtnTrocaPokemon(poke3_btn, 3, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
+			gerarBtnTrocaPokemon(poke4_btn, 4, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
+			gerarBtnTrocaPokemon(poke5_btn, 5, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
+			gerarBtnTrocaPokemon(poke6_btn, 6, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
 		
 
 			//Atacar
-			gerarBtnAtacar(botoesAtaque_btn1, 1, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
-			gerarBtnAtacar(botoesAtaque_btn2, 2, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
-			gerarBtnAtacar(botoesAtaque_btn3, 3, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
-			gerarBtnAtacar(botoesAtaque_btn4, 4, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar);
+			gerarBtnAtacar(botoesAtaque_btn1, 1, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
+			gerarBtnAtacar(botoesAtaque_btn2, 2, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
+			gerarBtnAtacar(botoesAtaque_btn3, 3, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
+			gerarBtnAtacar(botoesAtaque_btn4, 4, trainer1, trainer2, batalha_txtBox, painelBatalha, painelPokePool, batalha_botoesPrincipais, batalha_botoesAtaque, batalha_botaoAvancar, botaoAvancar_btnOk, batalha_lblPlayer1, mostrador1_nome, mostrador1_hpBar, botoesPrincipais_btn2);
 		
 		
 			//Usar Item
@@ -842,7 +842,7 @@ public class GUI {
 	
 	
 	private void gerarBtnTrocaPokemon(JButton BOTAO, int NUMERO, Trainer trainer1, Trainer trainer2, JTextPane batalha_txtBox, JPanel painelBatalha, JPanel painelPokePool, JPanel batalha_botoesPrincipais, JPanel batalha_botaoAvancar, JButton botaoAvancar_btnOk, JLabel batalha_lblPlayer1,
-			JLabel mostrador1_nome, JProgressBar mostrador1_hpBar){
+			JLabel mostrador1_nome, JProgressBar mostrador1_hpBar, JButton botoesPrincipais_btn2){
 		BOTAO.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				TrocaPokemon troca = new TrocaPokemon(NUMERO-1, trainer1.getPool());
@@ -871,7 +871,7 @@ public class GUI {
 				batalha_botaoAvancar.setVisible(true);
 				botaoAvancar_btnOk.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e){
-						gerarTelaLog(batalha_lblPlayer1, trainer1, mostrador1_nome, mostrador1_hpBar, batalha_botoesPrincipais, batalha_botaoAvancar, batalha_txtBox);
+						gerarBtnOk(batalha_lblPlayer1, trainer1, mostrador1_nome, mostrador1_hpBar, batalha_botoesPrincipais, batalha_botaoAvancar, batalha_txtBox, botaoAvancar_btnOk, botoesPrincipais_btn2);
 					}
 				});
 			}
@@ -879,7 +879,7 @@ public class GUI {
 	}
 	
 	private void gerarBtnAtacar(JButton BOTAO, int NUMERO, Trainer trainer1, Trainer trainer2, JTextPane batalha_txtBox, JPanel painelBatalha, JPanel painelPokePool, JPanel batalha_botoesPrincipais, JPanel batalha_botoesAtaque, JPanel batalha_botaoAvancar,
-			JButton botaoAvancar_btnOk, JLabel batalha_lblPlayer1, JLabel mostrador1_nome, JProgressBar mostrador1_hpBar){
+			JButton botaoAvancar_btnOk, JLabel batalha_lblPlayer1, JLabel mostrador1_nome, JProgressBar mostrador1_hpBar, JButton botoesPrincipais_btn2){
 		BOTAO.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -909,9 +909,11 @@ public class GUI {
 					batalha_botaoAvancar.setVisible(true);
 					botaoAvancar_btnOk.addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent e){
-							gerarTelaLog(batalha_lblPlayer1, trainer1, mostrador1_nome, mostrador1_hpBar, batalha_botoesPrincipais, batalha_botaoAvancar, batalha_txtBox);
+							gerarBtnOk(batalha_lblPlayer1, trainer1, mostrador1_nome, mostrador1_hpBar, batalha_botoesPrincipais, batalha_botaoAvancar, batalha_txtBox, botaoAvancar_btnOk, botoesPrincipais_btn2);
 						}
 					});
+					
+
 					
 				} catch (IOException e1) {
 					e1.printStackTrace();
@@ -920,15 +922,27 @@ public class GUI {
 		});
 	}
 	
-	private void gerarTelaLog(JLabel batalha_lblPlayer1, Trainer trainer1, JLabel mostrador1_nome, JProgressBar mostrador1_hpBar, JPanel batalha_botoesPrincipais, JPanel batalha_botaoAvancar, JTextPane batalha_txtBox){
+	private void gerarBtnOk(JLabel batalha_lblPlayer1, Trainer trainer1, JLabel mostrador1_nome, JProgressBar mostrador1_hpBar, JPanel batalha_botoesPrincipais, JPanel batalha_botaoAvancar, JTextPane batalha_txtBox
+			, JButton botaoAvancar_btnOk, JButton botoesPrincipais_btn2){
 		batalha_lblPlayer1.setIcon(resize("/imagens/Pokemon/back/"+ trainer1.getPool().getPokemon(0).getId() +".png", batalha_lblPlayer1));
 		mostrador1_nome.setText(trainer1.getPool().getPokemon(0).getNome());
 		mostrador1_hpBar.setMaximum(trainer1.getPool().getPokemon(0).getMaxHp());
 		mostrador1_hpBar.setValue(trainer1.getPool().getPokemon(0).getCurHp());
 		
+		if (trainer1.getPool().getPokemon(0).getCurHp() > 0){
 		batalha_botoesPrincipais.setVisible(true);
 		batalha_botaoAvancar.setVisible(false);
 		batalha_txtBox.setText("O que quer fazer?");
+
+		}
+		else{
+			batalha_txtBox.setText("Seu pokemon foi derrotado...");
+			botaoAvancar_btnOk.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e){
+					botoesPrincipais_btn2.doClick();
+				}
+			});
+		}
 	}
 	
 }
