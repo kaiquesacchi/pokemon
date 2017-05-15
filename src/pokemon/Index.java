@@ -65,9 +65,9 @@ public class Index {
 					aux=1;
 					while(pool1.dead(aux)){
 						aux++;
-						if(aux>5) break;
+						if(aux>pool1.getLenght()) break;
 					}
-					if(aux>5) break; //termina a batalha
+					if(aux>pool1.getLenght()) break; //termina a batalha
 					System.out.println("Morreu, trocando por "+pool1.getPokemon(aux).getNome());
 					actRes(2, ataque1, ataque2, itens1, pool1, 0, aux);
 					ataque1 = new Atacar(pool1, pool2, tipos);
@@ -96,9 +96,9 @@ public class Index {
 					aux=1;
 					while(pool2.dead(aux)){
 						aux++;
-						if(aux>5) break;
+						if(aux>pool2.getLenght()) break;
 					}
-					if(aux>5) break; //termina a batalha
+					if(aux>pool2.getLenght()) break; //termina a batalha
 					System.out.println("Morreu, trocando por "+pool2.getPokemon(aux).getNome());
 					actRes(2, ataque2, ataque1, itens2, pool2, 0, aux);
 					ataque1 = new Atacar(pool1, pool2, tipos);
@@ -121,7 +121,7 @@ public class Index {
 	public static void main(String[] args) throws IOException{
 		//Carregadores de banco de dados
 		Ataque[] ataques = CarregaTxt.leitorAtaque("txt/moves.txt");
-		PokemonBase[] pokemons = CarregaTxt.leitorPokemon("resourse/pokemon.txt", ataques);
+		PokemonBase[] pokemons = CarregaTxt.leitorPokemon("resource/pokemon.txt", ataques);
 		Type tipos = CarregaTxt.leitorTypeChart("txt/type.txt");
 		Potion[] potions = CarregaTxt.leitorPotions("txt/Itens/Potion");
 		Pokeball[] pokeballs = CarregaTxt.leitorPokeballs("txt/Itens/Pokeball");

@@ -14,6 +14,7 @@ public class PkmPool {
 		boolean aux=false;
 		while(a<6){
 			if(pokemons.length < a+1) break;
+			System.out.println("pokemon== "+pokemons[a].getNome());
 			if(pokemons[a].getStatsVol().getHp() > 0) aux=true;
 			++a;
 		}

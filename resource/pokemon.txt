@@ -1,0 +1,2389 @@
+1
+Bulbasaur
+GRASS,POISON
+----------Status-----------
+49,49,65,45,45
+--------Ataques Atuais --------
+TACKLE,GROWL,
+------tms Recebiveis-------
+3,6,8,9,10,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+7 - LEECH SEED
+13 - VINE WHIP
+20 - POISONPOWDER
+27 - RAZOR LEAF
+34 - GROWTH
+41 - SLEEP POWDER
+48 - SOLARBEAM
+||||
+2
+Ivysaur
+GRASS,POISON
+----------Status-----------
+62,63,80,60,60
+--------Ataques Atuais --------
+TACKLE,GROWL,LEECH SEED,
+------tms Recebiveis-------
+3,6,8,9,10,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+7 - LEECH SEED
+13 - VINE WHIP
+22 - POISONPOWDER
+30 - RAZOR LEAF
+38 - GROWTH
+46 - SLEEP POWDER
+54 - SOLARBEAM
+||||
+3
+Venusaur
+GRASS,POISON
+----------Status-----------
+82,83,100,80,80
+--------Ataques Atuais --------
+TACKLE,GROWL,LEECH SEED,VINE WHIP,
+------tms Recebiveis-------
+3,6,8,9,10,15,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+7 - LEECH SEED
+13 - VINE WHIP
+22 - POISONPOWDER
+30 - RAZOR LEAF
+43 - GROWTH
+55 - SLEEP POWDER
+65 - SOLARBEAM
+||||
+4
+Charmander
+Fire,null
+----------Status-----------
+52,43,50,65,39
+--------Ataques Atuais --------
+SCRATCH,GROWL,
+------tms Recebiveis-------
+1,3,5,6,8,9,10,17,18,19,20,23,28,31,32,33,34,38,39,40,44,50,51,54,0,
+-------Ataques Por Nivel-------
+9 - EMBER
+15 - LEER
+22 - RAGE
+30 - SLASH
+38 - FLAMETHROWER
+46 - FIRE SPIN
+||||
+5
+Charmeleon
+Fire,null
+----------Status-----------
+64,58,65,80,58
+--------Ataques Atuais --------
+SCRATCH,GROWL,EMBER,
+------tms Recebiveis-------
+1,3,5,6,8,9,10,17,18,19,20,23,28,31,32,33,34,38,39,40,44,50,51,54,0,
+-------Ataques Por Nivel-------
+9 - EMBER
+15 - LEER
+24 - RAGE
+33 - SLASH
+42 - FLAMETHROWER
+56 - FIRE SPIN
+||||
+6
+Charizard
+FIRE,FLYING
+----------Status-----------
+84,78,85,100,78
+--------Ataques Atuais --------
+SCRATCH,GROWL,EMBER,LEER,
+------tms Recebiveis-------
+1,3,5,6,8,9,10,15,17,18,19,20,23,26,27,28,31,32,33,34,38,39,40,44,50,51,54,0,
+-------Ataques Por Nivel-------
+9 - EMBER
+15 - LEER
+24 - RAGE
+36 - SLASH
+46 - FLAMETHROWER
+55 - FIRE SPIN
+||||
+7
+Squirtle
+Water,null
+----------Status-----------
+48,65,50,43,44
+--------Ataques Atuais --------
+TACKLE,TAIL WHIP,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,17,18,19,20,28,31,32,33,34,40,44,50,53,54,0,
+-------Ataques Por Nivel-------
+8 - BUBBLE
+15 - WATER GUN
+22 - BITE
+28 - WITHDRAW
+35 - SKULL BASH
+42 - HYDRO PUMP
+||||
+8
+Wartortle
+Water,null
+----------Status-----------
+63,80,65,58,59
+--------Ataques Atuais --------
+TACKLE,TAIL WHIP,BUBBLE,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,17,18,19,20,28,31,32,33,34,40,44,50,53,54,0,
+-------Ataques Por Nivel-------
+8 - BUBBLE
+15 - WATER GUN
+24 - BITE
+31 - WITHDRAW
+39 - SKULL BASH
+47 - HYDRO PUMP
+||||
+9
+Blastoise
+Water,null
+----------Status-----------
+83,100,85,78,79
+--------Ataques Atuais --------
+TACKLE,TAIL WHIP,BUBBLE,WATER GUN,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,26,27,28,31,32,33,34,40,44,50,53,54,0,
+-------Ataques Por Nivel-------
+8 - BUBBLE
+15 - WATER GUN
+24 - BITE
+31 - WITHDRAW
+42 - SKULL BASH
+52 - HYDRO PUMP
+||||
+10
+Caterpie
+Bug,null
+----------Status-----------
+30,35,20,45,45
+--------Ataques Atuais --------
+TACKLE,STRING SHOT,
+------tms Recebiveis-------
+0,0,0,0,0,0,0,0,
+-------Ataques Por Nivel-------
+||||
+11
+Metapod
+Bug,null
+----------Status-----------
+20,55,25,30,50
+--------Ataques Atuais --------
+HARDEN,
+------tms Recebiveis-------
+0,0,0,0,0,0,0,0,
+-------Ataques Por Nivel-------
+||||
+12
+Butterfree
+BUG,FLYING
+----------Status-----------
+45,50,80,70,60
+--------Ataques Atuais --------
+CONFUSION,
+------tms Recebiveis-------
+2,4,6,9,10,15,20,21,22,29,30,31,32,33,34,39,44,46,50,0,
+-------Ataques Por Nivel-------
+12 - CONFUSION
+15 - POISONPOWDER
+16 - STUN SPORE
+17 - SLEEP POWDER
+21 - SUPERSONIC
+26 - WHIRLWIND
+32 - PSYBEAM
+||||
+13
+Weedle
+BUG,POISON
+----------Status-----------
+35,30,20,50,40
+--------Ataques Atuais --------
+POISON STING,STRING SHOT,
+------tms Recebiveis-------
+0,0,0,0,0,0,0,0,
+-------Ataques Por Nivel-------
+||||
+14
+Kakuna
+BUG,POISON
+----------Status-----------
+25,50,25,35,45
+--------Ataques Atuais --------
+HARDEN,
+------tms Recebiveis-------
+0,0,0,0,0,0,0,0,
+-------Ataques Por Nivel-------
+||||
+15
+Beedrill
+BUG,POISON
+----------Status-----------
+80,40,45,75,65
+--------Ataques Atuais --------
+FURY ATTACK,
+------tms Recebiveis-------
+3,6,9,10,15,20,21,31,32,33,34,39,40,44,50,51,0,
+-------Ataques Por Nivel-------
+12 - FURY ATTACK
+16 - FOCUS ENERGY
+20 - TWINEEDLE
+25 - RAGE
+30 - PIN MISSILE
+35 - AGILITY
+||||
+16
+Pidgey
+NORMAL,FLYING
+----------Status-----------
+45,40,35,56,40
+--------Ataques Atuais --------
+GUST,
+------tms Recebiveis-------
+2,4,6,9,10,20,31,32,33,34,39,43,44,50,52,0,
+-------Ataques Por Nivel-------
+5 - SAND ATTACK
+12 - QUICK ATTACK
+19 - WHIRLWIND
+28 - WING ATTACK
+36 - AGILITY
+44 - MIRROR MOVE
+||||
+17
+Pidgeotto
+NORMAL,FLYING
+----------Status-----------
+60,55,50,71,63
+--------Ataques Atuais --------
+GUST,SAND ATTACK,
+------tms Recebiveis-------
+2,4,6,9,10,20,31,32,33,34,39,43,44,50,52,0,
+-------Ataques Por Nivel-------
+5 - SAND ATTACK
+12 - QUICK ATTACK
+21 - WHIRLWIND
+31 - WING ATTACK
+40 - AGILITY
+49 - MIRROR MOVE
+||||
+18
+Pidgeot
+NORMAL,FLYING
+----------Status-----------
+80,75,70,91,83
+--------Ataques Atuais --------
+GUST,SAND ATTACK,QUICK ATTACK,
+------tms Recebiveis-------
+2,4,6,9,10,15,20,31,32,33,34,39,43,44,50,52,0,
+-------Ataques Por Nivel-------
+5 - SAND ATTACK
+12 - QUICK ATTACK
+21 - WHIRLWIND
+31 - WING ATTACK
+44 - AGILITY
+54 - MIRROR MOVE
+||||
+19
+Rattata
+Normal,null
+----------Status-----------
+56,35,25,72,30
+--------Ataques Atuais --------
+TACKLE,TAIL WHIP,
+------tms Recebiveis-------
+6,8,9,10,11,12,14,20,24,25,28,31,32,34,39,40,44,50,0,
+-------Ataques Por Nivel-------
+7 - QUICK ATTACK
+14 - HYPER FANG
+23 - FOCUS ENERGY
+34 - SUPER FANG
+||||
+20
+Raticate
+Normal,null
+----------Status-----------
+81,60,50,97,55
+--------Ataques Atuais --------
+TACKLE,TAIL WHIP,QUICK ATTACK,
+------tms Recebiveis-------
+6,8,9,10,11,12,13,14,15,20,24,25,28,31,32,34,39,40,44,50,0,
+-------Ataques Por Nivel-------
+7 - QUICK ATTACK
+14 - HYPER FANG
+27 - FOCUS ENERGY
+41 - SUPER FANG
+||||
+21
+Spearow
+NORMAL,FLYING
+----------Status-----------
+60,30,31,70,40
+--------Ataques Atuais --------
+PECK,GROWL,
+------tms Recebiveis-------
+2,4,6,9,10,20,31,32,34,39,43,44,50,52,0,
+-------Ataques Por Nivel-------
+9 - LEER
+15 - FURY ATTACK
+22 - MIRROR MOVE
+29 - DRILL PECK
+36 - AGILITY
+||||
+22
+Fearow
+NORMAL,FLYING
+----------Status-----------
+90,65,61,100,65
+--------Ataques Atuais --------
+PECK,GROWL,LEER,
+------tms Recebiveis-------
+2,4,6,9,10,15,20,31,32,34,39,43,44,50,52,0,
+-------Ataques Por Nivel-------
+9 - LEER
+15 - FURY ATTACK
+25 - MIRROR MOVE
+34 - DRILL PECK
+43 - AGILITY
+||||
+23
+Ekans
+Poison,null
+----------Status-----------
+60,44,40,55,35
+--------Ataques Atuais --------
+WRAP,LEER,
+------tms Recebiveis-------
+6,8,9,10,20,21,26,27,28,31,32,34,40,44,48,50,54,0,
+-------Ataques Por Nivel-------
+10 - POISON STING
+17 - BITE
+24 - GLARE
+31 - SCREECH
+38 - ACID
+||||
+24
+Arbok
+Poison,null
+----------Status-----------
+85,69,65,80,60
+--------Ataques Atuais --------
+WRAP,LEER,POISON STING,
+------tms Recebiveis-------
+6,8,9,10,15,20,21,26,27,28,31,32,34,40,44,48,50,54,0,
+-------Ataques Por Nivel-------
+10 - POISON STING
+17 - BITE
+27 - GLARE
+36 - SCREECH
+47 - ACID
+||||
+25
+Pikachu
+Electric,null
+----------Status-----------
+55,30,50,90,35
+--------Ataques Atuais --------
+THUNDERSHOCK,GROWL,
+------tms Recebiveis-------
+1,5,6,8,9,10,16,17,19,20,24,25,31,32,33,34,39,40,44,45,50,55,0,
+-------Ataques Por Nivel-------
+9 - THUNDER WAVE
+16 - QUICK ATTACK
+26 - SWIFT
+33 - AGILITY
+43 - THUNDER
+||||
+26
+Raichu
+Electric,null
+----------Status-----------
+90,55,90,100,60
+--------Ataques Atuais --------
+THUNDERSHOCK,GROWL,THUNDER WAVE,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,16,17,19,20,24,25,31,32,33,34,39,40,44,45,50,55,0,
+-------Ataques Por Nivel-------
+||||
+27
+Sandshrew
+Ground,null
+----------Status-----------
+75,85,30,40,50
+--------Ataques Atuais --------
+SCRATCH,
+------tms Recebiveis-------
+3,6,8,9,10,17,19,20,26,27,28,31,32,34,39,40,44,48,50,51,54,0,
+-------Ataques Por Nivel-------
+10 - SAND ATTACK
+17 - SLASH
+24 - POISON STING
+31 - SWIFT
+38 - FURY SWIPES
+||||
+28
+Sandslash
+Ground,null
+----------Status-----------
+100,110,55,65,75
+--------Ataques Atuais --------
+SCRATCH,SAND ATTACK,
+------tms Recebiveis-------
+3,6,8,9,10,15,17,19,20,26,27,28,31,32,34,39,40,44,48,50,51,54,0,
+-------Ataques Por Nivel-------
+10 - SAND ATTACK
+17 - SLASH
+27 - POISON STING
+36 - SWIFT
+47 - FURY SWIPES
+||||
+29
+NidoranF
+Poison,null
+----------Status-----------
+47,52,40,41,55
+--------Ataques Atuais --------
+GROWL,TACKLE,
+------tms Recebiveis-------
+6,8,9,10,14,20,24,25,31,32,33,34,40,44,50,0,
+-------Ataques Por Nivel-------
+8 - SCRATCH
+14 - POISON STING
+21 - TAIL WHIP
+29 - BITE
+36 - FURY SWIPES
+43 - DOUBLE KICK
+||||
+30
+Nidorina
+Poison,null
+----------Status-----------
+62,67,55,56,70
+--------Ataques Atuais --------
+GROWL,TACKLE,SCRATCH,
+------tms Recebiveis-------
+6,7,8,9,10,11,12,13,14,20,24,25,31,32,33,34,40,44,50,0,
+-------Ataques Por Nivel-------
+8 - SCRATCH
+14 - POISON STING
+23 - TAIL WHIP
+32 - BITE
+41 - FURY SWIPES
+50 - DOUBLE KICK
+||||
+31
+Nidoqueen
+POISON,GROUND
+----------Status-----------
+82,87,75,76,90
+--------Ataques Atuais --------
+TACKLE,SCRATCH,TAIL WHIP,BODY SLAM,
+------tms Recebiveis-------
+1,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,25,26,27,31,32,33,34,38,40,44,48,50,53,54,0,
+-------Ataques Por Nivel-------
+8 - SCRATCH
+14 - POISON STING
+23 - BODY SLAM
+||||
+32
+NidoranM
+Poison,null
+----------Status-----------
+57,40,40,50,46
+--------Ataques Atuais --------
+LEER,TACKLE,
+------tms Recebiveis-------
+6,7,8,9,10,14,20,24,25,31,32,33,34,40,44,50,0,
+-------Ataques Por Nivel-------
+8 - HORN ATTACK
+14 - POISON STING
+21 - FOCUS ENERGY
+29 - FURY ATTACK
+36 - HORN DRILL
+43 - DOUBLE KICK
+||||
+33
+Nidorino
+Poison,null
+----------Status-----------
+72,57,55,65,61
+--------Ataques Atuais --------
+LEER,TACKLE,HORN ATTACK,
+------tms Recebiveis-------
+6,7,8,9,10,11,12,13,14,20,24,25,31,32,33,34,40,44,50,0,
+-------Ataques Por Nivel-------
+8 - HORN ATTACK
+14 - POISON STING
+23 - FOCUS ENERGY
+32 - FURY ATTACK
+41 - HORN DRILL
+50 - DOUBLE KICK
+||||
+34
+Nidoking
+POISON,GROUND
+----------Status-----------
+92,77,75,85,81
+--------Ataques Atuais --------
+TACKLE,HORN ATTACK,POISON STING,THRASH,
+------tms Recebiveis-------
+1,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,25,26,27,31,32,33,34,38,40,44,48,50,53,54,0,
+-------Ataques Por Nivel-------
+8 - HORN ATTACK
+14 - POISON STING
+23 - THRASH
+||||
+35
+Clefairy
+Fairy,null
+----------Status-----------
+45,48,60,35,70
+--------Ataques Atuais --------
+POUND,GROWL,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,17,18,19,20,22,24,25,29,30,31,32,33,34,35,38,40,44,45,46,49,50,54,55,0,
+-------Ataques Por Nivel-------
+13 - SING
+18 - DOUBLESLAP
+24 - MINIMIZE
+31 - METRONOME
+39 - DEFENSE CURL
+48 - LIGHT SCREEN
+||||
+36
+Clefable
+Fairy,null
+----------Status-----------
+70,73,85,60,95
+--------Ataques Atuais --------
+SING,DOUBLESLAP,MINIMIZE,METRONOME,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,22,24,25,29,30,31,32,33,34,35,38,40,44,45,46,49,50,54,55,0,
+-------Ataques Por Nivel-------
+||||
+37
+Vulpix
+Fire,null
+----------Status-----------
+41,40,65,65,38
+--------Ataques Atuais --------
+EMBER,TAIL WHIP,
+------tms Recebiveis-------
+6,8,9,10,20,28,31,32,33,34,38,39,40,44,50,0,
+-------Ataques Por Nivel-------
+16 - QUICK ATTACK
+21 - ROAR
+28 - CONFUSE RAY
+35 - FLAMETHROWER
+42 - FIRE SPIN
+||||
+38
+Ninetales
+Fire,null
+----------Status-----------
+76,75,100,100,73
+--------Ataques Atuais --------
+EMBER,TAIL WHIP,QUICK ATTACK,ROAR,
+------tms Recebiveis-------
+6,8,9,10,15,20,28,31,32,33,34,38,39,40,44,50,0,
+-------Ataques Por Nivel-------
+||||
+39
+Jigglypuff
+NORMAL,FAIRY
+----------Status-----------
+45,20,25,20,115
+--------Ataques Atuais --------
+SING,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,17,18,19,20,22,24,25,29,30,31,32,33,34,38,40,44,45,46,49,50,54,55,0,
+-------Ataques Por Nivel-------
+9 - POUND
+14 - DISABLE
+19 - DEFENSE CURL
+24 - DOUBLESLAP
+29 - REST
+34 - BODY SLAM
+39 - DOUBLE EDGE
+||||
+40
+Wigglytuff
+NORMAL,FAIRY
+----------Status-----------
+70,45,50,45,140
+--------Ataques Atuais --------
+SING,DISABLE,DEFENSE CURL,DOUBLESLAP,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,22,24,25,29,30,31,32,33,34,38,40,44,45,46,49,50,54,55,0,
+-------Ataques Por Nivel-------
+||||
+41
+Zubat
+POISON,FLYING
+----------Status-----------
+45,35,40,55,40
+--------Ataques Atuais --------
+LEECH LIFE,
+------tms Recebiveis-------
+2,4,6,9,10,20,21,31,32,34,39,44,50,0,
+-------Ataques Por Nivel-------
+10 - SUPERSONIC
+15 - BITE
+21 - CONFUSE RAY
+28 - WING ATTACK
+36 - HAZE
+||||
+42
+Golbat
+POISON,FLYING
+----------Status-----------
+80,70,75,90,75
+--------Ataques Atuais --------
+LEECH LIFE,SCREECH,BITE,
+------tms Recebiveis-------
+2,4,6,9,10,15,20,21,31,32,34,39,44,50,0,
+-------Ataques Por Nivel-------
+10 - SUPERSONIC
+15 - BITE
+21 - CONFUSE RAY
+32 - WING ATTACK
+43 - HAZE
+||||
+43
+Oddish
+GRASS,POISON
+----------Status-----------
+50,55,75,30,45
+--------Ataques Atuais --------
+ABSORB,
+------tms Recebiveis-------
+3,6,9,10,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+15 - POISONPOWDER
+17 - STUN SPORE
+19 - SLEEP POWDER
+24 - ACID
+33 - PETAL DANCE
+46 - SOLARBEAM
+||||
+44
+Gloom
+GRASS,POISON
+----------Status-----------
+65,70,85,40,60
+--------Ataques Atuais --------
+ABSORB,POISONPOWDER,STUN SPORE,
+------tms Recebiveis-------
+3,6,9,10,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+15 - POISONPOWDER
+17 - STUN SPORE
+19 - SLEEP POWDER
+28 - ACID
+38 - PETAL DANCE
+52 - SOLARBEAM
+||||
+45
+Vileplume
+GRASS,POISON
+----------Status-----------
+80,85,100,50,75
+--------Ataques Atuais --------
+STUN SPORE,SLEEP POWDER,ACID,PETAL DANCE,
+------tms Recebiveis-------
+3,6,8,9,10,15,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+15 - POISONPOWDER
+17 - STUN SPORE
+19 - SLEEP POWDER
+||||
+46
+Paras
+BUG,GRASS
+----------Status-----------
+70,55,55,25,35
+--------Ataques Atuais --------
+SCRATCH,
+------tms Recebiveis-------
+3,6,8,9,10,20,21,22,28,31,32,33,34,40,44,50,51,0,
+-------Ataques Por Nivel-------
+13 - STUN SPORE
+20 - LEECH LIFE
+27 - SPORE
+34 - SLASH
+41 - GROWTH
+||||
+47
+Parasect
+BUG,GRASS
+----------Status-----------
+95,80,80,30,60
+--------Ataques Atuais --------
+SCRATCH,STUN SPORE,LEECH LIFE,
+------tms Recebiveis-------
+3,6,8,9,10,15,20,21,22,28,31,32,33,34,40,44,50,51,0,
+-------Ataques Por Nivel-------
+13 - STUN SPORE
+20 - LEECH LIFE
+30 - SPORE
+39 - SLASH
+48 - GROWTH
+||||
+48
+Venonat
+BUG,POISON
+----------Status-----------
+55,50,40,45,60
+--------Ataques Atuais --------
+TACKLE,DISABLE,
+------tms Recebiveis-------
+6,9,10,20,21,22,29,31,32,33,34,44,46,50,0,
+-------Ataques Por Nivel-------
+24 - POISONPOWDER
+27 - LEECH LIFE
+30 - STUN SPORE
+35 - PSYBEAM
+38 - SLEEP POWDER
+43 - PSYCHIC M
+||||
+49
+Venomoth
+BUG,POISON
+----------Status-----------
+65,60,90,90,70
+--------Ataques Atuais --------
+TACKLE,DISABLE,POISONPOWDER,LEECH LIFE,
+------tms Recebiveis-------
+2,4,6,9,10,15,20,21,22,29,30,31,32,33,34,39,44,46,50,0,
+-------Ataques Por Nivel-------
+24 - POISONPOWDER
+27 - LEECH LIFE
+30 - STUN SPORE
+38 - PSYBEAM
+43 - SLEEP POWDER
+50 - PSYCHIC M
+||||
+50
+Diglett
+Ground,null
+----------Status-----------
+55,25,45,95,10
+--------Ataques Atuais --------
+SCRATCH,
+------tms Recebiveis-------
+6,8,9,10,20,26,27,28,31,32,34,44,48,50,0,
+-------Ataques Por Nivel-------
+15 - GROWL
+19 - DIG
+24 - SAND ATTACK
+31 - SLASH
+40 - EARTHQUAKE
+||||
+51
+Dugtrio
+Ground,null
+----------Status-----------
+80,50,70,120,35
+--------Ataques Atuais --------
+SCRATCH,GROWL,DIG,
+------tms Recebiveis-------
+6,8,9,10,15,20,26,27,28,31,32,34,44,48,50,0,
+-------Ataques Por Nivel-------
+15 - GROWL
+19 - DIG
+24 - SAND ATTACK
+35 - SLASH
+47 - EARTHQUAKE
+||||
+52
+Meowth
+Normal,null
+----------Status-----------
+45,35,40,90,40
+--------Ataques Atuais --------
+SCRATCH,GROWL,
+------tms Recebiveis-------
+6,8,9,10,11,12,16,20,24,25,31,32,34,39,40,44,50,0,
+-------Ataques Por Nivel-------
+12 - BITE
+17 - PAY DAY
+24 - SCREECH
+33 - FURY SWIPES
+44 - SLASH
+||||
+53
+Persian
+Normal,null
+----------Status-----------
+70,60,65,115,65
+--------Ataques Atuais --------
+SCRATCH,GROWL,BITE,SCREECH,
+------tms Recebiveis-------
+6,8,9,10,11,12,15,16,20,24,25,31,32,34,39,40,44,50,0,
+-------Ataques Por Nivel-------
+12 - BITE
+17 - PAY DAY
+24 - SCREECH
+37 - FURY SWIPES
+51 - SLASH
+||||
+54
+Psyduck
+Water,null
+----------Status-----------
+52,48,50,55,50
+--------Ataques Atuais --------
+SCRATCH,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,16,17,18,19,20,28,31,32,34,39,40,44,50,53,54,0,
+-------Ataques Por Nivel-------
+28 - TAIL WHIP
+31 - DISABLE
+36 - CONFUSION
+43 - FURY SWIPES
+52 - HYDRO PUMP
+||||
+55
+Golduck
+Water,null
+----------Status-----------
+82,78,80,85,80
+--------Ataques Atuais --------
+SCRATCH,TAIL WHIP,DISABLE,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,28,31,32,34,39,40,44,50,53,54,0,
+-------Ataques Por Nivel-------
+28 - TAIL WHIP
+31 - DISABLE
+39 - CONFUSION
+48 - FURY SWIPES
+59 - HYDRO PUMP
+||||
+56
+Mankey
+Fighting,null
+----------Status-----------
+80,35,35,70,40
+--------Ataques Atuais --------
+SCRATCH,LEER,
+------tms Recebiveis-------
+1,5,6,8,9,10,16,17,18,19,20,24,25,28,31,32,34,35,39,40,44,48,50,54,0,
+-------Ataques Por Nivel-------
+15 - KARATE CHOP
+21 - FURY SWIPES
+27 - FOCUS ENERGY
+33 - SEISMIC TOSS
+39 - THRASH
+||||
+57
+Primeape
+Fighting,null
+----------Status-----------
+105,60,60,95,65
+--------Ataques Atuais --------
+SCRATCH,LEER,KARATE CHOP,FURY SWIPES,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,16,17,18,19,20,24,25,28,31,32,34,35,39,40,44,48,50,54,0,
+-------Ataques Por Nivel-------
+15 - KARATE CHOP
+21 - FURY SWIPES
+27 - FOCUS ENERGY
+37 - SEISMIC TOSS
+46 - THRASH
+||||
+58
+Growlithe
+Fire,null
+----------Status-----------
+70,45,50,60,55
+--------Ataques Atuais --------
+BITE,ROAR,
+------tms Recebiveis-------
+6,8,9,10,20,23,28,31,32,33,34,38,39,40,44,50,0,
+-------Ataques Por Nivel-------
+18 - EMBER
+23 - LEER
+30 - TAKE DOWN
+39 - AGILITY
+50 - FLAMETHROWER
+||||
+59
+Arcanine
+Fire,null
+----------Status-----------
+110,80,80,95,90
+--------Ataques Atuais --------
+ROAR,EMBER,LEER,TAKE DOWN,
+------tms Recebiveis-------
+6,8,9,10,15,20,23,28,30,31,32,33,34,38,39,40,44,50,0,
+-------Ataques Por Nivel-------
+||||
+60
+Poliwag
+Water,null
+----------Status-----------
+50,40,40,90,40
+--------Ataques Atuais --------
+BUBBLE,
+------tms Recebiveis-------
+6,8,9,10,11,12,13,14,20,29,31,32,34,40,44,46,50,53,0,
+-------Ataques Por Nivel-------
+16 - HYPNOSIS
+19 - WATER GUN
+25 - DOUBLESLAP
+31 - BODY SLAM
+38 - AMNESIA
+45 - HYDRO PUMP
+||||
+61
+Poliwhirl
+Water,null
+----------Status-----------
+65,65,50,90,65
+--------Ataques Atuais --------
+BUBBLE,HYPNOSIS,WATER GUN,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,17,18,19,20,26,27,29,31,32,34,35,40,44,46,50,53,54,0,
+-------Ataques Por Nivel-------
+16 - HYPNOSIS
+19 - WATER GUN
+26 - DOUBLESLAP
+33 - BODY SLAM
+41 - AMNESIA
+49 - HYDRO PUMP
+||||
+62
+Poliwrath
+WATER,FIGHTING
+----------Status-----------
+85,95,70,70,90
+--------Ataques Atuais --------
+HYPNOSIS,WATER GUN,DOUBLESLAP,BODY SLAM,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,26,27,29,31,32,34,35,40,44,46,50,53,54,0,
+-------Ataques Por Nivel-------
+16 - HYPNOSIS
+19 - WATER GUN
+||||
+63
+Abra
+Psychic,null
+----------Status-----------
+20,15,105,90,25
+--------Ataques Atuais --------
+TELEPORT,
+------tms Recebiveis-------
+1,5,6,8,9,10,17,18,19,20,29,30,31,32,33,34,35,40,44,45,46,49,50,55,0,
+-------Ataques Por Nivel-------
+||||
+64
+Kadabra
+Psychic,null
+----------Status-----------
+35,30,120,105,40
+--------Ataques Atuais --------
+TELEPORT,CONFUSION,DISABLE,
+------tms Recebiveis-------
+1,5,6,8,9,10,17,18,19,20,28,29,30,31,32,33,34,35,40,44,45,46,49,50,55,0,
+-------Ataques Por Nivel-------
+16 - CONFUSION
+20 - DISABLE
+27 - PSYBEAM
+31 - RECOVER
+38 - PSYCHIC M
+42 - REFLECT
+||||
+65
+Alakazam
+Psychic,null
+----------Status-----------
+50,45,135,120,55
+--------Ataques Atuais --------
+TELEPORT,CONFUSION,DISABLE,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,17,18,19,20,28,29,30,31,32,33,34,35,40,44,45,46,49,50,55,0,
+-------Ataques Por Nivel-------
+16 - CONFUSION
+20 - DISABLE
+27 - PSYBEAM
+31 - RECOVER
+38 - PSYCHIC M
+42 - REFLECT
+||||
+66
+Machop
+Fighting,null
+----------Status-----------
+80,50,35,35,70
+--------Ataques Atuais --------
+KARATE CHOP,
+------tms Recebiveis-------
+1,5,6,8,9,10,17,18,19,20,26,27,28,31,32,34,35,38,40,44,48,50,54,0,
+-------Ataques Por Nivel-------
+20 - LOW KICK
+25 - LEER
+32 - FOCUS ENERGY
+39 - SEISMIC TOSS
+46 - SUBMISSION
+||||
+67
+Machoke
+Fighting,null
+----------Status-----------
+100,70,50,45,80
+--------Ataques Atuais --------
+KARATE CHOP,LOW KICK,LEER,
+------tms Recebiveis-------
+1,5,6,8,9,10,17,18,19,20,26,27,28,31,32,34,35,38,40,44,48,50,54,0,
+-------Ataques Por Nivel-------
+20 - LOW KICK
+25 - LEER
+36 - FOCUS ENERGY
+44 - SEISMIC TOSS
+52 - SUBMISSION
+||||
+68
+Machamp
+Fighting,null
+----------Status-----------
+130,80,65,55,90
+--------Ataques Atuais --------
+KARATE CHOP,LOW KICK,LEER,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,17,18,19,20,26,27,28,31,32,34,35,38,40,44,48,50,54,0,
+-------Ataques Por Nivel-------
+20 - LOW KICK
+25 - LEER
+36 - FOCUS ENERGY
+44 - SEISMIC TOSS
+52 - SUBMISSION
+||||
+69
+Bellsprout
+GRASS,POISON
+----------Status-----------
+75,35,70,40,50
+--------Ataques Atuais --------
+VINE WHIP,GROWTH,
+------tms Recebiveis-------
+3,6,9,10,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+13 - WRAP
+15 - POISONPOWDER
+18 - SLEEP POWDER
+21 - STUN SPORE
+26 - ACID
+33 - RAZOR LEAF
+42 - SLAM
+||||
+70
+Weepinbell
+GRASS,POISON
+----------Status-----------
+90,50,85,55,65
+--------Ataques Atuais --------
+VINE WHIP,GROWTH,WRAP,
+------tms Recebiveis-------
+3,6,9,10,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+13 - WRAP
+15 - POISONPOWDER
+18 - SLEEP POWDER
+23 - STUN SPORE
+29 - ACID
+38 - RAZOR LEAF
+49 - SLAM
+||||
+71
+Victreebel
+GRASS,POISON
+----------Status-----------
+105,65,100,70,80
+--------Ataques Atuais --------
+SLEEP POWDER,STUN SPORE,ACID,RAZOR LEAF,
+------tms Recebiveis-------
+3,6,8,9,10,15,20,21,22,31,32,33,34,44,50,51,0,
+-------Ataques Por Nivel-------
+13 - WRAP
+15 - POISONPOWDER
+18 - SLEEP POWDER
+||||
+72
+Tentacool
+WATER,POISON
+----------Status-----------
+40,35,100,70,40
+--------Ataques Atuais --------
+ACID,
+------tms Recebiveis-------
+3,6,9,10,11,12,13,14,20,21,31,32,33,34,40,44,50,51,53,0,
+-------Ataques Por Nivel-------
+7 - SUPERSONIC
+13 - WRAP
+18 - POISON STING
+22 - WATER GUN
+27 - CONSTRICT
+33 - BARRIER
+40 - SCREECH
+48 - HYDRO PUMP
+||||
+73
+Tentacruel
+WATER,POISON
+----------Status-----------
+70,65,120,100,80
+--------Ataques Atuais --------
+ACID,SUPERSONIC,WRAP,
+------tms Recebiveis-------
+3,6,9,10,11,12,13,14,15,20,21,31,32,33,34,40,44,50,51,53,0,
+-------Ataques Por Nivel-------
+7 - SUPERSONIC
+13 - WRAP
+18 - POISON STING
+22 - WATER GUN
+27 - CONSTRICT
+35 - BARRIER
+43 - SCREECH
+50 - HYDRO PUMP
+||||
+74
+Geodude
+ROCK,GROUND
+----------Status-----------
+80,100,30,20,40
+--------Ataques Atuais --------
+TACKLE,
+------tms Recebiveis-------
+1,6,8,9,10,17,18,19,20,26,27,28,31,32,34,35,36,38,44,47,48,50,54,0,
+-------Ataques Por Nivel-------
+11 - DEFENSE CURL
+16 - ROCK THROW
+21 - SELFDESTRUCT
+26 - HARDEN
+31 - EARTHQUAKE
+36 - EXPLOSION
+||||
+75
+Graveler
+ROCK,GROUND
+----------Status-----------
+95,115,45,35,55
+--------Ataques Atuais --------
+TACKLE,DEFENSE CURL,
+------tms Recebiveis-------
+1,6,8,9,10,17,18,19,20,26,27,28,31,32,34,35,36,38,44,47,48,50,54,0,
+-------Ataques Por Nivel-------
+11 - DEFENSE CURL
+16 - ROCK THROW
+21 - SELFDESTRUCT
+29 - HARDEN
+36 - EARTHQUAKE
+43 - EXPLOSION
+||||
+76
+Golem
+ROCK,GROUND
+----------Status-----------
+110,130,55,45,80
+--------Ataques Atuais --------
+TACKLE,DEFENSE CURL,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,17,18,19,20,26,27,28,31,32,34,35,36,38,44,47,48,50,54,0,
+-------Ataques Por Nivel-------
+11 - DEFENSE CURL
+16 - ROCK THROW
+21 - SELFDESTRUCT
+29 - HARDEN
+36 - EARTHQUAKE
+43 - EXPLOSION
+||||
+77
+Ponyta
+Fire,null
+----------Status-----------
+85,55,65,90,50
+--------Ataques Atuais --------
+EMBER,
+------tms Recebiveis-------
+6,7,8,9,10,20,31,32,33,34,38,39,40,44,50,0,
+-------Ataques Por Nivel-------
+30 - TAIL WHIP
+32 - STOMP
+35 - GROWL
+39 - FIRE SPIN
+43 - TAKE DOWN
+48 - AGILITY
+||||
+78
+Rapidash
+Fire,null
+----------Status-----------
+100,70,80,105,65
+--------Ataques Atuais --------
+EMBER,TAIL WHIP,STOMP,GROWL,
+------tms Recebiveis-------
+6,7,8,9,10,15,20,31,32,33,34,38,39,40,44,50,0,
+-------Ataques Por Nivel-------
+30 - TAIL WHIP
+32 - STOMP
+35 - GROWL
+39 - FIRE SPIN
+47 - TAKE DOWN
+55 - AGILITY
+||||
+79
+Slowpoke
+WATER,PSYCHIC
+----------Status-----------
+65,65,40,15,90
+--------Ataques Atuais --------
+CONFUSION,
+------tms Recebiveis-------
+6,8,9,10,11,12,13,14,16,20,26,27,28,29,30,31,32,33,34,38,39,40,44,45,46,49,50,53,54,55,0,
+-------Ataques Por Nivel-------
+18 - DISABLE
+22 - HEADBUTT
+27 - GROWL
+33 - WATER GUN
+40 - AMNESIA
+48 - PSYCHIC M
+||||
+80
+Slowbro
+WATER,PSYCHIC
+----------Status-----------
+75,110,80,30,95
+--------Ataques Atuais --------
+CONFUSION,DISABLE,HEADBUTT,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,26,27,28,29,30,31,32,33,34,38,39,40,44,45,46,49,50,53,54,55,0,
+-------Ataques Por Nivel-------
+18 - DISABLE
+22 - HEADBUTT
+27 - GROWL
+33 - WATER GUN
+37 - WITHDRAW
+44 - AMNESIA
+55 - PSYCHIC M
+||||
+81
+Magnemite
+ELECTRIC,STEEL
+----------Status-----------
+35,70,95,45,25
+--------Ataques Atuais --------
+TACKLE,
+------tms Recebiveis-------
+6,9,10,20,24,25,30,31,32,33,34,39,44,45,50,55,0,
+-------Ataques Por Nivel-------
+21 - SONICBOOM
+25 - THUNDERSHOCK
+29 - SUPERSONIC
+35 - THUNDER WAVE
+41 - SWIFT
+47 - SCREECH
+||||
+82
+Magneton
+ELECTRIC,STEEL
+----------Status-----------
+60,95,120,70,50
+--------Ataques Atuais --------
+TACKLE,SONICBOOM,THUNDERSHOCK,
+------tms Recebiveis-------
+6,9,10,15,20,24,25,30,31,32,33,34,39,44,45,50,55,0,
+-------Ataques Por Nivel-------
+21 - SONICBOOM
+25 - THUNDERSHOCK
+29 - SUPERSONIC
+38 - THUNDER WAVE
+46 - SWIFT
+54 - SCREECH
+||||
+83
+Farfetch'd
+NORMAL,FLYING
+----------Status-----------
+65,55,58,60,52
+--------Ataques Atuais --------
+PECK,SAND ATTACK,
+------tms Recebiveis-------
+2,3,4,6,8,9,10,20,31,32,33,34,39,40,44,50,51,52,0,
+-------Ataques Por Nivel-------
+7 - LEER
+15 - FURY ATTACK
+23 - SWORDS DANCE
+31 - AGILITY
+39 - SLASH
+||||
+84
+Doduo
+NORMAL,FLYING
+----------Status-----------
+85,45,35,75,35
+--------Ataques Atuais --------
+PECK,
+------tms Recebiveis-------
+4,6,8,9,10,20,31,32,33,34,40,43,44,49,50,52,0,
+-------Ataques Por Nivel-------
+20 - GROWL
+24 - FURY ATTACK
+30 - DRILL PECK
+36 - RAGE
+40 - TRI ATTACK
+44 - AGILITY
+||||
+85
+Dodrio
+NORMAL,FLYING
+----------Status-----------
+110,70,60,100,60
+--------Ataques Atuais --------
+PECK,GROWL,FURY ATTACK,
+------tms Recebiveis-------
+4,6,8,9,10,15,20,31,32,33,34,40,43,44,49,50,52,0,
+-------Ataques Por Nivel-------
+20 - GROWL
+24 - FURY ATTACK
+30 - DRILL PECK
+39 - RAGE
+45 - TRI ATTACK
+51 - AGILITY
+||||
+86
+Seel
+Water,null
+----------Status-----------
+45,55,70,45,65
+--------Ataques Atuais --------
+HEADBUTT,
+------tms Recebiveis-------
+6,7,8,9,10,11,12,13,14,16,20,31,32,34,40,44,50,53,54,0,
+-------Ataques Por Nivel-------
+30 - GROWL
+35 - AURORA BEAM
+40 - REST
+45 - TAKE DOWN
+50 - ICE BEAM
+||||
+87
+Dewgong
+WATER,ICE
+----------Status-----------
+70,80,95,70,90
+--------Ataques Atuais --------
+HEADBUTT,GROWL,AURORA BEAM,
+------tms Recebiveis-------
+6,7,8,9,10,11,12,13,14,15,16,20,31,32,34,40,44,50,53,54,0,
+-------Ataques Por Nivel-------
+30 - GROWL
+35 - AURORA BEAM
+44 - REST
+50 - TAKE DOWN
+56 - ICE BEAM
+||||
+88
+Grimer
+Poison,null
+----------Status-----------
+80,50,40,25,80
+--------Ataques Atuais --------
+POUND,DISABLE,
+------tms Recebiveis-------
+6,8,0,20,21,24,25,31,32,34,36,38,44,47,50,0,
+-------Ataques Por Nivel-------
+30 - POISON GAS
+33 - MINIMIZE
+37 - SLUDGE
+42 - HARDEN
+48 - SCREECH
+55 - ACID ARMOR
+||||
+89
+Muk
+Poison,null
+----------Status-----------
+105,75,65,50,105
+--------Ataques Atuais --------
+POUND,DISABLE,POISON GAS,
+------tms Recebiveis-------
+6,8,15,20,21,24,25,31,32,34,36,38,44,47,50,0,
+-------Ataques Por Nivel-------
+30 - POISON GAS
+33 - MINIMIZE
+37 - SLUDGE
+45 - HARDEN
+53 - SCREECH
+60 - ACID ARMOR
+||||
+90
+Shellder
+Water,null
+----------Status-----------
+65,100,45,40,30
+--------Ataques Atuais --------
+TACKLE,WITHDRAW,
+------tms Recebiveis-------
+6,9,10,11,12,13,14,20,30,31,32,33,34,36,39,44,47,49,50,53,0,
+-------Ataques Por Nivel-------
+18 - SUPERSONIC
+23 - CLAMP
+30 - AURORA BEAM
+39 - LEER
+50 - ICE BEAM
+||||
+91
+Cloyster
+WATER,ICE
+----------Status-----------
+95,180,85,70,50
+--------Ataques Atuais --------
+WITHDRAW,SUPERSONIC,CLAMP,AURORA BEAM,
+------tms Recebiveis-------
+6,9,10,11,12,13,14,15,20,30,31,32,33,34,36,39,44,47,49,50,53,0,
+-------Ataques Por Nivel-------
+50 - SPIKE CANNON
+||||
+92
+Gastly
+GHOST,POISON
+----------Status-----------
+35,30,100,80,30
+--------Ataques Atuais --------
+LICK,CONFUSE RAY,NIGHT SHADE,
+------tms Recebiveis-------
+6,0,20,21,24,25,29,31,32,34,36,42,44,46,47,50,0,
+-------Ataques Por Nivel-------
+27 - HYPNOSIS
+35 - DREAM EATER
+||||
+93
+Haunter
+GHOST,POISON
+----------Status-----------
+50,45,115,95,45
+--------Ataques Atuais --------
+LICK,CONFUSE RAY,NIGHT SHADE,
+------tms Recebiveis-------
+6,0,20,21,24,25,29,31,32,34,36,42,44,46,47,50,0,
+-------Ataques Por Nivel-------
+29 - HYPNOSIS
+38 - DREAM EATER
+||||
+94
+Gengar
+GHOST,POISON
+----------Status-----------
+65,60,130,110,60
+--------Ataques Atuais --------
+LICK,CONFUSE RAY,NIGHT SHADE,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,17,18,19,20,21,24,25,29,31,32,34,35,36,40,42,44,46,47,50,54,0,
+-------Ataques Por Nivel-------
+29 - HYPNOSIS
+38 - DREAM EATER
+||||
+95
+Onix
+ROCK,GROUND
+----------Status-----------
+45,160,30,70,35
+--------Ataques Atuais --------
+TACKLE,SCREECH,
+------tms Recebiveis-------
+6,8,9,10,20,26,27,28,31,32,34,36,40,44,47,48,50,54,0,
+-------Ataques Por Nivel-------
+15 - BIND
+19 - ROCK THROW
+25 - RAGE
+33 - SLAM
+43 - HARDEN
+||||
+96
+Drowzee
+Psychic,null
+----------Status-----------
+48,45,90,42,60
+--------Ataques Atuais --------
+POUND,HYPNOSIS,
+------tms Recebiveis-------
+1,5,6,8,9,10,17,18,19,20,29,30,31,32,33,34,35,40,42,44,45,46,49,50,55,0,
+-------Ataques Por Nivel-------
+12 - DISABLE
+17 - CONFUSION
+24 - HEADBUTT
+29 - POISON GAS
+32 - PSYCHIC M
+37 - MEDITATE
+||||
+97
+Hypno
+Psychic,null
+----------Status-----------
+73,70,115,67,85
+--------Ataques Atuais --------
+POUND,HYPNOSIS,DISABLE,CONFUSION,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,17,18,19,20,29,30,31,32,33,34,35,40,42,44,45,46,49,50,55,0,
+-------Ataques Por Nivel-------
+12 - DISABLE
+17 - CONFUSION
+24 - HEADBUTT
+33 - POISON GAS
+37 - PSYCHIC M
+43 - MEDITATE
+||||
+98
+Krabby
+Water,null
+----------Status-----------
+105,90,25,50,30
+--------Ataques Atuais --------
+BUBBLE,LEER,
+------tms Recebiveis-------
+3,6,8,9,10,11,12,13,14,20,31,32,34,44,50,51,53,54,0,
+-------Ataques Por Nivel-------
+20 - VICEGRIP
+25 - GUILLOTINE
+30 - STOMP
+35 - CRABHAMMER
+40 - HARDEN
+||||
+99
+Kingler
+Water,null
+----------Status-----------
+130,115,50,75,55
+--------Ataques Atuais --------
+BUBBLE,LEER,VICEGRIP,
+------tms Recebiveis-------
+3,6,8,9,10,11,12,13,14,15,20,31,32,34,44,50,51,53,54,0,
+-------Ataques Por Nivel-------
+20 - VICEGRIP
+25 - GUILLOTINE
+34 - STOMP
+42 - CRABHAMMER
+49 - HARDEN
+||||
+100
+Voltorb
+Electric,null
+----------Status-----------
+30,50,55,100,40
+--------Ataques Atuais --------
+TACKLE,SCREECH,
+------tms Recebiveis-------
+6,9,20,24,25,30,31,32,33,34,36,39,44,45,47,50,55,0,
+-------Ataques Por Nivel-------
+17 - SONICBOOM
+22 - SELFDESTRUCT
+29 - LIGHT SCREEN
+36 - SWIFT
+43 - EXPLOSION
+||||
+101
+Electrode
+Electric,null
+----------Status-----------
+50,70,80,140,60
+--------Ataques Atuais --------
+TACKLE,SCREECH,SONICBOOM,
+------tms Recebiveis-------
+6,9,15,20,24,25,30,31,32,33,34,36,39,40,44,45,47,50,55,0,
+-------Ataques Por Nivel-------
+17 - SONICBOOM
+22 - SELFDESTRUCT
+29 - LIGHT SCREEN
+40 - SWIFT
+50 - EXPLOSION
+||||
+102
+Exeggcute
+GRASS,PSYCHIC
+----------Status-----------
+40,80,60,40,60
+--------Ataques Atuais --------
+BARRAGE,HYPNOSIS,
+------tms Recebiveis-------
+6,9,10,20,29,30,31,32,33,34,36,37,44,46,47,50,0,
+-------Ataques Por Nivel-------
+25 - REFLECT
+28 - LEECH SEED
+32 - STUN SPORE
+37 - POISONPOWDER
+42 - SOLARBEAM
+48 - SLEEP POWDER
+||||
+103
+Exeggutor
+GRASS,PSYCHIC
+----------Status-----------
+95,85,125,55,95
+--------Ataques Atuais --------
+BARRAGE,HYPNOSIS,
+------tms Recebiveis-------
+6,9,10,15,20,21,22,29,30,31,32,33,34,36,37,44,46,47,50,54,0,
+-------Ataques Por Nivel-------
+28 - STOMP
+||||
+104
+Cubone
+Ground,null
+----------Status-----------
+50,95,40,35,50
+--------Ataques Atuais --------
+BONE CLUB,GROWL,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,17,18,19,20,26,27,28,31,32,34,38,40,44,50,54,0,
+-------Ataques Por Nivel-------
+25 - LEER
+31 - FOCUS ENERGY
+38 - THRASH
+43 - BONEMERANG
+46 - RAGE
+||||
+105
+Marowak
+Ground,null
+----------Status-----------
+80,110,50,45,60
+--------Ataques Atuais --------
+BONE CLUB,GROWL,LEER,FOCUS ENERGY,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,26,27,28,31,32,34,38,40,44,50,54,0,
+-------Ataques Por Nivel-------
+25 - LEER
+33 - FOCUS ENERGY
+41 - THRASH
+48 - BONEMERANG
+55 - RAGE
+||||
+106
+Hitmonlee
+Fighting,null
+----------Status-----------
+120,53,35,87,50
+--------Ataques Atuais --------
+DOUBLE KICK,MEDITATE,
+------tms Recebiveis-------
+1,5,6,8,9,10,17,18,19,20,31,32,34,35,39,40,44,50,54,0,
+-------Ataques Por Nivel-------
+33 - ROLLING KICK
+38 - JUMP KICK
+43 - FOCUS ENERGY
+48 - HI JUMP KICK
+53 - MEGA KICK
+||||
+107
+Hitmonchan
+Fighting,null
+----------Status-----------
+105,79,35,76,50
+--------Ataques Atuais --------
+COMET PUNCH,AGILITY,
+------tms Recebiveis-------
+1,5,6,8,9,10,17,18,19,20,31,32,34,35,39,40,44,50,54,0,
+-------Ataques Por Nivel-------
+33 - FIRE PUNCH
+38 - ICE PUNCH
+43 - THUNDERPUNCH
+48 - MEGA PUNCH
+53 - COUNTER
+||||
+108
+Lickitung
+Normal,null
+----------Status-----------
+55,75,60,30,90
+--------Ataques Atuais --------
+WRAP,SUPERSONIC,
+------tms Recebiveis-------
+1,3,5,6,8,9,10,11,12,13,14,15,17,18,19,20,24,25,26,27,31,32,34,38,40,44,50,51,53,54,0,
+-------Ataques Por Nivel-------
+7 - STOMP
+15 - DISABLE
+23 - DEFENSE CURL
+31 - SLAM
+39 - SCREECH
+||||
+109
+Koffing
+Poison,null
+----------Status-----------
+65,95,60,35,40
+--------Ataques Atuais --------
+TACKLE,SMOG,
+------tms Recebiveis-------
+6,0,20,24,25,31,32,34,36,38,44,47,50,0,
+-------Ataques Por Nivel-------
+32 - SLUDGE
+37 - SMOKESCREEN
+40 - SELFDESTRUCT
+45 - HAZE
+48 - EXPLOSION
+||||
+110
+Weezing
+Poison,null
+----------Status-----------
+90,120,85,60,65
+--------Ataques Atuais --------
+TACKLE,SMOG,SLUDGE,
+------tms Recebiveis-------
+6,15,20,24,25,31,32,34,36,38,44,47,50,0,
+-------Ataques Por Nivel-------
+32 - SLUDGE
+39 - SMOKESCREEN
+43 - SELFDESTRUCT
+49 - HAZE
+53 - EXPLOSION
+||||
+111
+Rhyhorn
+GROUND,ROCK
+----------Status-----------
+85,95,30,25,80
+--------Ataques Atuais --------
+HORN ATTACK,
+------tms Recebiveis-------
+6,7,8,9,10,20,24,25,26,27,28,31,32,34,38,40,44,48,50,54,0,
+-------Ataques Por Nivel-------
+30 - STOMP
+35 - TAIL WHIP
+40 - FURY ATTACK
+45 - HORN DRILL
+50 - LEER
+55 - TAKE DOWN
+||||
+112
+Rhydon
+GROUND,ROCK
+----------Status-----------
+130,120,45,40,105
+--------Ataques Atuais --------
+HORN ATTACK,STOMP,TAIL WHIP,FURY ATTACK,
+------tms Recebiveis-------
+1,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,25,26,27,28,31,32,34,38,40,44,48,50,53,54,0,
+-------Ataques Por Nivel-------
+30 - STOMP
+35 - TAIL WHIP
+40 - FURY ATTACK
+48 - HORN DRILL
+55 - LEER
+64 - TAKE DOWN
+||||
+113
+Chansey
+Normal,null
+----------Status-----------
+5,5,105,50,250
+--------Ataques Atuais --------
+POUND,DOUBLESLAP,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,22,24,25,29,30,31,32,33,34,35,37,38,40,41,44,45,46,49,50,54,55,0,
+-------Ataques Por Nivel-------
+24 - SING
+30 - GROWL
+38 - MINIMIZE
+44 - DEFENSE CURL
+48 - LIGHT SCREEN
+54 - DOUBLE EDGE
+||||
+114
+Tangela
+Grass,null
+----------Status-----------
+55,115,100,60,65
+--------Ataques Atuais --------
+CONSTRICT,BIND,
+------tms Recebiveis-------
+3,6,8,9,10,15,20,21,22,31,32,34,40,44,50,51,0,
+-------Ataques Por Nivel-------
+29 - ABSORB
+32 - POISONPOWDER
+36 - STUN SPORE
+39 - SLEEP POWDER
+45 - SLAM
+49 - GROWTH
+||||
+115
+Kangaskhan
+Normal,null
+----------Status-----------
+95,80,40,90,105
+--------Ataques Atuais --------
+COMET PUNCH,RAGE,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,24,25,26,27,31,32,34,38,40,44,48,50,53,54,0,
+-------Ataques Por Nivel-------
+26 - BITE
+31 - TAIL WHIP
+36 - MEGA PUNCH
+41 - LEER
+46 - DIZZY PUNCH
+||||
+116
+Horsea
+Water,null
+----------Status-----------
+40,70,70,60,30
+--------Ataques Atuais --------
+BUBBLE,
+------tms Recebiveis-------
+6,9,10,11,12,13,14,20,31,32,34,39,40,44,50,53,0,
+-------Ataques Por Nivel-------
+19 - SMOKESCREEN
+24 - LEER
+30 - WATER GUN
+37 - AGILITY
+45 - HYDRO PUMP
+||||
+117
+Seadra
+Water,null
+----------Status-----------
+65,95,95,85,55
+--------Ataques Atuais --------
+BUBBLE,SMOKESCREEN,
+------tms Recebiveis-------
+6,9,10,11,12,13,14,15,20,31,32,34,39,40,44,50,53,0,
+-------Ataques Por Nivel-------
+19 - SMOKESCREEN
+24 - LEER
+30 - WATER GUN
+41 - AGILITY
+52 - HYDRO PUMP
+||||
+118
+Goldeen
+Water,null
+----------Status-----------
+67,60,50,63,45
+--------Ataques Atuais --------
+PECK,TAIL WHIP,
+------tms Recebiveis-------
+6,7,9,10,11,12,13,14,20,31,32,34,39,40,44,50,53,0,
+-------Ataques Por Nivel-------
+19 - SUPERSONIC
+24 - HORN ATTACK
+30 - FURY ATTACK
+37 - WATERFALL
+45 - HORN DRILL
+54 - AGILITY
+||||
+119
+Seaking
+Water,null
+----------Status-----------
+92,65,80,68,80
+--------Ataques Atuais --------
+PECK,TAIL WHIP,SUPERSONIC,
+------tms Recebiveis-------
+6,7,9,10,11,12,13,14,15,20,31,32,34,39,40,44,50,53,0,
+-------Ataques Por Nivel-------
+19 - SUPERSONIC
+24 - HORN ATTACK
+30 - FURY ATTACK
+39 - WATERFALL
+48 - HORN DRILL
+54 - AGILITY
+||||
+120
+Staryu
+Water,null
+----------Status-----------
+45,55,70,85,30
+--------Ataques Atuais --------
+TACKLE,
+------tms Recebiveis-------
+6,9,10,11,12,13,14,20,24,25,29,30,31,32,33,34,39,40,44,45,46,49,50,53,55,0,
+-------Ataques Por Nivel-------
+17 - WATER GUN
+22 - HARDEN
+27 - RECOVER
+32 - SWIFT
+37 - MINIMIZE
+42 - LIGHT SCREEN
+47 - HYDRO PUMP
+||||
+121
+Starmie
+WATER,PSYCHIC
+----------Status-----------
+75,85,100,115,60
+--------Ataques Atuais --------
+TACKLE,WATER GUN,HARDEN,
+------tms Recebiveis-------
+6,9,10,11,12,13,14,15,20,24,25,29,30,31,32,33,34,39,40,44,45,46,49,50,53,55,0,
+-------Ataques Por Nivel-------
+||||
+122
+Mr. Mime
+PSYCHIC,FAIRY
+----------Status-----------
+45,65,100,90,40
+--------Ataques Atuais --------
+CONFUSION,BARRIER,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,17,18,19,20,22,24,25,29,30,31,32,33,34,35,40,44,45,46,50,55,0,
+-------Ataques Por Nivel-------
+15 - CONFUSION
+23 - LIGHT SCREEN
+31 - DOUBLESLAP
+39 - MEDITATE
+47 - SUBSTITUTE
+||||
+123
+Scyther
+BUG,FLYING
+----------Status-----------
+110,80,55,105,70
+--------Ataques Atuais --------
+QUICK ATTACK,
+------tms Recebiveis-------
+3,6,9,10,15,20,31,32,34,39,40,44,50,51,0,
+-------Ataques Por Nivel-------
+17 - LEER
+20 - FOCUS ENERGY
+24 - DOUBLE TEAM
+29 - SLASH
+35 - SWORDS DANCE
+42 - AGILITY
+||||
+124
+Jynx
+ICE,PSYCHIC
+----------Status-----------
+50,35,95,95,65
+--------Ataques Atuais --------
+POUND,LOVELY KISS,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,17,18,19,20,29,30,31,32,33,34,35,40,44,46,50,0,
+-------Ataques Por Nivel-------
+18 - LICK
+23 - DOUBLESLAP
+31 - ICE PUNCH
+39 - BODY SLAM
+47 - THRASH
+58 - BLIZZARD
+||||
+125
+Electabuzz
+Electric,null
+----------Status-----------
+83,57,85,105,65
+--------Ataques Atuais --------
+QUICK ATTACK,LEER,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,17,18,19,20,24,25,29,30,31,32,33,34,35,39,40,44,45,46,50,54,55,0,
+-------Ataques Por Nivel-------
+34 - THUNDERSHOCK
+37 - SCREECH
+42 - THUNDERPUNCH
+49 - LIGHT SCREEN
+54 - THUNDER
+||||
+126
+Magmar
+Fire,null
+----------Status-----------
+95,57,85,93,65
+--------Ataques Atuais --------
+EMBER,
+------tms Recebiveis-------
+1,5,6,8,9,10,15,17,18,19,20,29,30,31,32,34,35,38,40,44,46,50,54,0,
+-------Ataques Por Nivel-------
+36 - LEER
+39 - CONFUSE RAY
+43 - FIRE PUNCH
+48 - SMOKESCREEN
+52 - SMOG
+55 - FLAMETHROWER
+||||
+127
+Pinsir
+Bug,null
+----------Status-----------
+125,100,55,85,65
+--------Ataques Atuais --------
+VICEGRIP,
+------tms Recebiveis-------
+3,6,8,9,10,15,17,19,20,31,32,34,44,50,51,54,0,
+-------Ataques Por Nivel-------
+25 - SEISMIC TOSS
+30 - GUILLOTINE
+36 - FOCUS ENERGY
+43 - HARDEN
+49 - SLASH
+54 - SWORDS DANCE
+||||
+128
+Tauros
+Normal,null
+----------Status-----------
+100,95,70,110,75
+--------Ataques Atuais --------
+TACKLE,
+------tms Recebiveis-------
+6,7,8,9,10,13,14,15,20,24,25,26,27,31,32,34,38,40,44,50,54,0,
+-------Ataques Por Nivel-------
+21 - STOMP
+28 - TAIL WHIP
+35 - LEER
+44 - RAGE
+51 - TAKE DOWN
+||||
+129
+Magikarp
+Water,null
+----------Status-----------
+10,55,20,80,20
+--------Ataques Atuais --------
+SPLASH,
+------tms Recebiveis-------
+0,0,0,0,0,0,0,0,
+-------Ataques Por Nivel-------
+15 - TACKLE
+||||
+130
+Gyarados
+WATER,FLYING
+----------Status-----------
+125,79,100,81,95
+--------Ataques Atuais --------
+BITE,DRAGON RAGE,LEER,HYDRO PUMP,
+------tms Recebiveis-------
+6,8,9,10,11,12,13,14,15,20,23,24,25,31,32,33,34,38,40,44,50,53,54,0,
+-------Ataques Por Nivel-------
+20 - BITE
+25 - DRAGON RAGE
+32 - LEER
+41 - HYDRO PUMP
+52 - HYPER BEAM
+||||
+131
+Lapras
+WATER,ICE
+----------Status-----------
+85,80,95,60,130
+--------Ataques Atuais --------
+WATER GUN,GROWL,
+------tms Recebiveis-------
+6,7,8,9,10,11,12,13,14,15,20,22,23,24,25,29,31,32,33,34,40,44,46,50,53,54,0,
+-------Ataques Por Nivel-------
+16 - SING
+20 - MIST
+25 - BODY SLAM
+31 - CONFUSE RAY
+38 - ICE BEAM
+46 - HYDRO PUMP
+||||
+132
+Ditto
+Normal,null
+----------Status-----------
+48,48,48,48,48
+--------Ataques Atuais --------
+TRANSFORM,
+------tms Recebiveis-------
+0,0,0,0,0,0,0,0,
+-------Ataques Por Nivel-------
+||||
+133
+Eevee
+Normal,null
+----------Status-----------
+55,50,65,55,55
+--------Ataques Atuais --------
+TACKLE,SAND ATTACK,
+------tms Recebiveis-------
+6,8,9,10,20,31,32,33,34,39,40,44,50,0,
+-------Ataques Por Nivel-------
+27 - QUICK ATTACK
+31 - TAIL WHIP
+37 - BITE
+45 - TAKE DOWN
+||||
+134
+Vaporeon
+Water,null
+----------Status-----------
+65,60,110,65,130
+--------Ataques Atuais --------
+TACKLE,SAND ATTACK,QUICK ATTACK,WATER GUN,
+------tms Recebiveis-------
+6,8,9,10,11,12,13,14,15,20,31,32,33,34,39,40,44,50,53,0,
+-------Ataques Por Nivel-------
+27 - QUICK ATTACK
+31 - WATER GUN
+37 - TAIL WHIP
+40 - BITE
+42 - ACID ARMOR
+44 - HAZE
+48 - MIST
+54 - HYDRO PUMP
+||||
+135
+Jolteon
+Electric,null
+----------Status-----------
+65,60,110,130,65
+--------Ataques Atuais --------
+TACKLE,SAND ATTACK,QUICK ATTACK,THUNDERSHOCK,
+------tms Recebiveis-------
+6,8,9,10,15,20,24,25,31,32,33,34,39,40,44,45,50,55,0,
+-------Ataques Por Nivel-------
+27 - QUICK ATTACK
+31 - THUNDERSHOCK
+37 - TAIL WHIP
+40 - THUNDER WAVE
+42 - DOUBLE KICK
+44 - AGILITY
+48 - PIN MISSILE
+54 - THUNDER
+||||
+136
+Flareon
+Fire,null
+----------Status-----------
+130,60,110,65,65
+--------Ataques Atuais --------
+TACKLE,SAND ATTACK,QUICK ATTACK,EMBER,
+------tms Recebiveis-------
+6,8,9,10,15,20,31,32,33,34,38,39,40,44,50,0,
+-------Ataques Por Nivel-------
+27 - QUICK ATTACK
+31 - EMBER
+37 - TAIL WHIP
+40 - BITE
+42 - LEER
+44 - FIRE SPIN
+48 - RAGE
+54 - FLAMETHROWER
+||||
+137
+Porygon
+Normal,null
+----------Status-----------
+60,70,75,40,65
+--------Ataques Atuais --------
+TACKLE,SHARPEN,CONVERSION,
+------tms Recebiveis-------
+6,9,10,13,14,15,20,24,25,29,30,31,32,33,34,39,40,44,45,46,49,50,55,0,
+-------Ataques Por Nivel-------
+23 - PSYBEAM
+28 - RECOVER
+35 - AGILITY
+42 - TRI ATTACK
+||||
+138
+Omanyte
+ROCK,WATER
+----------Status-----------
+40,100,90,35,35
+--------Ataques Atuais --------
+WATER GUN,WITHDRAW,
+------tms Recebiveis-------
+6,8,9,10,11,12,13,14,20,31,32,33,34,44,50,53,0,
+-------Ataques Por Nivel-------
+34 - HORN ATTACK
+39 - LEER
+46 - SPIKE CANNON
+53 - HYDRO PUMP
+||||
+139
+Omastar
+ROCK,WATER
+----------Status-----------
+60,125,115,55,70
+--------Ataques Atuais --------
+WATER GUN,WITHDRAW,HORN ATTACK,
+------tms Recebiveis-------
+6,7,8,9,10,11,12,13,14,15,17,19,20,31,32,33,34,40,44,50,53,0,
+-------Ataques Por Nivel-------
+34 - HORN ATTACK
+39 - LEER
+44 - SPIKE CANNON
+49 - HYDRO PUMP
+||||
+140
+Kabuto
+ROCK,WATER
+----------Status-----------
+80,90,45,55,30
+--------Ataques Atuais --------
+SCRATCH,HARDEN,
+------tms Recebiveis-------
+6,8,9,10,11,12,13,14,20,31,32,33,34,44,50,53,0,
+-------Ataques Por Nivel-------
+34 - ABSORB
+39 - SLASH
+44 - LEER
+49 - HYDRO PUMP
+||||
+141
+Kabutops
+ROCK,WATER
+----------Status-----------
+115,105,70,80,60
+--------Ataques Atuais --------
+SCRATCH,HARDEN,ABSORB,
+------tms Recebiveis-------
+2,3,5,6,8,9,10,11,12,13,14,15,17,19,20,31,32,33,34,40,44,50,53,0,
+-------Ataques Por Nivel-------
+34 - ABSORB
+39 - SLASH
+46 - LEER
+53 - HYDRO PUMP
+||||
+142
+Aerodactyl
+ROCK,FLYING
+----------Status-----------
+105,65,60,130,80
+--------Ataques Atuais --------
+WING ATTACK,AGILITY,
+------tms Recebiveis-------
+2,4,6,9,10,15,20,23,31,32,33,34,38,39,43,44,50,52,0,
+-------Ataques Por Nivel-------
+33 - SUPERSONIC
+38 - BITE
+45 - TAKE DOWN
+54 - HYPER BEAM
+||||
+143
+Snorlax
+Normal,null
+----------Status-----------
+110,65,65,30,160
+--------Ataques Atuais --------
+HEADBUTT,AMNESIA,REST,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,22,24,25,26,27,29,31,32,33,34,35,36,38,40,44,46,48,50,53,54,0,
+-------Ataques Por Nivel-------
+35 - BODY SLAM
+41 - HARDEN
+48 - DOUBLE EDGE
+56 - HYPER BEAM
+||||
+144
+Articuno
+ICE,FLYING
+----------Status-----------
+85,100,125,85,90
+--------Ataques Atuais --------
+PECK,ICE BEAM,
+------tms Recebiveis-------
+2,4,6,9,10,11,12,13,14,15,20,31,32,33,34,39,43,44,50,52,0,
+-------Ataques Por Nivel-------
+51 - BLIZZARD
+55 - AGILITY
+60 - MIST
+||||
+145
+Zapdos
+ELECTRIC,FLYING
+----------Status-----------
+90,85,125,100,90
+--------Ataques Atuais --------
+THUNDERSHOCK,DRILL PECK,
+------tms Recebiveis-------
+2,4,6,9,10,15,20,24,25,31,32,33,34,39,43,44,45,50,52,55,0,
+-------Ataques Por Nivel-------
+51 - THUNDER
+55 - AGILITY
+60 - LIGHT SCREEN
+||||
+146
+Moltres
+FIRE,FLYING
+----------Status-----------
+100,90,125,90,90
+--------Ataques Atuais --------
+PECK,FIRE SPIN,
+------tms Recebiveis-------
+2,4,6,9,10,15,20,31,32,33,34,38,39,43,44,50,52,0,
+-------Ataques Por Nivel-------
+51 - LEER
+55 - AGILITY
+60 - SKY ATTACK
+||||
+147
+Dratini
+Dragon,null
+----------Status-----------
+64,45,50,50,41
+--------Ataques Atuais --------
+WRAP,LEER,
+------tms Recebiveis-------
+6,8,9,10,11,12,13,14,20,23,24,25,31,32,33,34,38,39,40,44,45,50,53,0,
+-------Ataques Por Nivel-------
+10 - THUNDER WAVE
+20 - AGILITY
+30 - SLAM
+40 - DRAGON RAGE
+50 - HYPER BEAM
+||||
+148
+Dragonair
+Dragon,null
+----------Status-----------
+84,65,70,70,61
+--------Ataques Atuais --------
+WRAP,LEER,THUNDER WAVE,
+------tms Recebiveis-------
+6,7,8,9,10,11,12,13,14,20,23,24,25,31,32,33,34,38,39,40,44,45,50,53,0,
+-------Ataques Por Nivel-------
+10 - THUNDER WAVE
+20 - AGILITY
+35 - SLAM
+45 - DRAGON RAGE
+55 - HYPER BEAM
+||||
+149
+Dragonite
+DRAGON,FLYING
+----------Status-----------
+134,95,100,80,91
+--------Ataques Atuais --------
+WRAP,LEER,THUNDER WAVE,AGILITY,
+------tms Recebiveis-------
+2,6,7,8,9,10,11,12,13,14,15,20,23,24,25,31,32,33,34,38,39,40,44,45,50,53,54,0,
+-------Ataques Por Nivel-------
+10 - THUNDER WAVE
+20 - AGILITY
+35 - SLAM
+45 - DRAGON RAGE
+60 - HYPER BEAM
+||||
+150
+Mewtwo
+Psychic,null
+----------Status-----------
+110,90,154,130,106
+--------Ataques Atuais --------
+CONFUSION,DISABLE,SWIFT,PSYCHIC M,
+------tms Recebiveis-------
+1,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,22,24,25,29,30,31,32,33,34,35,36,38,40,44,45,46,49,50,54,55,0,
+-------Ataques Por Nivel-------
+63 - BARRIER
+66 - PSYCHIC M
+70 - RECOVER
+75 - MIST
+81 - AMNESIA
+||||
+151
+Mew
+Psychic,null
+----------Status-----------
+100,100,100,100,100
+--------Ataques Atuais --------
+POUND,
+------tms Recebiveis-------
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,0,
+-------Ataques Por Nivel-------
+10 - TRANSFORM
+20 - MEGA PUNCH
+30 - METRONOME
+40 - PSYCHIC M
+||||
