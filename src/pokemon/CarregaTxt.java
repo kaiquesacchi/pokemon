@@ -22,7 +22,7 @@ public class CarregaTxt {
 	        i++;
 	    }
 	    buffRead.close();
-	    System.out.println("[CarregaAtaques] Ataques gerados com sucesso");
+	    //System.out.println("[CarregaAtaques] Ataques gerados com sucesso");
 	    return ataques;
 	}
     
@@ -41,7 +41,7 @@ public class CarregaTxt {
 	        i++;
 	    }
 	    buffRead.close();
-	    System.out.println("[CarregaPotion] Potions geradas com sucesso");
+	    //System.out.println("[CarregaPotion] Potions geradas com sucesso");
 	    return potions;
 	}
     
@@ -60,7 +60,7 @@ public class CarregaTxt {
 	        i++;
 	    }
 	    buffRead.close();
-	    System.out.println("[CarregaPokeball] Pokeballs geradas com sucesso");
+	    //System.out.println("[CarregaPokeball] Pokeballs geradas com sucesso");
 	    return pokeballs;
 	}
     
@@ -79,7 +79,7 @@ public class CarregaTxt {
 	        i++;
 	    }
 	    buffRead.close();
-	    System.out.println("[CarregaElixere] Elixeres gerados com sucesso");
+	    //System.out.println("[CarregaElixere] Elixeres gerados com sucesso");
 	    return elixeres;
 	}
     public static BattleItem[] leitorBattleItems(String path) throws IOException {
@@ -97,7 +97,7 @@ public class CarregaTxt {
 	        i++;
 	    }
 	    buffRead.close();
-	    System.out.println("[CarregaBattleItem] BattleItems gerados com sucesso");
+	    //System.out.println("[CarregaBattleItem] BattleItems gerados com sucesso");
 	    return battleItems;
 	}
     public static StatusRestore[] leitorStatusRestore(String path) throws IOException {
@@ -115,7 +115,7 @@ public class CarregaTxt {
 	        i++;
 	    }
 	    buffRead.close();
-	    System.out.println("[CarregaStatusRestore] StatusRestores gerados com sucesso");
+	    //System.out.println("[CarregaStatusRestore] StatusRestores gerados com sucesso");
 	    return statusRestores;
 	}
     public static Type leitorTypeChart(String path) throws IOException {
@@ -135,7 +135,7 @@ public class CarregaTxt {
         }
         buffRead.close();
         Type aux3 = new Type(aux2, aux);
-        System.out.println("[CarregaTypeChart] TypeChart gerada com sucesso");
+        //System.out.println("[CarregaTypeChart] TypeChart gerada com sucesso");
         return (aux3);
 	}
     

@@ -6,6 +6,7 @@ import java.io.IOException;
 public class Index {
 	
 	static public void actRes(int act, Atacar ataque1, Atacar ataque2, UsarItem itens, PkmPool pool, int skill, int troca){
+		//Esta função cria um evento, dependendo da decisão (act) tomada
 		switch(act){
 		case 0:
 			System.out.println("Pokemon "+pool.getPokemon(0).getNome()+" atacou");
@@ -20,11 +21,13 @@ public class Index {
 			TrocaPokemon.action(troca, pool);
 			break;
 		default:
-			System.out.println("deu alguma bosta, action veio "+act);
+			System.out.println("Ocorreu um problema: "+act);
 		}
 	}
 	
 	static public void battle(Trainer trainer1, Trainer trainer2, Type tipos, UsarItem itens1, UsarItem itens2){
+		//Esta função gerencia toda a batalha. Como a atividade pedia um resultado deterministico, usa-se sempre o mesmo ataque 
+		//em cada pokemon... Os ataques foram selecionados de forma a evitar variaveis, como efeitos de contato, precisão etc.
 		PkmPool pool1 = trainer1.getPool(), pool2 = trainer2.getPool();
 		Atacar ataque1 = new Atacar(pool1, pool2, tipos);
 		Atacar ataque2 = new Atacar(pool2, pool1, tipos);

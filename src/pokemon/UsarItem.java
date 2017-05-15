@@ -154,7 +154,6 @@ public class UsarItem extends Event {
 			}
 			break;
 		default:
-			System.out.println("deu bosta no UsarItemAction");
 		}
 		
 	}

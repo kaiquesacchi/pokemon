@@ -101,7 +101,7 @@ public class Atacar extends Event{
 			switch(hab.getEfeito()){
 			case "NO ADDITIONAL EFFECT":
 				defensor.takeDamage(dano);
-				System.out.println("LEVOU FODENDOS " + dano + " DE DANOSO");
+				System.out.println("O POKEMON RECEBEU " + dano + " DE DANO");
 				break;
 			case "TWO TO FIVE ATTACKS EFFECT":
 				rand = (int)(Math.random() * 4) + 2;
@@ -119,25 +119,25 @@ public class Atacar extends Event{
 				rand = (int)(Math.random() * 10) +1;
 				if(rand == 10){
 					defensor.addEffect("FREEZE");
-					System.out.println("OLOCO BIXO TA EM FREEZE");
+					System.out.println("CONGELADO");
 				}
 				break;
 			case "OHKO EFFECT": //13
 				defensor.takeDamage(defensor.getCurHp() + 1);
-				System.out.println("EITA PORRA VIROU O SAITAMA");
+				System.out.println("OHKO!");
 				break;
 			case "CHARGE EFFECT":
 				if(!(atacante.chargeEffect())){
 					atacante.addChargeEffect(hab);
 					atacante.getAtkPool().getAtaqueAtualX(a).restorePP(1);
-				System.out.println("SÓ ESPERA ARROMBADO");
+				System.out.println("AGUARDE O ATAQUE CARREGAR");
 				}
 				else{
 					atacante.removeChargeEffect();
 					if(calcPrecisao(hab)){
 						defensor.takeDamage(dano);
 					}
-					else System.out.println("FALHOU PIRANHO");
+					else System.out.println("FALHOU...");
 				}
 				break;
 			case "ATTACK UP2 EFFECT":
@@ -146,14 +146,14 @@ public class Atacar extends Event{
 				atacante.getStatsVol().addAtk((int)(atacante.calcStatusAdd("ATTACK")));
 				break;
 			case "SWITCH AND TELEPORT EFFECT":  //APENAS FUNCIONA EM WILD POKEMON
-				System.out.println("NOTHING HAPPENED LUL");
+				System.out.println("NADA ACONTECEU...");
 				break;
 			case "FLY EFFECT":
 				if(!(atacante.chargeEffect())){
 					atacante.addChargeEffect(hab);
 					atacante.addInvulneravel();
 					atacante.getAtkPool().getAtaqueAtualX(a).restorePP(1);
-					System.out.println("OLOCO BIXO TA VOANDO");
+					System.out.println("O POKEMON ESTÁ VOANDO");
 				}
 				else{
 					atacante.removeChargeEffect();
@@ -161,7 +161,7 @@ public class Atacar extends Event{
 					if(calcPrecisao(hab)){
 						defensor.takeDamage(dano);
 					}
-					else System.out.println("VOOU E ERROWW");
+					else System.out.println("ERROU...");
 				}
 				break;
 			case "TRAPPING EFFECT":
@@ -434,30 +434,29 @@ public class Atacar extends Event{
 				}
 				else System.out.println("target precisa estar dormindo, senao nao faz nada");
 				break;
-			case "TRANSFORM EFFECT": //falta implementar pq PUTA QUE PARIU QUE MERDA CHATA NAO AGUENTO MAIS
+			case "TRANSFORM EFFECT": //falta implementar 
 				System.out.println("se transformou em uma linda borboleta");
 				break;
 			case "SPLASH EFFECT":
-				System.out.println("seu peixe de merda fez um splash");
+				System.out.println("seu peixe fez um splash");
 				break;
-			case "CONVERSION EFFECT": //vai tomar no cu que merda nunca ouvi falar nessa skill de bosta
+			case "CONVERSION EFFECT": 
 				System.out.println("se transorma no megazord");
 				break;
 			case "SUPER FANG EFFECT":
 				defensor.takeDamage(defensor.getStatsVol().getHp()/2);
 				break;
-			case "SUBSTITUTE EFFECT": //ME RECUSO A IMPLEMENTAR ESSA MERDA ENFIA NO CU
-				System.out.println("substitui sua semana de estudos pra p2 por um ep desnecessariamente complicado de pokemon");
+			case "SUBSTITUTE EFFECT": 
 				break;
 			default:
 				System.out.println("Tcharam aconteceu algo, descubra o que");			
 			}
 		}
-		else System.out.println("ERROOOOW");
+		else System.out.println("ERROU...");
 		
 	}
 	public String description(){
-		return "usa uma habilidade seu imbecil, acha que \"ataca\" faz o que seu cabaço";
+		return "usa uma habilidade do pokemon para causar dano ou causar efeito de status";
 	}
 	
 	

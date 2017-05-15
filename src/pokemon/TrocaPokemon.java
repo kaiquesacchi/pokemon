@@ -10,7 +10,7 @@ public class TrocaPokemon extends Event{
 	}
 	
 	public String description(){
-		return "Troca a porra do pokemon caralho";
+		return "Troca o pokemon atual por outro em sua pokepool";
 	}
 	
 	//Construtor
