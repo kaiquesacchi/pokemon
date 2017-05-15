@@ -11,6 +11,7 @@ abstract public class Index2 {
 	
 	
 	static public void actRes(int act, Atacar ataque1, Atacar ataque2, UsarItem itens, PkmPool pool, PkmPool pool2, int skill, int troca){
+		//cria um evento, dependendo da decisao tomada em battle
 		switch(act){
 		case 0:
 			System.out.println("Pokemon "+pool.getPokemon(0).getNome()+" atacou");
@@ -21,7 +22,7 @@ abstract public class Index2 {
 			itens.action("Potion", "POTION",0, 0);
 			break;
 		case 2:
-			System.out.println("trocou "+pool.getPokemon(0).getNome()+" por "+pool.getPokemon(troca).getNome());
+			//System.out.println("trocou "+pool.getPokemon(0).getNome()+" por "+pool.getPokemon(troca).getNome());
 			TrocaPokemon.action(troca, pool);
 			break;
 		case 3:
@@ -33,12 +34,13 @@ abstract public class Index2 {
 			else System.out.println("GLAUCINHO ESCAPOU, É MUITO SAGAZ PRA VOCE");
 			break;
 		default:
-			System.out.println("deu alguma bosta, action veio "+act);
+			System.out.println("Ocorreu um problema... "+act);
 		}
 	}
 	
 	static public void battle(Trainer trainer1, Trainer trainer2, Type tipos, UsarItem itens1, UsarItem itens2){
 		PkmPool pool1 = trainer1.getPool(), pool2 = trainer2.getPool();
+		//inicializa ataques e itens
 		Atacar ataque1 = new Atacar(pool1, pool2, tipos);
 		Atacar ataque2 = new Atacar(pool2, pool1, tipos);
 		itens1.setPool(pool1);
@@ -48,7 +50,7 @@ abstract public class Index2 {
 		System.out.println("trainer1== "+trainer1.getNome());
 		System.out.println("trainer2== "+trainer2.getNome());
 		while(trainer1.lose() && trainer2.lose()){
-			System.out.println("here");
+			//se estiver com pouca vida, usa poção
 			if(pool1.getPokemon(0).getStatsVol().getHp() < 15 && potions1 > 0){
 				potions1--;
 				act1=1;
@@ -61,22 +63,12 @@ abstract public class Index2 {
 			}
 			else act2=0;
 			if(act1 > act2 || (act1==act2 && pool1.getPokemon(0).getSpd() >= pool2.getPokemon(0).getSpd())){
+				//decide quem tem prioridade
 				actRes(act1, ataque1, ataque2, itens1, pool1, pool2, 0, 0);
 				if(pool2.getPokemon(0).getStatsVol().getHp() > 0){
 					actRes(act2, ataque2, ataque1, itens2, pool2,pool1, 0, 0);
 				}
 				else{
-					/*aux=1;
-					while(pool2.dead(aux)){
-						aux++;
-						if(aux>pool2.getLenght()-1) break;
-					}
-					if(aux>pool2.getLenght()-1) break; //termina a batalha
-					System.out.println("Morreu, trocando por "+pool2.getPokemon(aux).getNome());
-					actRes(2, ataque2, ataque1, itens2, pool2, pool1, 0, aux);
-					ataque1 = new Atacar(pool1, pool2, tipos);
-					ataque2 = new Atacar(pool2, pool1, tipos);*/
-					//System.out.println("GLAUCINHO MORREU");
 					break;
 				}
 				if(pool1.getPokemon(0).getCurHp() < 1){
@@ -86,7 +78,7 @@ abstract public class Index2 {
 						if(aux>pool1.getLenght()-1) break;
 					}
 					if(aux>pool1.getLenght()) break; //termina a batalha
-					System.out.println("Morreu, trocando por "+pool1.getPokemon(aux).getNome());
+					//System.out.println("Morreu, trocando por "+pool1.getPokemon(aux).getNome());
 					actRes(2, ataque1, ataque2, itens1, pool1, pool2, 0, aux);
 					ataque1 = new Atacar(pool1, pool2, tipos);
 					ataque2 = new Atacar(pool2, pool1, tipos);
@@ -111,17 +103,7 @@ abstract public class Index2 {
 				}
 				System.out.println("Poke "+pool2.getPokemon(0).getNome()+" curhp== "+pool2.getPokemon(0).getCurHp());
 				if(pool2.getPokemon(0).getCurHp() < 1){
-					/*aux=1;
-					while(pool2.dead(aux)){
-						aux++;
-						if(aux>5) break;
-					}
-					if(aux>5) break; //termina a batalha
-					System.out.println("Morreu, trocando por "+pool2.getPokemon(aux).getNome());
-					actRes(2, ataque2, ataque1, itens2, pool2, pool1, 0, aux);
-					ataque1 = new Atacar(pool1, pool2, tipos);
-					ataque2 = new Atacar(pool2, pool1, tipos);*/
-					//System.out.println("GLAUCINHO MORREU");
+				
 					break;
 				}
 			}
@@ -207,6 +189,10 @@ abstract public class Index2 {
 		pkmpool1.getPokemon(0).getStatsSol().addHp(30);
 		pkmpool1.getPokemon(0).getStatsVol().addHp(30);
 		pkmpool1.getPokemon(0).addCurHp(30);
+		
+		pkmpool2.getPokemon(1).getStatsSol().addHp(300);
+		pkmpool2.getPokemon(1).getStatsVol().addHp(300);
+		pkmpool2.getPokemon(1).addCurHp(300);
 		Trainer trainer1 = new Trainer("Sergio Moro do Top Gear", pkmpool2, 0);
 		Trainer wild = new Trainer("GLAUCINHO TERRA", pkmpool1, -15);
 		
