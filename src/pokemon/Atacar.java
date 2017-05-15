@@ -97,7 +97,7 @@ public class Atacar extends Event{
 		}*/
 		hab.usePP();
 		if(calcPrecisao(hab)){
-			hab.printAll();
+			
 			switch(hab.getEfeito()){
 			case "NO ADDITIONAL EFFECT":
 				defensor.takeDamage(dano);
